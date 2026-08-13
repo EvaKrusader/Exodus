@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Adrenaline",
+    "icon": "adrenaline",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": "AdrenalineEffectStartedapplied",
+    "onExpired": "AdrenalineEffectExpires",
+    "onMobHurt": "AdrenalineTakeDamageProc"
+  }
+}

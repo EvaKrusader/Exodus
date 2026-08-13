@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Calidium"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium",
+      "CUSTOM:Calidium"
+    ],
+    "recipeReturnStack": "CUSTOM:CalidiumBlock",
+    "name": "calidium_ore_block_recipe",
+    "namespace": "mod"
+  }
+}

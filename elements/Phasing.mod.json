@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Phasing",
+    "icon": "phasing",
+    "color": {
+      "value": -8519811,
+      "falpha": 0.0
+    },
+    "onAddedSound": "",
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": "PhasingEffectStartedapplied",
+    "onExpired": "PhasingEffectExpires"
+  }
+}

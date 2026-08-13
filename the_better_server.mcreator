@@ -1,0 +1,3851 @@
+{
+  "mod_elements": [
+    {
+      "name": "Test",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/renderer/TestRenderer.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "Baubles",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "baubles",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "CreeperRepellent",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_2.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_3.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_7.json",
+          "src/main/resources/assets/the_better_server/items/creeper_repellent.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_4.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_0.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_6.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_1.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_repellent_5.json",
+          "src/main/java/net/mcreator/thebetterserver/item/CreeperRepellentItem.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "CreeperRepellentProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CreeperRepellentProcProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "ExtraBioluminescence",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extra_bioluminescence",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/enchantment/extra_bioluminescence.json"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "MysticalConductivity",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_conductivity",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/enchantment/mystical_conductivity.json"
+        ]
+      },
+      "path": "~/Curio"
+    },
+    {
+      "name": "DevOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DevOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "Dev",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/network/DevMessage.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "CreeperPatcherBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_patcher_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CreeperPatcherBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "CreeperPatcher",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_patcher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/blockstates/creeper_patcher.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/creeper_patcher.json",
+          "src/main/resources/assets/the_better_server/items/creeper_patcher.json",
+          "src/main/resources/assets/the_better_server/models/block/creeper_patcher.json",
+          "src/main/resources/assets/the_better_server/models/item/creeper_patcher.json",
+          "src/main/java/net/mcreator/thebetterserver/block/CreeperPatcherBlock.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "HayBread",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hay_bread",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/hay_bread.json",
+          "src/main/resources/data/the_better_server/recipe/hay_bread.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "AdvBreadFiend",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_bread_fiend",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/adv_bread_fiend.json"
+        ]
+      },
+      "path": "~/QOL/Advancements"
+    },
+    {
+      "name": "BreadfiendProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breadfiend_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/BreadfiendProcProcedure.java"
+        ]
+      },
+      "path": "~/QOL/Advancements"
+    },
+    {
+      "name": "Onyx",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxItem.java",
+          "src/main/resources/assets/the_better_server/items/onyx.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/loot_table/blocks/onyx_ore.json",
+          "src/main/resources/assets/the_better_server/blockstates/onyx_ore.json",
+          "src/main/resources/assets/the_better_server/models/block/onyx_ore.json",
+          "src/main/resources/assets/the_better_server/items/onyx_ore.json",
+          "src/main/java/net/mcreator/thebetterserver/block/OnyxOreBlock.java",
+          "src/main/resources/data/the_better_server/neoforge/biome_modifier/onyx_ore_biome_modifier.json",
+          "src/main/resources/data/the_better_server/worldgen/configured_feature/onyx_ore.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx_ore.json",
+          "src/main/resources/data/the_better_server/worldgen/placed_feature/onyx_ore.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/onyx_block.json",
+          "src/main/resources/assets/the_better_server/blockstates/onyx_block.json",
+          "src/main/java/net/mcreator/thebetterserver/block/OnyxBlockBlock.java",
+          "src/main/resources/assets/the_better_server/items/onyx_block.json",
+          "src/main/resources/assets/the_better_server/models/block/onyx_block.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/onyx_block.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_ore_block_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_block_ore_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_ore_smelting.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/onyx_pickaxe.json",
+          "src/main/resources/assets/the_better_server/items/onyx_pickaxe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxPickaxeItem.java"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/onyx_axe.json",
+          "src/main/resources/assets/the_better_server/items/onyx_axe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxAxeItem.java"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/onyx_sword.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxSwordItem.java",
+          "src/main/resources/assets/the_better_server/models/item/onyx_sword.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxShovelItem.java",
+          "src/main/resources/assets/the_better_server/items/onyx_shovel.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx_shovel.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/onyx_hoe.json",
+          "src/main/resources/assets/the_better_server/items/onyx_hoe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxHoeItem.java"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_pickaxe_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_axe_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_axe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_sword_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_sword_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_shovel_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_hoe_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/onyx_armor_helmet.json",
+          "src/main/resources/assets/the_better_server/items/onyx_armor_leggings.json",
+          "src/main/resources/assets/the_better_server/equipment/onyx_armor.json",
+          "src/main/java/net/mcreator/thebetterserver/client/renderer/item/OnyxArmorArmor.java",
+          "src/main/resources/assets/the_better_server/models/item/onyx_armor_boots.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx_armor_helmet.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OnyxArmorItem.java",
+          "src/main/resources/assets/the_better_server/items/onyx_armor_chestplate.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx_armor_chestplate.json",
+          "src/main/resources/assets/the_better_server/models/item/onyx_armor_leggings.json",
+          "src/main/resources/assets/the_better_server/items/onyx_armor_boots.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/onyx_armor_helmet_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_armor_chestplate_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_armor_leggings_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "OnyxArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/onyx_armor_boots_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/onyx_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/RubyItem.java",
+          "src/main/resources/assets/the_better_server/items/ruby.json",
+          "src/main/resources/assets/the_better_server/models/item/ruby.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/ruby_ore.json",
+          "src/main/resources/data/the_better_server/neoforge/biome_modifier/ruby_ore_biome_modifier.json",
+          "src/main/resources/data/the_better_server/worldgen/configured_feature/ruby_ore.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/ruby_ore.json",
+          "src/main/resources/data/the_better_server/worldgen/placed_feature/ruby_ore.json",
+          "src/main/resources/assets/the_better_server/items/ruby_ore.json",
+          "src/main/resources/assets/the_better_server/models/block/ruby_ore.json",
+          "src/main/resources/assets/the_better_server/blockstates/ruby_ore.json",
+          "src/main/java/net/mcreator/thebetterserver/block/RubyOreBlock.java"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/loot_table/blocks/ruby_block.json",
+          "src/main/java/net/mcreator/thebetterserver/block/RubyBlockBlock.java",
+          "src/main/resources/assets/the_better_server/models/item/ruby_block.json",
+          "src/main/resources/assets/the_better_server/items/ruby_block.json",
+          "src/main/resources/assets/the_better_server/blockstates/ruby_block.json",
+          "src/main/resources/assets/the_better_server/models/block/ruby_block.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/ruby_ore_block_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_block_ore_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_ore_smelting.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/RubyPickaxeItem.java",
+          "src/main/resources/assets/the_better_server/items/ruby_pickaxe.json",
+          "src/main/resources/assets/the_better_server/models/item/ruby_pickaxe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/ruby_axe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/RubyAxeItem.java",
+          "src/main/resources/assets/the_better_server/items/ruby_axe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubySword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/ruby_sword.json",
+          "src/main/java/net/mcreator/thebetterserver/item/RubySwordItem.java",
+          "src/main/resources/assets/the_better_server/models/item/ruby_sword.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/ruby_shovel.json",
+          "src/main/java/net/mcreator/thebetterserver/item/RubyShovelItem.java",
+          "src/main/resources/assets/the_better_server/items/ruby_shovel.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/ruby_hoe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/RubyHoeItem.java",
+          "src/main/resources/assets/the_better_server/items/ruby_hoe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/ruby_pickaxe_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_axe_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_axe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubySwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_sword_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_sword_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/ruby_shovel_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/ruby_hoe_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/ruby_armor_helmet.json",
+          "src/main/resources/assets/the_better_server/items/ruby_armor_chestplate.json",
+          "src/main/resources/assets/the_better_server/models/item/ruby_armor_chestplate.json",
+          "src/main/resources/assets/the_better_server/equipment/ruby_armor.json",
+          "src/main/resources/assets/the_better_server/items/ruby_armor_leggings.json",
+          "src/main/resources/assets/the_better_server/models/item/ruby_armor_boots.json",
+          "src/main/java/net/mcreator/thebetterserver/item/RubyArmorItem.java",
+          "src/main/java/net/mcreator/thebetterserver/client/renderer/item/RubyArmorArmor.java",
+          "src/main/resources/assets/the_better_server/models/item/ruby_armor_helmet.json",
+          "src/main/resources/assets/the_better_server/items/ruby_armor_boots.json",
+          "src/main/resources/assets/the_better_server/models/item/ruby_armor_leggings.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_armor_helmet_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_armor_chestplate_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/ruby_armor_leggings_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RubyArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/ruby_armor_boots_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/ruby_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Ruby"
+    },
+    {
+      "name": "RecipeCreeperRepellent",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_creeper_repellent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/recipe_creeper_repellent.json",
+          "src/main/resources/data/the_better_server/recipe/recipe_creeper_repellent.json"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "TestBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/TestBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "CreeperRepellentPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent_biolum_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CreeperRepellentPropertyValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "CreeperRepellentRangeValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent_range_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CreeperRepellentRangeValueProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "CreeperRepellentHasItemGlowingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent_has_item_glowing_effect",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CreeperRepellentHasItemGlowingEffectProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "BonePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/bone_pickaxe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/BonePickaxeItem.java",
+          "src/main/resources/assets/the_better_server/models/item/bone_pickaxe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/bone_axe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/BoneAxeItem.java",
+          "src/main/resources/assets/the_better_server/items/bone_axe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/bone_sword.json",
+          "src/main/java/net/mcreator/thebetterserver/item/BoneSwordItem.java",
+          "src/main/resources/assets/the_better_server/models/item/bone_sword.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/BoneShovelItem.java",
+          "src/main/resources/assets/the_better_server/models/item/bone_shovel.json",
+          "src/main/resources/assets/the_better_server/items/bone_shovel.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/bone_hoe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/BoneHoeItem.java",
+          "src/main/resources/assets/the_better_server/items/bone_hoe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BonePickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_axe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_sword_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "BoneHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Bone"
+    },
+    {
+      "name": "Phasing",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/potion/PhasingMobEffect.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/screens/PhasingOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PhasingOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlay2",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/screens/PhasingOverlay2Overlay.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlay3",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/screens/PhasingOverlay3Overlay.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlayDisplayOverlayIngame2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay_display_overlay_ingame_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PhasingOverlayDisplayOverlayIngame2Procedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingOverlayDisplayOverlayIngame3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_overlay_display_overlay_ingame_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PhasingOverlayDisplayOverlayIngame3Procedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PhasingEffectStartedappliedProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "PhasingEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasing_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PhasingEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Phasing"
+    },
+    {
+      "name": "ExperienceGummy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_gummy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/ExperienceGummyItem.java",
+          "src/main/resources/assets/the_better_server/models/item/experience_gummy.json",
+          "src/main/resources/assets/the_better_server/items/experience_gummy.json"
+        ]
+      },
+      "path": "~/Items/XP Gummy"
+    },
+    {
+      "name": "ExperienceGummyPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_gummy_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ExperienceGummyPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/XP Gummy"
+    },
+    {
+      "name": "AdvXPGummy10",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_xp_gummy_10",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/adv_xp_gummy_10.json"
+        ]
+      },
+      "path": "~/Items/XP Gummy"
+    },
+    {
+      "name": "AdvXPGummy64",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_xp_gummy_64",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/adv_xp_gummy_64.json"
+        ]
+      },
+      "path": "~/Items/XP Gummy"
+    },
+    {
+      "name": "AdvZeroPoint",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adv_zero_point",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/adv_zero_point.json"
+        ]
+      },
+      "path": "~/QOL/Advancements"
+    },
+    {
+      "name": "ZeroPointProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_point_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ZeroPointProcProcedure.java"
+        ]
+      },
+      "path": "~/QOL/Advancements"
+    },
+    {
+      "name": "ZeroPointProcJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_point_proc_join",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ZeroPointProcJoinProcedure.java"
+        ]
+      },
+      "path": "~/QOL/Advancements"
+    },
+    {
+      "name": "Calidium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/calidium.json",
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumItem.java",
+          "src/main/resources/assets/the_better_server/items/calidium.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/loot_table/blocks/calidium_ore.json",
+          "src/main/resources/assets/the_better_server/models/block/calidium_ore.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_ore.json",
+          "src/main/resources/assets/the_better_server/items/calidium_ore.json",
+          "src/main/resources/assets/the_better_server/blockstates/calidium_ore.json",
+          "src/main/java/net/mcreator/thebetterserver/block/CalidiumOreBlock.java"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/calidium_block.json",
+          "src/main/resources/assets/the_better_server/models/block/calidium_block.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/calidium_block.json",
+          "src/main/resources/assets/the_better_server/items/calidium_block.json",
+          "src/main/java/net/mcreator/thebetterserver/block/CalidiumBlockBlock.java",
+          "src/main/resources/assets/the_better_server/blockstates/calidium_block.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_ore_block_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_block_ore_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_ore_smelting.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumPickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/calidium_pickaxe.json",
+          "src/main/resources/assets/the_better_server/items/calidium_pickaxe.json",
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumPickaxeItem.java"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumAxeItem.java",
+          "src/main/resources/assets/the_better_server/models/item/calidium_axe.json",
+          "src/main/resources/assets/the_better_server/items/calidium_axe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumSwordItem.java",
+          "src/main/resources/assets/the_better_server/items/calidium_sword.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_sword.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/calidium_shovel.json",
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumShovelItem.java",
+          "src/main/resources/assets/the_better_server/items/calidium_shovel.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumHoeItem.java",
+          "src/main/resources/assets/the_better_server/models/item/calidium_hoe.json",
+          "src/main/resources/assets/the_better_server/items/calidium_hoe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumPickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_pickaxe_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_axe_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/calidium_axe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_sword_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_sword_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_shovel_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_hoe_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/calidium_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/items/calidium_armor_helmet.json",
+          "src/main/resources/assets/the_better_server/equipment/calidium_armor.json",
+          "src/main/java/net/mcreator/thebetterserver/item/CalidiumArmorItem.java",
+          "src/main/resources/assets/the_better_server/items/calidium_armor_leggings.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_armor_helmet.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_armor_leggings.json",
+          "src/main/java/net/mcreator/thebetterserver/client/renderer/item/CalidiumArmorArmor.java",
+          "src/main/resources/assets/the_better_server/items/calidium_armor_chestplate.json",
+          "src/main/resources/assets/the_better_server/items/calidium_armor_boots.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_armor_boots.json",
+          "src/main/resources/assets/the_better_server/models/item/calidium_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_armor_helmet_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/calidium_armor_chestplate_recipe.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_armor_leggings_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/calidium_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/recipes/calidium_armor_boots_recipe.json",
+          "src/main/resources/data/the_better_server/recipe/calidium_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "ScaldingCalidium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalding_calidium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/ScaldingCalidiumItem.java",
+          "src/main/resources/assets/the_better_server/models/item/scalding_calidium.json",
+          "src/main/resources/assets/the_better_server/items/scalding_calidium.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumBlackstoneFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_blackstone_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/neoforge/biome_modifier/calidium_blackstone_feature_biome_modifier.json",
+          "src/main/resources/data/the_better_server/worldgen/configured_feature/calidium_blackstone_feature.json",
+          "src/main/resources/data/the_better_server/worldgen/placed_feature/calidium_blackstone_feature.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "BasaltCalidiumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_calidium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/blockstates/basalt_calidium_ore.json",
+          "src/main/java/net/mcreator/thebetterserver/block/BasaltCalidiumOreBlock.java",
+          "src/main/resources/assets/the_better_server/items/basalt_calidium_ore.json",
+          "src/main/resources/assets/the_better_server/models/block/basalt_calidium_ore.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/basalt_calidium_ore.json",
+          "src/main/resources/assets/the_better_server/models/item/basalt_calidium_ore.json"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "CalidiumOreBreakProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calidium_ore_break_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/CalidiumOreBreakProcProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "ScaldingCalidiumPickupProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalding_calidium_pickup_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ScaldingCalidiumPickupProcProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "ScaldingCalidiumOreDropProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalding_calidium_ore_drop_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ScaldingCalidiumOreDropProcProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Calidium"
+    },
+    {
+      "name": "GreedRelic",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_3.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_2.json",
+          "src/main/java/net/mcreator/thebetterserver/item/GreedRelicItem.java",
+          "src/main/resources/assets/the_better_server/items/greed_relic.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_0.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_4.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_5.json",
+          "src/main/resources/assets/the_better_server/models/item/greed_relic_1.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedRelicBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic_bauble",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/renderer/GreedRelicBaubleRenderer.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedRelicTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GreedRelicTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedRelicBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GreedRelicBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedRelicBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GreedRelicBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedRelicBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_relic_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GreedRelicBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "Authority",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "authority",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/enchantment/authority.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins"
+    },
+    {
+      "name": "GildedBlackstoneGreed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_blackstone_greed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GildedBlackstoneGreedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GoldRushEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rush_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GoldRushEffectStartedappliedProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Gold Rush"
+    },
+    {
+      "name": "GoldRush",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/potion/GoldRushMobEffect.java"
+        ]
+      },
+      "path": "~/Potion Effects/Gold Rush"
+    },
+    {
+      "name": "DevOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/client/screens/DevOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "ReturnGreedLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_greed_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnGreedLevelProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "SinfulFaithValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sinful_faith_value_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/SinfulFaithValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GreedLevelGold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed_level_gold",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GreedLevelGoldProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "GoldBlockChecker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_block_checker",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/GoldBlockCheckerProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo"
+    },
+    {
+      "name": "ReturnGoldValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_gold_value",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnGoldValueProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "ReturnGoldGoal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_gold_goal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnGoldGoalProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "PlatformSoles",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_soles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/enchantment/platform_soles.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "PlatformSolesProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_soles_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/PlatformSolesProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "HermesWings",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermes_wings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/HermesWingsItem.java",
+          "src/main/resources/assets/the_better_server/models/item/hermes_wings.json",
+          "src/main/resources/assets/the_better_server/items/hermes_wings.json"
+        ]
+      },
+      "path": "~/Curio/Hermes Wings"
+    },
+    {
+      "name": "Ankles",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ankles",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/curios/entities/ankles.json",
+          "src/main/resources/data/the_better_server/curios/slots/ankles.json",
+          "src/main/resources/data/curios/tags/item/ankles.json"
+        ]
+      },
+      "path": "~/Curio/Hermes Wings"
+    },
+    {
+      "name": "HermesWingsBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermes_wings_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Hermes Wings"
+    },
+    {
+      "name": "HermesWingsProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermes_wings_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/HermesWingsProcProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Hermes Wings"
+    },
+    {
+      "name": "Sinful",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sinful",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/sinful.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins"
+    },
+    {
+      "name": "SuccumbToYourGreedAdv",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "succumb_to_your_greed_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/advancement/succumb_to_your_greed_adv.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo/Advancements"
+    },
+    {
+      "name": "WaterStone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/WaterStoneItem.java",
+          "src/main/resources/assets/the_better_server/models/item/water_stone.json",
+          "src/main/resources/assets/the_better_server/items/water_stone.json"
+        ]
+      },
+      "path": "~/Curio/GraceFall"
+    },
+    {
+      "name": "WaterStoneBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_stone_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/WaterStoneBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/GraceFall"
+    },
+    {
+      "name": "WaterStoneBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_stone_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/GraceFall"
+    },
+    {
+      "name": "ReturnStepHeightBase",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_step_height_base",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnStepHeightBaseProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "ReturnStepHeightMod",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_step_height_mod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnStepHeightModProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "FireAspectUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_aspect_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/FireAspectUpdateProcedure.java"
+        ]
+      },
+      "path": "~/QOL/Enchantments"
+    },
+    {
+      "name": "DeathContract",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/item/DeathContractItem.java",
+          "src/main/resources/assets/the_better_server/items/death_contract.json",
+          "src/main/resources/assets/the_better_server/models/item/death_contract_0.json",
+          "src/main/resources/assets/the_better_server/models/item/death_contract_1.json",
+          "src/main/resources/assets/the_better_server/models/item/death_contract.json"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractBaubleCanUnequipBauble",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_bauble_can_unequip_bauble",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractBaubleCanUnequipBaubleProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractDiesProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractRespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_respawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractRespawnProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractIsSignedTexture",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_is_signed_texture",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractIsSignedTextureProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "DeathContractItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_contract_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/DeathContractItemInInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Death Contract"
+    },
+    {
+      "name": "OminousLanternLevelProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_level_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/OminousLanternLevelProviderProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLantern",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_3.json",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_5.json",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_0.json",
+          "src/main/java/net/mcreator/thebetterserver/item/OminousLanternItem.java",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_1.json",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_4.json",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern.json",
+          "src/main/resources/assets/the_better_server/items/ominous_lantern.json",
+          "src/main/resources/assets/the_better_server/models/item/ominous_lantern_2.json"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "ReturnOminousLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ominous_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnOminousLevelProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "OminousPotionDrink",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_potion_drink",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/OminousPotionDrinkProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLanternBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/OminousLanternBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLanternBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLanternBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/OminousLanternBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "GoldRushPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rush_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Potion Effects/Gold Rush"
+    },
+    {
+      "name": "GoldRushPotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rush_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/recipe/brewing/GoldRushPotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo/Recipes"
+    },
+    {
+      "name": "Adrenaline",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/potion/AdrenalineMobEffect.java"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "AdrenalineTakeDamageProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_take_damage_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/AdrenalineTakeDamageProcProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "AdrenalineDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/damage_type/adrenaline_damage.json"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "AdrenalineEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/AdrenalineEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "ReturnAdrenalineDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_adrenaline_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnAdrenalineDamageProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "AdrenalineOnDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_on_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/AdrenalineOnDeathProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "AdrenalineEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/AdrenalineEffectStartedappliedProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Adrenaline"
+    },
+    {
+      "name": "ChewingGum",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chewing_gum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/chewing_gum.json",
+          "src/main/java/net/mcreator/thebetterserver/item/ChewingGumItem.java",
+          "src/main/resources/assets/the_better_server/items/chewing_gum.json"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ChewingGumPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chewing_gum_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ChewingGumPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ChewingGumMinuteFeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chewing_gum_minute_feed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ChewingGumMinuteFeedProcedure.java"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ReturnChewingGumGlobal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_chewing_gum_global",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnChewingGumGlobalProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "ReturnChewingGumCounter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_chewing_gum_counter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnChewingGumCounterProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "Choking",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choking",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/damage_type/choking.json"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ChewingGumTakeDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chewing_gum_take_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ChewingGumTakeDamageProcedure.java"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ChewingGumRun",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chewing_gum_run",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ChewingGumRunProcedure.java"
+        ]
+      },
+      "path": "~/Items/Chewing Gum"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "phasing_overlay",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "isGreedy",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "greedLevel",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "greedLeveler",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "goldAmount",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "goldGoal",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "fakeGoldLevel",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "hasDeathContract",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "playContractSound",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "deathContractDied",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "latest_trial_level",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "adrenalineDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "healthBeforeAdrenaline",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "20.0"
+    },
+    {
+      "name": "isChewingGum",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "howLongChewingGum",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "chewingGumCounter",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "chewingGumLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "gold_rush_start",
+      "files": [
+        "gold_rush_start"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "gold_rush_kaching",
+      "files": [
+        "gold_rush_1",
+        "gold_rush_2",
+        "gold_rush_3",
+        "gold_rush_4"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "greed_upgrade",
+      "files": [
+        "greed_upgrade"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "choke_cough",
+      "files": [
+        "cough"
+      ],
+      "category": "player",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:mod:baubles": [
+      "CUSTOM:CreeperRepellent"
+    ],
+    "ITEMS:the_better_server:onyx_pickaxe_repair_items": [
+      "~OnyxPickaxe@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:onyx_axe_repair_items": [
+      "~OnyxAxe@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:onyx_sword_repair_items": [
+      "~OnyxSword@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:onyx_shovel_repair_items": [
+      "~OnyxShovel@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:onyx_hoe_repair_items": [
+      "~OnyxHoe@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:onyx_armor_repair_items": [
+      "~OnyxArmor@CUSTOM:Onyx"
+    ],
+    "ITEMS:the_better_server:ruby_pickaxe_repair_items": [
+      "~RubyPickaxe@CUSTOM:Ruby"
+    ],
+    "ITEMS:the_better_server:ruby_axe_repair_items": [
+      "~RubyAxe@CUSTOM:Ruby"
+    ],
+    "ITEMS:the_better_server:ruby_sword_repair_items": [
+      "~RubySword@CUSTOM:Ruby"
+    ],
+    "ITEMS:the_better_server:ruby_shovel_repair_items": [
+      "~RubyShovel@CUSTOM:Ruby"
+    ],
+    "ITEMS:the_better_server:ruby_hoe_repair_items": [
+      "~RubyHoe@CUSTOM:Ruby"
+    ],
+    "ITEMS:the_better_server:ruby_armor_repair_items": [
+      "~RubyArmor@CUSTOM:Ruby"
+    ],
+    "ITEMS:mod:bauble_ranged": [
+      "CUSTOM:CreeperRepellent"
+    ],
+    "ITEMS:the_better_server:bone_pickaxe_repair_items": [],
+    "ITEMS:the_better_server:bone_axe_repair_items": [
+      "~BoneAxe@CUSTOM:Bone"
+    ],
+    "ITEMS:the_better_server:bone_sword_repair_items": [
+      "~BoneSword@CUSTOM:Bone"
+    ],
+    "ITEMS:the_better_server:bone_shovel_repair_items": [
+      "~BoneShovel@CUSTOM:Bone"
+    ],
+    "ITEMS:the_better_server:bone_hoe_repair_items": [
+      "~BoneHoe@CUSTOM:Bone"
+    ],
+    "ITEMS:the_better_server:bone_armor_repair_items": [],
+    "ITEMS:the_better_server:molarite_pickaxe_repair_items": [],
+    "ITEMS:the_better_server:molarite_axe_repair_items": [],
+    "ITEMS:the_better_server:molarite_sword_repair_items": [],
+    "ITEMS:the_better_server:molarite_shovel_repair_items": [],
+    "ITEMS:the_better_server:molarite_hoe_repair_items": [],
+    "ITEMS:the_better_server:molarite_armor_repair_items": [],
+    "ITEMS:the_better_server:calidium_pickaxe_repair_items": [
+      "~CalidiumPickaxe@CUSTOM:Calidium"
+    ],
+    "ITEMS:the_better_server:calidium_axe_repair_items": [
+      "~CalidiumAxe@CUSTOM:Calidium"
+    ],
+    "ITEMS:the_better_server:calidium_sword_repair_items": [
+      "~CalidiumSword@CUSTOM:Calidium"
+    ],
+    "ITEMS:the_better_server:calidium_shovel_repair_items": [
+      "~CalidiumShovel@CUSTOM:Calidium"
+    ],
+    "ITEMS:the_better_server:calidium_hoe_repair_items": [
+      "~CalidiumHoe@CUSTOM:Calidium"
+    ],
+    "ITEMS:the_better_server:calidium_armor_repair_items": [
+      "~CalidiumArmor@CUSTOM:Calidium"
+    ],
+    "ITEMS:mod:sinful_baubles": [],
+    "BLOCKS:the_better_server:gold_blocks": [
+      "Blocks.GOLD_ORE",
+      "Blocks.DEEPSLATE_GOLD_ORE",
+      "Blocks.NETHER_GOLD_ORE",
+      "Blocks.RAW_GOLD_BLOCK",
+      "Blocks.GOLD_BLOCK",
+      "Blocks.GILDED_BLACKSTONE"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~WaterStone@CUSTOM:WaterStone",
+      "~HermesWings@CUSTOM:HermesWings",
+      "~CreeperRepellent@CUSTOM:CreeperRepellent"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~PlatformSoles@CUSTOM:PlatformSoles",
+      "~MysticalConductivity@CUSTOM:MysticalConductivity",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~PlatformSoles@CUSTOM:PlatformSoles",
+      "~MysticalConductivity@CUSTOM:MysticalConductivity",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~PlatformSoles@CUSTOM:PlatformSoles",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+    ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Authority@CUSTOM:Authority",
+      "~MysticalConductivity@CUSTOM:MysticalConductivity"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
+      "~CalidiumBlock@CUSTOM:CalidiumBlock",
+      "~CalidiumOre@CUSTOM:CalidiumOre",
+      "~RubyBlock@CUSTOM:RubyBlock",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~OnyxBlock@CUSTOM:OnyxBlock",
+      "~OnyxOre@CUSTOM:OnyxOre"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CalidiumBlock@CUSTOM:CalidiumBlock",
+      "~RubyBlock@CUSTOM:RubyBlock",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~OnyxBlock@CUSTOM:OnyxBlock",
+      "~OnyxOre@CUSTOM:OnyxOre"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CalidiumPickaxe@CUSTOM:CalidiumPickaxe",
+      "~BonePickaxe@CUSTOM:BonePickaxe",
+      "~RubyPickaxe@CUSTOM:RubyPickaxe",
+      "~OnyxPickaxe@CUSTOM:OnyxPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CalidiumAxe@CUSTOM:CalidiumAxe",
+      "~BoneAxe@CUSTOM:BoneAxe",
+      "~RubyAxe@CUSTOM:RubyAxe",
+      "~OnyxAxe@CUSTOM:OnyxAxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CalidiumSword@CUSTOM:CalidiumSword",
+      "~BoneSword@CUSTOM:BoneSword",
+      "~RubySword@CUSTOM:RubySword",
+      "~OnyxSword@CUSTOM:OnyxSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CalidiumShovel@CUSTOM:CalidiumShovel",
+      "~BoneShovel@CUSTOM:BoneShovel",
+      "~RubyShovel@CUSTOM:RubyShovel",
+      "~OnyxShovel@CUSTOM:OnyxShovel"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CalidiumHoe@CUSTOM:CalidiumHoe",
+      "~BoneHoe@CUSTOM:BoneHoe",
+      "~RubyHoe@CUSTOM:RubyHoe",
+      "~OnyxHoe@CUSTOM:OnyxHoe"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CalidiumArmor@CUSTOM:CalidiumArmor.helmet",
+      "~RubyArmor@CUSTOM:RubyArmor.helmet",
+      "~OnyxArmor@CUSTOM:OnyxArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CalidiumArmor@CUSTOM:CalidiumArmor.body",
+      "~RubyArmor@CUSTOM:RubyArmor.body",
+      "~OnyxArmor@CUSTOM:OnyxArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CalidiumArmor@CUSTOM:CalidiumArmor.legs",
+      "~RubyArmor@CUSTOM:RubyArmor.legs",
+      "~OnyxArmor@CUSTOM:OnyxArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CalidiumArmor@CUSTOM:CalidiumArmor.boots",
+      "~RubyArmor@CUSTOM:RubyArmor.boots",
+      "~OnyxArmor@CUSTOM:OnyxArmor.boots"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
+      "~CalidiumOre@CUSTOM:CalidiumOre"
+    ],
+    "ENTITIES:mod:trial_mobs": [
+      "EntityBreeze",
+      "EntityZombie",
+      "EntityHusk",
+      "EntityCaveSpider",
+      "EntitySpider",
+      "EntitySilverfish",
+      "EntityStray",
+      "EntitySkeleton",
+      "EntityBogged"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.the_better_server.baubles": "Baubles",
+      "item.the_better_server.creeper_repellent": "Creeper Repellent",
+      "enchantment.the_better_server.extra_bioluminescence": "Bioluminescence",
+      "enchantment.the_better_server.mystical_conductivity": "Mystical Conductivity",
+      "key.the_better_server.dev": "Dev",
+      "item.the_better_server.creeper_patcher": "Creeper Patcher",
+      "advancements.adv_bread_fiend.descr": "Have at least 9 stacks of bread in your inventory",
+      "advancements.adv_bread_fiend.title": "Bread Fiend",
+      "item.the_better_server.onyx": "Onyx",
+      "item.the_better_server.onyx_ore": "Onyx Ore",
+      "item.the_better_server.onyx_block": "Block of Onyx",
+      "item.the_better_server.onyx_pickaxe": "Onyx Pickaxe",
+      "item.the_better_server.onyx_axe": "Onyx Axe",
+      "item.the_better_server.onyx_sword": "Onyx Sword",
+      "item.the_better_server.onyx_shovel": "Onyx Shovel",
+      "item.the_better_server.onyx_hoe": "Onyx Hoe",
+      "item.the_better_server.onyx_armor_helmet": "Onyx Helmet",
+      "item.the_better_server.onyx_armor_chestplate": "Onyx Chestplate",
+      "item.the_better_server.onyx_armor_leggings": "Onyx Leggings",
+      "item.the_better_server.onyx_armor_boots": "Onyx Boots",
+      "item.the_better_server.ruby": "Ruby",
+      "item.the_better_server.ruby_ore": "Ruby Ore",
+      "item.the_better_server.ruby_block": "Block of Ruby",
+      "item.the_better_server.ruby_pickaxe": "Ruby Pickaxe",
+      "item.the_better_server.ruby_axe": "Ruby Axe",
+      "item.the_better_server.ruby_sword": "Ruby Sword",
+      "item.the_better_server.ruby_shovel": "Ruby Shovel",
+      "item.the_better_server.ruby_hoe": "Ruby Hoe",
+      "item.the_better_server.ruby_armor_chestplate": "Ruby Chestplate",
+      "item.the_better_server.ruby_armor_boots": "Ruby Boots",
+      "item.the_better_server.ruby_armor_helmet": "Ruby Helmet",
+      "item.the_better_server.ruby_armor_leggings": "Ruby Leggings",
+      "item.the_better_server.bone_pickaxe": "Bone Pickaxe",
+      "item.the_better_server.bone_axe": "Bone Axe",
+      "item.the_better_server.bone_sword": "Bone Sword",
+      "item.the_better_server.bone_shovel": "Bone Shovel",
+      "item.the_better_server.bone_hoe": "Bone Hoe",
+      "effect.the_better_server.phasing": "Phasing",
+      "item.minecraft.splash_potion.effect.phasing_potion": "Splash Potion of Phasing",
+      "item.minecraft.potion.effect.phasing_potion": "Potion of Phasing",
+      "item.minecraft.lingering_potion.effect.phasing_potion": "Lingering Potion of Phasing",
+      "item.minecraft.tipped_arrow.effect.phasing_potion": "Arrow of Phasing",
+      "item.the_better_server.experience_gummy": "Experience Gummy",
+      "advancements.adv_xp_gummy_10.descr": "Eat 8 Experience Gummies at once",
+      "advancements.adv_xp_gummy_10.title": "Level Up!",
+      "advancements.adv_xp_gummy_64.descr": "Eat a stack of Experience Gummies at once",
+      "advancements.adv_xp_gummy_64.title": "Gamers Level Up",
+      "advancements.adv_zero_point.title": "Zero Point",
+      "advancements.adv_zero_point.descr": "Place a Diamond Block at 0, 0, 0",
+      "item.the_better_server.calidium": "Calidium",
+      "item.the_better_server.calidium_ore": "Blackstone Calidium Ore",
+      "item.the_better_server.calidium_block": "Block of Calidium",
+      "item.the_better_server.calidium_pickaxe": "Calidium Pickaxe",
+      "item.the_better_server.calidium_axe": "Calidium Axe",
+      "item.the_better_server.calidium_sword": "Calidium Sword",
+      "item.the_better_server.calidium_shovel": "Calidium Shovel",
+      "item.the_better_server.calidium_hoe": "Calidium Hoe",
+      "item.the_better_server.calidium_armor_chestplate": "Calidium Chestplate",
+      "item.the_better_server.calidium_armor_leggings": "Calidium Leggings",
+      "item.the_better_server.calidium_armor_boots": "Calidium Boots",
+      "item.the_better_server.calidium_armor_helmet": "Calidium Helmet",
+      "item.the_better_server.scalding_calidium": "Scalding Calidium",
+      "item.the_better_server.basalt_calidium_ore": "Basalt Calidium Ore",
+      "item.the_better_server.greed_relic": "Halo of Avarice",
+      "enchantment.the_better_server.authority": "Authority",
+      "effect.the_better_server.gold_rush": "Gold Rush",
+      "subtitles.gold_rush_start": "",
+      "subtitles.gold_rush_kaching": "",
+      "subtitles.greed_upgrade": "",
+      "enchantment.the_better_server.platform_soles": "Platform Soles",
+      "item.the_better_server.hermes_wings": "Hermes Wings",
+      "curios.identifier.ankles": "Ankles",
+      "advancements.sinful.title": "Sinful",
+      "advancements.sinful.descr": "Pick your poison",
+      "advancements.succumb_to_your_greed_adv.descr": "Master the §6Halo of Avarice",
+      "advancements.succumb_to_your_greed_adv.title": "Succumb To Your Greed",
+      "item.the_better_server.water_stone": "Water Stone",
+      "item.the_better_server.death_contract": "Death Contract",
+      "item.the_better_server.ominous_lantern": "Ominous Lantern",
+      "item.minecraft.splash_potion.effect.gold_rush_potion": "Splash Potion of Gold Rush",
+      "item.minecraft.tipped_arrow.effect.gold_rush_potion": "Arrow of Gold Rush",
+      "item.minecraft.potion.effect.gold_rush_potion": "Potion of Gold Rush",
+      "item.minecraft.lingering_potion.effect.gold_rush_potion": "Lingering Potion of Gold Rush",
+      "effect.the_better_server.adrenaline": "Adrenaline",
+      "death.attack.adrenaline_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.adrenaline_damage": "%1$s\u0027s body couldn\u0027t take it",
+      "death.attack.adrenaline_damage.player": "%1$s\u0027s heart gave out whilst trying to escape %2$s",
+      "item.the_better_server.chewing_gum": "Chewing Gum",
+      "death.attack.choking": "%1$s choked",
+      "death.attack.choking.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.choking.player": "%1$s choked whilst trying to escape %2$s",
+      "subtitles.choke_cough": ""
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/data/the_better_server/curios/entities/slots.json",
+      "src/main/resources/data/the_better_server/curios/slots/charm.json",
+      "src/main/resources/data/the_better_server/curios/slots/necklace.json",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModCuriosRenderers.java",
+      "src/main/resources/data/the_better_server/curios/slots/belt.json",
+      "src/main/resources/data/curios/tags/item/necklace.json",
+      "src/main/resources/data/curios/tags/item/body.json",
+      "src/main/resources/data/the_better_server/curios/slots/head.json",
+      "src/main/resources/data/curios/tags/item/belt.json",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModCuriosCompat.java",
+      "src/main/resources/data/curios/tags/item/head.json",
+      "src/main/resources/data/the_better_server/curios/slots/body.json",
+      "src/main/resources/data/curios/tags/item/charm.json",
+      "src/main/java/net/mcreator/thebetterserver/client/renderer/item/LegacyOverrideSelectItemModel.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModKeyMappings.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModMobEffects.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModPotions.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModBlocks.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModItems.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModModels.java",
+      "src/main/java/net/mcreator/thebetterserver/TheBetterServerMod.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModTabs.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModSounds.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModRenderStateModifiers.java",
+      "src/main/resources/assets/the_better_server/sounds.json",
+      "src/main/java/net/mcreator/thebetterserver/network/TheBetterServerModVariables.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Curio",
+        "children": [
+          {
+            "name": "Creeper Repellent",
+            "children": [
+              {
+                "name": "Block",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Reality Anchor",
+            "children": []
+          },
+          {
+            "name": "Deadly Sins",
+            "children": [
+              {
+                "name": "Lustar Halo",
+                "children": [
+                  {
+                    "name": "GoldPick Enchant",
+                    "children": []
+                  },
+                  {
+                    "name": "Advancements",
+                    "children": []
+                  },
+                  {
+                    "name": "Recipes",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hermes Wings",
+            "children": []
+          },
+          {
+            "name": "GraceFall",
+            "children": []
+          },
+          {
+            "name": "Death Contract",
+            "children": []
+          },
+          {
+            "name": "Ominous Lantern",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dev",
+        "children": []
+      },
+      {
+        "name": "QOL",
+        "children": [
+          {
+            "name": "Recipes",
+            "children": []
+          },
+          {
+            "name": "Advancements",
+            "children": []
+          },
+          {
+            "name": "Enchantments",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Ores",
+        "children": [
+          {
+            "name": "Onyx",
+            "children": []
+          },
+          {
+            "name": "Ruby",
+            "children": []
+          },
+          {
+            "name": "Bone",
+            "children": []
+          },
+          {
+            "name": "Calidium",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potion Effects",
+        "children": [
+          {
+            "name": "Phasing",
+            "children": []
+          },
+          {
+            "name": "Gold Rush",
+            "children": []
+          },
+          {
+            "name": "Adrenaline",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "XP Gummy",
+            "children": []
+          },
+          {
+            "name": "Chewing Gum",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Enchantments",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "the_better_server",
+    "modName": "The Better Server",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api"
+    ],
+    "currentGenerator": "neoforge-26.1.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.thebetterserver"
+  },
+  "mcreatorVersion": 202600233218
+}

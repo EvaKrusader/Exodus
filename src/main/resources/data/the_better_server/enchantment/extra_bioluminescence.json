@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.the_better_server.extra_bioluminescence"
+  },
+  "supported_items": "the_better_server:creeper_repellent",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": []
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "the_better_server:calidium"
+  },
+  "result": {
+    "id": "the_better_server:calidium_block",
+    "count": 1
+  }
+}

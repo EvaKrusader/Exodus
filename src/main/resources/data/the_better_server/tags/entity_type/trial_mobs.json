@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "breeze",
+    "stray",
+    "cave_spider",
+    "silverfish",
+    "zombie",
+    "skeleton",
+    "bogged",
+    "husk",
+    "spider"
+  ]
+}

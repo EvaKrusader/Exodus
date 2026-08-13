@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "the_better_server:item/calidium_pickaxe"
+  }
+}

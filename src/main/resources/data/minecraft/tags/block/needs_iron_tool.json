@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "the_better_server:ruby_ore",
+    "the_better_server:calidium_block",
+    "the_better_server:ruby_block",
+    "the_better_server:onyx_ore",
+    "the_better_server:onyx_block"
+  ]
+}

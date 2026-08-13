@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Phasing",
+    "splashName": "Splash Potion of Phasing",
+    "lingeringName": "Lingering Potion of Phasing",
+    "arrowName": "Arrow of Phasing",
+    "effects": [
+      {
+        "effect": "CUSTOM:Phasing",
+        "duration": 60,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

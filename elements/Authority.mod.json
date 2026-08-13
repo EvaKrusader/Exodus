@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Authority",
+    "supportedSlots": "any",
+    "weight": 10,
+    "anvilCost": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "incompatibleEnchantments": [],
+    "supportedItems": [
+      "TAG:mod:sinful_baubles"
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": false,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"ench_component_prevent_armor_change\"></block></next></block></xml>"
+  }
+}

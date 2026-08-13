@@ -1,0 +1,25 @@
+{
+  "_fv": 89,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "WaterStone",
+    "slotType": "CHARM",
+    "slotAmount": 1,
+    "addSlot": true,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": "",
+    "hasModel": false,
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "curioTick": "WaterStoneBaubleWhileBaubleIsEquippedTick",
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Empty",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": []
+  }
+}

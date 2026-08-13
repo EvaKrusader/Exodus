@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "the_better_server:onyx_ore",
+  "step": "underground_ores"
+}

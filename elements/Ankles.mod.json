@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "curiosslot",
+  "definition": {
+    "texture": "empty_armor_slot_boots.png",
+    "name": "Ankles",
+    "amount": 2,
+    "modelToggling": true,
+    "changeOrder": false,
+    "slotOrder": 23
+  }
+}

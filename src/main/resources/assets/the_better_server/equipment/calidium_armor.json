@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "the_better_server:calidium_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "the_better_server:calidium_armor"
+      }
+    ]
+  }
+}

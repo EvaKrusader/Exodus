@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "minecraft:bone",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "the_better_server:bone_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Gold Rush",
+    "splashName": "Splash Potion of Gold Rush",
+    "lingeringName": "Lingering Potion of Gold Rush",
+    "arrowName": "Arrow of Gold Rush",
+    "effects": [
+      {
+        "effect": "CUSTOM:GoldRush",
+        "duration": 800,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}
