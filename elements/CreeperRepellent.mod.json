@@ -216,8 +216,7 @@
     "name": "Creeper Repellent",
     "rarity": "COMMON",
     "creativeTabs": [
-      "CUSTOM:Baubles",
-      "TOOLS"
+      "CUSTOM:Baubles"
     ],
     "stackSize": 1,
     "enchantability": 0,

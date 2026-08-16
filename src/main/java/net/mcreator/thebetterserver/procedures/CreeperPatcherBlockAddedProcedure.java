@@ -13,11 +13,11 @@ public class CreeperPatcherBlockAddedProcedure {
 		double sy = 0;
 		double sz = 0;
 		sx = -6;
-		for (int _i3 = 0; _i3 < 12; _i3++) {
+		for (int _i1 = 0; _i1 < 12; _i1++) {
 			sy = -12;
-			for (int _i7 = 0; _i7 < 12; _i7++) {
+			for (int _i2 = 0; _i2 < 12; _i2++) {
 				sz = -6;
-				for (int _i11 = 0; _i11 < 12; _i11++) {
+				for (int _i3 = 0; _i3 < 12; _i3++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.AIR) {
 						{
 							BlockPos _bp = BlockPos.containing(x + sx, y + sy, z + sz);

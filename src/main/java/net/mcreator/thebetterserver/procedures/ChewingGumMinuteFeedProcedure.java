@@ -33,7 +33,7 @@ public class ChewingGumMinuteFeedProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).isChewingGum == true) {
-			if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).chewingGumCounter > 1200) {
+			if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).chewingGumCounter > 600) {
 				{
 					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
 					_vars.chewingGumCounter = 0;
@@ -59,6 +59,37 @@ public class ChewingGumMinuteFeedProcedure {
 				TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
 				_vars.howLongChewingGum = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum + 1;
 				_vars.markSyncDirty();
+			}
+			if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum > 7000) {
+				{
+					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
+					_vars.chewingGumLevel = 2;
+					_vars.markSyncDirty();
+				}
+			} else if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum > 6000) {
+				{
+					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
+					_vars.chewingGumLevel = 1;
+					_vars.markSyncDirty();
+				}
+			} else if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum == 2) {
+				{
+					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
+					_vars.chewingGumLevel = 3;
+					_vars.markSyncDirty();
+				}
+			} else if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum == 3) {
+				{
+					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
+					_vars.chewingGumLevel = 4;
+					_vars.markSyncDirty();
+				}
+			} else if (entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES).howLongChewingGum == 4) {
+				{
+					TheBetterServerModVariables.PlayerVariables _vars = entity.getData(TheBetterServerModVariables.PLAYER_VARIABLES);
+					_vars.chewingGumLevel = 5;
+					_vars.markSyncDirty();
+				}
 			}
 		}
 	}

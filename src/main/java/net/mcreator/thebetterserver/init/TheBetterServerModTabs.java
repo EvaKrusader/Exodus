@@ -32,30 +32,9 @@ public class TheBetterServerModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(TheBetterServerModItems.CREEPER_REPELLENT.get());
-			tabData.accept(TheBetterServerModItems.ONYX_PICKAXE.get());
-			tabData.accept(TheBetterServerModItems.ONYX_AXE.get());
-			tabData.accept(TheBetterServerModItems.ONYX_SHOVEL.get());
-			tabData.accept(TheBetterServerModItems.ONYX_HOE.get());
-			tabData.accept(TheBetterServerModItems.RUBY_PICKAXE.get());
-			tabData.accept(TheBetterServerModItems.RUBY_AXE.get());
-			tabData.accept(TheBetterServerModItems.RUBY_SHOVEL.get());
-			tabData.accept(TheBetterServerModItems.RUBY_HOE.get());
-			tabData.accept(TheBetterServerModItems.BONE_PICKAXE.get());
-			tabData.accept(TheBetterServerModItems.BONE_AXE.get());
-			tabData.accept(TheBetterServerModItems.BONE_SHOVEL.get());
-			tabData.accept(TheBetterServerModItems.BONE_HOE.get());
-			tabData.accept(TheBetterServerModItems.CALIDIUM_PICKAXE.get());
-			tabData.accept(TheBetterServerModItems.CALIDIUM_AXE.get());
-			tabData.accept(TheBetterServerModItems.CALIDIUM_SHOVEL.get());
-			tabData.accept(TheBetterServerModItems.CALIDIUM_HOE.get());
-			tabData.accept(TheBetterServerModItems.GREED_RELIC.get());
-			tabData.accept(TheBetterServerModItems.WATER_STONE.get());
-			tabData.accept(TheBetterServerModItems.DEATH_CONTRACT.get());
-			tabData.accept(TheBetterServerModItems.OMINOUS_LANTERN.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(TheBetterServerModBlocks.CREEPER_PATCHER.get().asItem());
+			tabData.accept(TheBetterServerModBlocks.EASY_BAKE_OVEN.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(TheBetterServerModItems.ONYX.get());
 			tabData.accept(TheBetterServerModItems.RUBY.get());
@@ -66,6 +45,19 @@ public class TheBetterServerModTabs {
 			tabData.accept(TheBetterServerModBlocks.RUBY_ORE.get().asItem());
 			tabData.accept(TheBetterServerModBlocks.RUBY_BLOCK.get().asItem());
 			tabData.accept(TheBetterServerModBlocks.CALIDIUM_BLOCK.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(TheBetterServerModItems.ONYX_PICKAXE.get());
+			tabData.accept(TheBetterServerModItems.ONYX_AXE.get());
+			tabData.accept(TheBetterServerModItems.ONYX_SHOVEL.get());
+			tabData.accept(TheBetterServerModItems.ONYX_HOE.get());
+			tabData.accept(TheBetterServerModItems.RUBY_PICKAXE.get());
+			tabData.accept(TheBetterServerModItems.RUBY_AXE.get());
+			tabData.accept(TheBetterServerModItems.RUBY_SHOVEL.get());
+			tabData.accept(TheBetterServerModItems.RUBY_HOE.get());
+			tabData.accept(TheBetterServerModItems.CALIDIUM_PICKAXE.get());
+			tabData.accept(TheBetterServerModItems.CALIDIUM_AXE.get());
+			tabData.accept(TheBetterServerModItems.CALIDIUM_SHOVEL.get());
+			tabData.accept(TheBetterServerModItems.CALIDIUM_HOE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(TheBetterServerModItems.ONYX_SWORD.get());
 			tabData.accept(TheBetterServerModItems.ONYX_ARMOR_HELMET.get());
@@ -77,7 +69,6 @@ public class TheBetterServerModTabs {
 			tabData.accept(TheBetterServerModItems.RUBY_ARMOR_CHESTPLATE.get());
 			tabData.accept(TheBetterServerModItems.RUBY_ARMOR_LEGGINGS.get());
 			tabData.accept(TheBetterServerModItems.RUBY_ARMOR_BOOTS.get());
-			tabData.accept(TheBetterServerModItems.BONE_SWORD.get());
 			tabData.accept(TheBetterServerModItems.CALIDIUM_SWORD.get());
 			tabData.accept(TheBetterServerModItems.CALIDIUM_ARMOR_HELMET.get());
 			tabData.accept(TheBetterServerModItems.CALIDIUM_ARMOR_CHESTPLATE.get());

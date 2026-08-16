@@ -31,11 +31,6 @@
   "item.the_better_server.ruby_armor_boots": "Ruby Boots",
   "item.the_better_server.ruby_armor_helmet": "Ruby Helmet",
   "item.the_better_server.ruby_armor_leggings": "Ruby Leggings",
-  "item.the_better_server.bone_pickaxe": "Bone Pickaxe",
-  "item.the_better_server.bone_axe": "Bone Axe",
-  "item.the_better_server.bone_sword": "Bone Sword",
-  "item.the_better_server.bone_shovel": "Bone Shovel",
-  "item.the_better_server.bone_hoe": "Bone Hoe",
   "effect.the_better_server.phasing": "Phasing",
   "item.minecraft.splash_potion.effect.phasing_potion": "Splash Potion of Phasing",
   "item.minecraft.potion.effect.phasing_potion": "Potion of Phasing",
@@ -90,5 +85,7 @@
   "death.attack.choking": "%1$s choked",
   "death.attack.choking.item": "%1$s was killed by %2$s using %3$s",
   "death.attack.choking.player": "%1$s choked whilst trying to escape %2$s",
-  "subtitles.choke_cough": ""
+  "subtitles.choke_cough": "",
+  "item.the_better_server.ds": "Ds",
+  "item.the_better_server.easy_bake_oven": "Easy Bake Oven"
 }

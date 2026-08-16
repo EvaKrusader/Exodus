@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "squaline_ore",
+        "1": "squaline_ore_gem",
+        "2": "squaline_ore_gem_crease"
+      }
+    }
+  }
+}

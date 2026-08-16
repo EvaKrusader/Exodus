@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.ROTTEN_FLESH"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": "Items.ROTTEN_FLESH",
+    "smeltingReturnStack": "Items.LEATHER",
+    "name": "rotten_flesh_leather",
+    "namespace": "mod"
+  }
+}

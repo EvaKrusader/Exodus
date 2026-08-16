@@ -49,11 +49,6 @@ public class TheBetterServerModItems {
 	public static final DeferredItem<Item> RUBY_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> RUBY_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> RUBY_ARMOR_BOOTS;
-	public static final DeferredItem<Item> BONE_PICKAXE;
-	public static final DeferredItem<Item> BONE_AXE;
-	public static final DeferredItem<Item> BONE_SWORD;
-	public static final DeferredItem<Item> BONE_SHOVEL;
-	public static final DeferredItem<Item> BONE_HOE;
 	public static final DeferredItem<Item> EXPERIENCE_GUMMY;
 	public static final DeferredItem<Item> CALIDIUM;
 	public static final DeferredItem<Item> CALIDIUM_ORE;
@@ -75,6 +70,8 @@ public class TheBetterServerModItems {
 	public static final DeferredItem<Item> DEATH_CONTRACT;
 	public static final DeferredItem<Item> OMINOUS_LANTERN;
 	public static final DeferredItem<Item> CHEWING_GUM;
+	public static final DeferredItem<Item> DS;
+	public static final DeferredItem<Item> EASY_BAKE_OVEN;
 	static {
 		CREEPER_REPELLENT = register("creeper_repellent", CreeperRepellentItem::new);
 		CREEPER_PATCHER = block(TheBetterServerModBlocks.CREEPER_PATCHER);
@@ -102,11 +99,6 @@ public class TheBetterServerModItems {
 		RUBY_ARMOR_CHESTPLATE = register("ruby_armor_chestplate", RubyArmorItem.Chestplate::new);
 		RUBY_ARMOR_LEGGINGS = register("ruby_armor_leggings", RubyArmorItem.Leggings::new);
 		RUBY_ARMOR_BOOTS = register("ruby_armor_boots", RubyArmorItem.Boots::new);
-		BONE_PICKAXE = register("bone_pickaxe", BonePickaxeItem::new);
-		BONE_AXE = register("bone_axe", BoneAxeItem::new);
-		BONE_SWORD = register("bone_sword", BoneSwordItem::new);
-		BONE_SHOVEL = register("bone_shovel", BoneShovelItem::new);
-		BONE_HOE = register("bone_hoe", BoneHoeItem::new);
 		EXPERIENCE_GUMMY = register("experience_gummy", ExperienceGummyItem::new);
 		CALIDIUM = register("calidium", CalidiumItem::new);
 		CALIDIUM_ORE = block(TheBetterServerModBlocks.CALIDIUM_ORE);
@@ -128,6 +120,8 @@ public class TheBetterServerModItems {
 		DEATH_CONTRACT = register("death_contract", DeathContractItem::new);
 		OMINOUS_LANTERN = register("ominous_lantern", OminousLanternItem::new);
 		CHEWING_GUM = register("chewing_gum", ChewingGumItem::new);
+		DS = block(TheBetterServerModBlocks.DS);
+		EASY_BAKE_OVEN = block(TheBetterServerModBlocks.EASY_BAKE_OVEN);
 	}
 
 	// Start of user code block custom items

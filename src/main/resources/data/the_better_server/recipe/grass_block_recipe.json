@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "minecraft:bone_meal",
+    "b": "minecraft:dirt"
+  },
+  "result": {
+    "id": "minecraft:grass_block",
+    "count": 1
+  }
+}

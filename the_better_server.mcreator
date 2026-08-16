@@ -17,7 +17,7 @@
       "name": "Baubles",
       "type": "tab",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "baubles",
       "metadata": {
         "files": []
@@ -962,146 +962,6 @@
         ]
       },
       "path": "~/Curio/Creeper Repellent"
-    },
-    {
-      "name": "BonePickaxe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_pickaxe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_better_server/items/bone_pickaxe.json",
-          "src/main/java/net/mcreator/thebetterserver/item/BonePickaxeItem.java",
-          "src/main/resources/assets/the_better_server/models/item/bone_pickaxe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneAxe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_axe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_better_server/models/item/bone_axe.json",
-          "src/main/java/net/mcreator/thebetterserver/item/BoneAxeItem.java",
-          "src/main/resources/assets/the_better_server/items/bone_axe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneSword",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_sword",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_better_server/items/bone_sword.json",
-          "src/main/java/net/mcreator/thebetterserver/item/BoneSwordItem.java",
-          "src/main/resources/assets/the_better_server/models/item/bone_sword.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneShovel",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_shovel",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/thebetterserver/item/BoneShovelItem.java",
-          "src/main/resources/assets/the_better_server/models/item/bone_shovel.json",
-          "src/main/resources/assets/the_better_server/items/bone_shovel.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneHoe",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_hoe",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_better_server/models/item/bone_hoe.json",
-          "src/main/java/net/mcreator/thebetterserver/item/BoneHoeItem.java",
-          "src/main/resources/assets/the_better_server/items/bone_hoe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BonePickaxeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_pickaxe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_better_server/recipe/bone_pickaxe_recipe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneAxeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_axe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_better_server/recipe/bone_axe_recipe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneSwordRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_sword_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_better_server/recipe/bone_sword_recipe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneShovelRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_shovel_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_better_server/recipe/bone_shovel_recipe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
-    },
-    {
-      "name": "BoneHoeRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bone_hoe_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/the_better_server/recipe/bone_hoe_recipe.json"
-        ]
-      },
-      "path": "~/Ores/Bone"
     },
     {
       "name": "Phasing",
@@ -3224,6 +3084,147 @@
         ]
       },
       "path": "~/Items/Chewing Gum"
+    },
+    {
+      "name": "ReturnChewingGumLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_chewing_gum_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/ReturnChewingGumLevelProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "BoneBlockBig",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_block_big",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/bone_block_big.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "GrassBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/grass_block_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "GravelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/gravel_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "RottenFleshLeather",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotten_flesh_leather",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_better_server/recipe/rotten_flesh_leather.json",
+          "src/main/resources/data/the_better_server/advancement/recipes/rotten_flesh_leather.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "Ds",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ds",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/blockstates/ds.json",
+          "src/main/resources/assets/the_better_server/models/item/ds.json",
+          "src/main/resources/data/the_better_server/loot_table/blocks/ds.json",
+          "src/main/resources/assets/the_better_server/items/ds.json",
+          "src/main/resources/assets/the_better_server/models/block/ds.json",
+          "src/main/java/net/mcreator/thebetterserver/block/DsBlock.java"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "EasyBakeOven",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_bake_oven",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_better_server/models/item/easy_bake_oven.json",
+          "src/main/resources/assets/the_better_server/blockstates/easy_bake_oven.json",
+          "src/main/resources/assets/the_better_server/models/block/easy_bake_oven.json",
+          "src/main/java/net/mcreator/thebetterserver/block/entity/EasyBakeOvenBlockEntity.java",
+          "src/main/resources/assets/the_better_server/items/easy_bake_oven.json",
+          "src/main/java/net/mcreator/thebetterserver/block/EasyBakeOvenBlock.java",
+          "src/main/resources/data/the_better_server/loot_table/blocks/easy_bake_oven.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "EasyBakeOvenGenerate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_bake_oven_generate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/thebetterserver/procedures/EasyBakeOvenGenerateProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -3411,18 +3412,10 @@
       "CUSTOM:CreeperRepellent"
     ],
     "ITEMS:the_better_server:bone_pickaxe_repair_items": [],
-    "ITEMS:the_better_server:bone_axe_repair_items": [
-      "~BoneAxe@CUSTOM:Bone"
-    ],
-    "ITEMS:the_better_server:bone_sword_repair_items": [
-      "~BoneSword@CUSTOM:Bone"
-    ],
-    "ITEMS:the_better_server:bone_shovel_repair_items": [
-      "~BoneShovel@CUSTOM:Bone"
-    ],
-    "ITEMS:the_better_server:bone_hoe_repair_items": [
-      "~BoneHoe@CUSTOM:Bone"
-    ],
+    "ITEMS:the_better_server:bone_axe_repair_items": [],
+    "ITEMS:the_better_server:bone_sword_repair_items": [],
+    "ITEMS:the_better_server:bone_shovel_repair_items": [],
+    "ITEMS:the_better_server:bone_hoe_repair_items": [],
     "ITEMS:the_better_server:bone_armor_repair_items": [],
     "ITEMS:the_better_server:molarite_pickaxe_repair_items": [],
     "ITEMS:the_better_server:molarite_axe_repair_items": [],
@@ -3456,6 +3449,17 @@
       "Blocks.RAW_GOLD_BLOCK",
       "Blocks.GOLD_BLOCK",
       "Blocks.GILDED_BLACKSTONE"
+    ],
+    "ENTITIES:mod:trial_mobs": [
+      "EntityBreeze",
+      "EntityZombie",
+      "EntityHusk",
+      "EntityCaveSpider",
+      "EntitySpider",
+      "EntitySilverfish",
+      "EntityStray",
+      "EntitySkeleton",
+      "EntityBogged"
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~WaterStone@CUSTOM:WaterStone",
@@ -3498,31 +3502,26 @@
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CalidiumPickaxe@CUSTOM:CalidiumPickaxe",
-      "~BonePickaxe@CUSTOM:BonePickaxe",
       "~RubyPickaxe@CUSTOM:RubyPickaxe",
       "~OnyxPickaxe@CUSTOM:OnyxPickaxe"
     ],
     "ITEMS:minecraft:axes": [
       "~CalidiumAxe@CUSTOM:CalidiumAxe",
-      "~BoneAxe@CUSTOM:BoneAxe",
       "~RubyAxe@CUSTOM:RubyAxe",
       "~OnyxAxe@CUSTOM:OnyxAxe"
     ],
     "ITEMS:minecraft:swords": [
       "~CalidiumSword@CUSTOM:CalidiumSword",
-      "~BoneSword@CUSTOM:BoneSword",
       "~RubySword@CUSTOM:RubySword",
       "~OnyxSword@CUSTOM:OnyxSword"
     ],
     "ITEMS:minecraft:shovels": [
       "~CalidiumShovel@CUSTOM:CalidiumShovel",
-      "~BoneShovel@CUSTOM:BoneShovel",
       "~RubyShovel@CUSTOM:RubyShovel",
       "~OnyxShovel@CUSTOM:OnyxShovel"
     ],
     "ITEMS:minecraft:hoes": [
       "~CalidiumHoe@CUSTOM:CalidiumHoe",
-      "~BoneHoe@CUSTOM:BoneHoe",
       "~RubyHoe@CUSTOM:RubyHoe",
       "~OnyxHoe@CUSTOM:OnyxHoe"
     ],
@@ -3549,17 +3548,6 @@
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumOre@CUSTOM:CalidiumOre"
-    ],
-    "ENTITIES:mod:trial_mobs": [
-      "EntityBreeze",
-      "EntityZombie",
-      "EntityHusk",
-      "EntityCaveSpider",
-      "EntitySpider",
-      "EntitySilverfish",
-      "EntityStray",
-      "EntitySkeleton",
-      "EntityBogged"
     ]
   },
   "tab_element_order": {},
@@ -3597,11 +3585,6 @@
       "item.the_better_server.ruby_armor_boots": "Ruby Boots",
       "item.the_better_server.ruby_armor_helmet": "Ruby Helmet",
       "item.the_better_server.ruby_armor_leggings": "Ruby Leggings",
-      "item.the_better_server.bone_pickaxe": "Bone Pickaxe",
-      "item.the_better_server.bone_axe": "Bone Axe",
-      "item.the_better_server.bone_sword": "Bone Sword",
-      "item.the_better_server.bone_shovel": "Bone Shovel",
-      "item.the_better_server.bone_hoe": "Bone Hoe",
       "effect.the_better_server.phasing": "Phasing",
       "item.minecraft.splash_potion.effect.phasing_potion": "Splash Potion of Phasing",
       "item.minecraft.potion.effect.phasing_potion": "Potion of Phasing",
@@ -3656,7 +3639,9 @@
       "death.attack.choking": "%1$s choked",
       "death.attack.choking.item": "%1$s was killed by %2$s using %3$s",
       "death.attack.choking.player": "%1$s choked whilst trying to escape %2$s",
-      "subtitles.choke_cough": ""
+      "subtitles.choke_cough": "",
+      "item.the_better_server.ds": "Ds",
+      "item.the_better_server.easy_bake_oven": "Easy Bake Oven"
     }
   },
   "metadata": {
@@ -3679,6 +3664,7 @@
       "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModMobEffects.java",
       "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModPotions.java",
       "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModBlocks.java",
+      "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModBlockEntities.java",
       "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModItems.java",
       "src/main/java/net/mcreator/thebetterserver/init/TheBetterServerModModels.java",
       "src/main/java/net/mcreator/thebetterserver/TheBetterServerMod.java",
@@ -3784,11 +3770,11 @@
             "children": []
           },
           {
-            "name": "Bone",
+            "name": "Calidium",
             "children": []
           },
           {
-            "name": "Calidium",
+            "name": "Squaline",
             "children": []
           }
         ]
@@ -3826,6 +3812,10 @@
       {
         "name": "Enchantments",
         "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
       }
     ]
   },
@@ -3847,5 +3837,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.thebetterserver"
   },
-  "mcreatorVersion": 202600233218
+  "mcreatorVersion": 202600233518
 }

@@ -111,8 +111,7 @@
     "name": "Ominous Lantern",
     "rarity": "COMMON",
     "creativeTabs": [
-      "CUSTOM:Baubles",
-      "TOOLS"
+      "CUSTOM:Baubles"
     ],
     "stackSize": 1,
     "enchantability": 0,

@@ -62,6 +62,7 @@ public class TheBetterServerMod {
 		}
 		TheBetterServerModSounds.REGISTRY.register(modEventBus);
 		TheBetterServerModBlocks.REGISTRY.register(modEventBus);
+		TheBetterServerModBlockEntities.REGISTRY.register(modEventBus);
 		TheBetterServerModItems.REGISTRY.register(modEventBus);
 		TheBetterServerModTabs.REGISTRY.register(modEventBus);
 		TheBetterServerModVariables.ATTACHMENT_TYPES.register(modEventBus);

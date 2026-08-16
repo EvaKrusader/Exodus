@@ -39,7 +39,7 @@ public class ExperienceGummyPlayerFinishesUsingItemProcedure {
 					}
 				}
 			}
-			for (int _i20 = 0; _i20 < itemstack.getCount(); _i20++) {
+			for (int _i1 = 0; _i1 < itemstack.getCount(); _i1++) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints((int) ((entity instanceof Player _plr ? _plr.getXpNeededForNextLevel() : 0)
 							+ (entity instanceof Player _plr ? _plr.getXpNeededForNextLevel() : 0) * (1 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / 40d)));

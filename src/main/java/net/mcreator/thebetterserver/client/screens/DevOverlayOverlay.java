@@ -57,6 +57,9 @@ public class DevOverlayOverlay {
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ReturnChewingGumCounterProcedure.execute(entity), w / 2 + -209, h / 2 + -24, -1, false);
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
+
+					ReturnChewingGumLevelProcedure.execute(entity), w / 2 + -207, h / 2 + -9, -1, false);
 		}
 	}
 }

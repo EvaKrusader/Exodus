@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE",
+      "Items.BONE"
+    ],
+    "recipeReturnStack": "Blocks.BONE_BLOCK",
+    "name": "bone_block_big",
+    "namespace": "mod"
+  }
+}
