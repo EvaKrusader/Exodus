@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "exodus:calidium_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "exodus:calidium_armor"
+      }
+    ]
+  }
+}

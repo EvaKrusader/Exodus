@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:onyx_armor_helmet",
-    "the_better_server:calidium_armor_helmet",
-    "the_better_server:ruby_armor_helmet"
+    "exodus:onyx_armor_helmet",
+    "exodus:calidium_armor_helmet",
+    "exodus:ruby_armor_helmet"
   ]
 }

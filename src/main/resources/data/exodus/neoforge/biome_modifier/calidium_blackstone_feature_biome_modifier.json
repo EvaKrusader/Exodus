@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "exodus:calidium_blackstone_feature",
+  "step": "underground_decoration"
+}

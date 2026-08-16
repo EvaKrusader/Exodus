@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:onyx_armor_boots",
-    "the_better_server:calidium_armor_boots",
-    "the_better_server:ruby_armor_boots"
+    "exodus:onyx_armor_boots",
+    "exodus:calidium_armor_boots",
+    "exodus:ruby_armor_boots"
   ]
 }

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:calidium_armor_chestplate",
-    "the_better_server:onyx_armor_chestplate",
-    "the_better_server:ruby_armor_chestplate"
+    "exodus:calidium_armor_chestplate",
+    "exodus:onyx_armor_chestplate",
+    "exodus:ruby_armor_chestplate"
   ]
 }

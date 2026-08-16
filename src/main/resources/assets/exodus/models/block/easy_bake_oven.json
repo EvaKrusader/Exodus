@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "exodus:block/calidium_ore_block",
+    "particle": "exodus:block/calidium_ore_block"
+  }
+}

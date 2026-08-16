@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exodus:block/calidium_basalt_top",
+    "up": "exodus:block/calidium_basalt_top",
+    "north": "exodus:block/calidium_basalt",
+    "east": "exodus:block/calidium_basalt",
+    "south": "exodus:block/calidium_basalt",
+    "west": "exodus:block/calidium_basalt",
+    "particle": "exodus:block/calidium_basalt_top"
+  }
+}

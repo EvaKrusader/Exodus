@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa",
+    " b",
+    " b"
+  ],
+  "key": {
+    "a": "exodus:calidium",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "exodus:calidium_hoe",
+    "count": 1
+  }
+}

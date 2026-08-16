@@ -1,0 +1,95 @@
+{
+  "model": {
+    "type": "exodus:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_2"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_3"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 4
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_4"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 5
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_5"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "exodus:item/ominous_lantern"
+    }
+  }
+}

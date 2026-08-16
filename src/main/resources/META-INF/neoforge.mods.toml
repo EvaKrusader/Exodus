@@ -3,12 +3,12 @@ loaderVersion="[4,)"
 license="Not specified"
 
 [[mods]]
-modId="the_better_server"
-version="1.0.0"
-displayName="The Better Server"
+modId="exodus"
+version="0.0.1"
+displayName="Exodus"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="MCreator"
+authors="EvaKrusader"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -17,14 +17,14 @@ authors="MCreator"
 # Start of user code block custom mixins
 # End of user code block custom mixins
 
-[[dependencies.the_better_server]]
+[[dependencies.exodus]]
     modId="neoforge"
     type="required"
     versionRange="[26.1.2.95,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.the_better_server]]
+[[dependencies.exodus]]
     modId="minecraft"
     type="required"
     versionRange="[26.1.2]"
@@ -32,7 +32,7 @@ authors="MCreator"
     side="BOTH"
 
 
-[[dependencies.the_better_server]]
+[[dependencies.exodus]]
     modId="curios_api"
     type="optional"
     versionRange="[0,)"

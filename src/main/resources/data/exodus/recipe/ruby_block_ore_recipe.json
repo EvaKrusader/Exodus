@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "exodus:ruby_block"
+  ],
+  "result": {
+    "id": "exodus:ruby",
+    "count": 9
+  }
+}

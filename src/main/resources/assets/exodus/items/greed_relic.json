@@ -1,0 +1,95 @@
+{
+  "model": {
+    "type": "exodus:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_2"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_3"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 4
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_4"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:greed_relic/greed_level"
+            },
+            "value": 5
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/greed_relic_5"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "exodus:item/greed_relic"
+    }
+  }
+}

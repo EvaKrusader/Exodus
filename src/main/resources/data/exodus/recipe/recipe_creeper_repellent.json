@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:iron_ingot",
+    "b": "exodus:onyx_block"
+  },
+  "result": {
+    "id": "exodus:creeper_repellent",
+    "count": 1
+  }
+}

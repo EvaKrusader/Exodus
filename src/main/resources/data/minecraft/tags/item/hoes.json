@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:onyx_hoe",
-    "the_better_server:calidium_hoe",
-    "the_better_server:ruby_hoe"
+    "exodus:onyx_hoe",
+    "exodus:calidium_hoe",
+    "exodus:ruby_hoe"
   ]
 }

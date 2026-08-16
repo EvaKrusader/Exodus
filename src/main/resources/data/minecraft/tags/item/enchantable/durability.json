@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:hermes_wings",
-    "the_better_server:creeper_repellent",
-    "the_better_server:water_stone"
+    "exodus:hermes_wings",
+    "exodus:creeper_repellent",
+    "exodus:water_stone"
   ]
 }

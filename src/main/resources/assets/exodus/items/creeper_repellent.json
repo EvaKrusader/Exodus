@@ -1,0 +1,171 @@
+{
+  "model": {
+    "type": "exodus:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_2"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_3"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_4"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_5"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_6"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/has_biolum"
+            },
+            "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:creeper_repellent/range_level"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/creeper_repellent_7"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "exodus:item/creeper_repellent"
+    }
+  }
+}

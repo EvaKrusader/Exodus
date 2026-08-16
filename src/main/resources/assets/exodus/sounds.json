@@ -1,0 +1,46 @@
+{
+  "gold_rush_start": {
+    "sounds": [
+      {
+        "name": "exodus:gold_rush_start",
+        "stream": false
+      }
+    ]
+  },
+  "gold_rush_kaching": {
+    "sounds": [
+      {
+        "name": "exodus:gold_rush_1",
+        "stream": false
+      },
+      {
+        "name": "exodus:gold_rush_2",
+        "stream": false
+      },
+      {
+        "name": "exodus:gold_rush_3",
+        "stream": false
+      },
+      {
+        "name": "exodus:gold_rush_4",
+        "stream": false
+      }
+    ]
+  },
+  "greed_upgrade": {
+    "sounds": [
+      {
+        "name": "exodus:greed_upgrade",
+        "stream": false
+      }
+    ]
+  },
+  "choke_cough": {
+    "sounds": [
+      {
+        "name": "exodus:cough",
+        "stream": false
+      }
+    ]
+  }
+}

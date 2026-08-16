@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "exodus:blocks/easy_bake_oven",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "exodus:easy_bake_oven"
+        }
+      ]
+    }
+  ]
+}

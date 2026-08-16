@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "exodus:onyx_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "exodus:onyx_armor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": {
+    "translate": "enchantment.exodus.authority"
+  },
+  "supported_items": "#exodus:sinful_baubles",
+  "weight": 10,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": [],
+  "effects": {
+    "minecraft:prevent_armor_change": {}
+  }
+}

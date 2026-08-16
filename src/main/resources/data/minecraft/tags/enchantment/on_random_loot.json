@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:extra_bioluminescence",
-    "the_better_server:platform_soles",
-    "the_better_server:mystical_conductivity"
+    "exodus:extra_bioluminescence",
+    "exodus:platform_soles",
+    "exodus:mystical_conductivity"
   ]
 }

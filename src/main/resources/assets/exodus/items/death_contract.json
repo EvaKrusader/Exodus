@@ -1,0 +1,39 @@
+{
+  "model": {
+    "type": "exodus:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:death_contract/is_signed"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/death_contract_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:death_contract/is_signed"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/death_contract_1"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "exodus:item/death_contract"
+    }
+  }
+}

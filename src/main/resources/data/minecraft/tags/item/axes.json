@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:onyx_axe",
-    "the_better_server:calidium_axe",
-    "the_better_server:ruby_axe"
+    "exodus:onyx_axe",
+    "exodus:calidium_axe",
+    "exodus:ruby_axe"
   ]
 }

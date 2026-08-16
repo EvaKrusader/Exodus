@@ -1,0 +1,10 @@
+{
+  "parent": "exodus:custom/squaline_ore",
+  "textures": {
+    "all": "exodus:block/squaline_ore",
+    "particle": "exodus:block/squaline_ore",
+    "0": "exodus:block/squaline_ore",
+    "1": "exodus:block/squaline_ore_gem",
+    "2": "exodus:block/squaline_ore_gem_crease"
+  }
+}

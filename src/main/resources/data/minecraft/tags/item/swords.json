@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "the_better_server:ruby_sword",
-    "the_better_server:calidium_sword",
-    "the_better_server:onyx_sword"
+    "exodus:ruby_sword",
+    "exodus:calidium_sword",
+    "exodus:onyx_sword"
   ]
 }

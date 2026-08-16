@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_nether",
-  "features": "the_better_server:calidium_blackstone_feature",
-  "step": "underground_decoration"
-}
