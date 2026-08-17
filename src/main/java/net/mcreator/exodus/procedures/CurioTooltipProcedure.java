@@ -34,22 +34,22 @@ public class CurioTooltipProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(ExodusModMobEffects.KNOWLEDGE)) == true) {
 			if (itemstack.getItem() == ExodusModItems.ONYX_NECKLACE.get()) {
-				tooltip.add(Component.literal("tooltip"));
+				tooltip.add(Component.literal("\u00A77Protects from Creepers"));
 			}
 			if (itemstack.getItem() == ExodusModItems.GREED_RELIC.get()) {
-				tooltip.add(Component.literal("Let your greed"));
+				tooltip.add(Component.literal("\u00A77Your greed protects you"));
 			}
 			if (itemstack.getItem() == ExodusModItems.HERMES_WINGS.get()) {
 				tooltip.add(Component.literal("\u00A77Slows your fall when sneaking"));
 			}
 			if (itemstack.getItem() == ExodusModItems.OMINOUS_LANTERN.get()) {
-				tooltip.add(Component.literal("tooltip"));
+				tooltip.add(Component.literal("\u00A77Highlights mobs during ominous trials"));
 			}
 			if (itemstack.getItem() == ExodusModItems.WATER_STONE.get()) {
 				tooltip.add(Component.literal("\u00A77Extinguishes fire when you sneak"));
 			}
 			if (itemstack.getItem() == ExodusModItems.DEATH_CONTRACT.get()) {
-				tooltip.add(Component.literal("tooltip"));
+				tooltip.add(Component.literal("\u00A77Reverses death for a price"));
 			}
 		}
 	}

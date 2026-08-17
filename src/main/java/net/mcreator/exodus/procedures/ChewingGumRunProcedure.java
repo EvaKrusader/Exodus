@@ -56,6 +56,7 @@ public class ChewingGumRunProcedure {
 					}
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.isChewingGum = false;
 						_vars.chewingGumCounter = 0;
 						_vars.markSyncDirty();
 					}

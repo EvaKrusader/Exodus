@@ -1,6 +1,7 @@
 package net.mcreator.exodus.procedures;
 
 import net.neoforged.neoforge.event.level.block.BreakBlockEvent;
+import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -16,7 +17,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.Identifier;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -24,6 +27,8 @@ import net.mcreator.exodus.network.ExodusModVariables;
 import net.mcreator.exodus.init.ExodusModMobEffects;
 
 import javax.annotation.Nullable;
+
+import java.io.File;
 
 @EventBusSubscriber
 public class GreedLevelGoldProcedure {
@@ -45,6 +50,7 @@ public class GreedLevelGoldProcedure {
 		double gold_extra = 0;
 		double gold_rush_multiplier = 0;
 		double gold_rush_additive = 0;
+		File file = new File("");
 		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 0) {
 			{
 				ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
@@ -136,6 +142,12 @@ public class GreedLevelGoldProcedure {
 					}
 				}
 			}
+		}
+		if (world instanceof ServerLevel _level) {
+			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(FMLPaths.GAMEDIR.get().toString()), false);
+		}
+		if (world instanceof ServerLevel _level) {
+			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((FMLPaths.GAMEDIR.get().toString().substring(0, (FMLPaths.GAMEDIR.get().toString()).length() - 3) + "src\\main\\resources\\assets\\exodus\\values\\")), false);
 		}
 	}
 }
