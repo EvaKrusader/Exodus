@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "exodus:extra_bioluminescence",
+    "exodus:bioluminescence",
     "exodus:platform_soles"
   ]
 }

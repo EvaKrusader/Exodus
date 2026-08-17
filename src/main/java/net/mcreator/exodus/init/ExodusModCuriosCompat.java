@@ -19,22 +19,6 @@ public class ExodusModCuriosCompat {
 			}
 
 			@Override
-			public void curioTick(SlotContext slotContext) {
-				CreeperRepellentProcProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
-			}
-
-			@Override
-			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
-				TestBaubleIsEquippedProcedure.execute(slotContext.entity());
-			}
-		}, ExodusModItems.CREEPER_REPELLENT.get());
-		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
-			@Override
-			public ItemStack getStack() {
-				return stack;
-			}
-
-			@Override
 			public boolean makesPiglinsNeutral(SlotContext slotContext) {
 				return true;
 			}
@@ -118,5 +102,21 @@ public class ExodusModCuriosCompat {
 				OminousLanternBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
 			}
 		}, ExodusModItems.OMINOUS_LANTERN.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				CreeperRepellentProcProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+
+			@Override
+			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
+				TestBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+		}, ExodusModItems.ONYX_NECKLACE.get());
 	}
 }

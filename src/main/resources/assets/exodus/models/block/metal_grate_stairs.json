@@ -1,0 +1,8 @@
+{
+  "parent": "exodus:custom/stairs_grate",
+  "textures": {
+    "all": "exodus:block/a",
+    "particle": "exodus:block/a",
+    "0": "exodus:block/a"
+  }
+}

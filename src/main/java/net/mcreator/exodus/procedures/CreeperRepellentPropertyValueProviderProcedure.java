@@ -8,7 +8,7 @@ import net.minecraft.core.registries.Registries;
 
 public class CreeperRepellentPropertyValueProviderProcedure {
 	public static double execute(LevelAccessor world, ItemStack itemstack) {
-		if ((itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:extra_bioluminescence")))) != 0) == true) {
+		if ((itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:bioluminescence")))) != 0) == true) {
 			return 1;
 		}
 		return 0;

@@ -30,6 +30,8 @@ public class ExodusModBlocks {
 	public static final DeferredBlock<Block> BASALT_CALIDIUM_ORE;
 	public static final DeferredBlock<Block> DS;
 	public static final DeferredBlock<Block> EASY_BAKE_OVEN;
+	public static final DeferredBlock<Block> METAL_GRATE_STAIRS;
+	public static final DeferredBlock<Block> METAL_GRATE_SLAB;
 	static {
 		CREEPER_PATCHER = register("creeper_patcher", CreeperPatcherBlock::new);
 		ONYX_ORE = register("onyx_ore", OnyxOreBlock::new);
@@ -41,6 +43,8 @@ public class ExodusModBlocks {
 		BASALT_CALIDIUM_ORE = register("basalt_calidium_ore", BasaltCalidiumOreBlock::new);
 		DS = register("ds", DsBlock::new);
 		EASY_BAKE_OVEN = register("easy_bake_oven", EasyBakeOvenBlock::new);
+		METAL_GRATE_STAIRS = register("metal_grate_stairs", MetalGrateStairsBlock::new);
+		METAL_GRATE_SLAB = register("metal_grate_slab", MetalGrateSlabBlock::new);
 	}
 
 	// Start of user code block custom blocks

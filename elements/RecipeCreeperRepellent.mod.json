@@ -5,9 +5,7 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [
-      "CUSTOM:CreeperRepellent"
-    ],
+    "unlockingItems": [],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -24,7 +22,7 @@
       "Items.IRON_INGOT",
       ""
     ],
-    "recipeReturnStack": "CUSTOM:CreeperRepellent",
+    "recipeReturnStack": "CUSTOM:OnyxNecklace",
     "name": "recipe_creeper_repellent",
     "namespace": "mod"
   }

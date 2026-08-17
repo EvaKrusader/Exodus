@@ -6,166 +6,166 @@
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 0
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 0
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_0"
+          "model": "exodus:item/onyx_necklace_0"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 0
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 1
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_1"
+          "model": "exodus:item/onyx_necklace_1"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 0
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 2
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_2"
+          "model": "exodus:item/onyx_necklace_2"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 0
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 3
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_3"
+          "model": "exodus:item/onyx_necklace_3"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 1
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 0
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_4"
+          "model": "exodus:item/onyx_necklace_4"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 1
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 1
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_5"
+          "model": "exodus:item/onyx_necklace_5"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 1
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 2
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_6"
+          "model": "exodus:item/onyx_necklace_6"
         }
       },
       {
         "predicate": [
           {
             "property": {
-              "property": "exodus:creeper_repellent/has_biolum"
+              "property": "exodus:onyx_necklace/has_biolum"
             },
             "value": 1
           },
           {
             "property": {
-              "property": "exodus:creeper_repellent/range_level"
+              "property": "exodus:onyx_necklace/range_level"
             },
             "value": 3
           }
         ],
         "model": {
           "type": "minecraft:model",
-          "model": "exodus:item/creeper_repellent_7"
+          "model": "exodus:item/onyx_necklace_7"
         }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "exodus:item/creeper_repellent"
+      "model": "exodus:item/onyx_necklace"
     }
   }
 }

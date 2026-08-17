@@ -26,7 +26,7 @@ public class GoldBlockCheckerProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if (blockstate.is(BlockTags.create(Identifier.parse("the_better_server:gold_blocks"))) == true) {
+		if (blockstate.is(BlockTags.create(Identifier.parse("exodus:gold_blocks"))) == true) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);

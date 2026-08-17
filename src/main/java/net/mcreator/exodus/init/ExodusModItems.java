@@ -23,7 +23,6 @@ import java.util.function.Function;
 
 public class ExodusModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(ExodusMod.MODID);
-	public static final DeferredItem<Item> CREEPER_REPELLENT;
 	public static final DeferredItem<Item> CREEPER_PATCHER;
 	public static final DeferredItem<Item> ONYX;
 	public static final DeferredItem<Item> ONYX_ORE;
@@ -72,8 +71,10 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> CHEWING_GUM;
 	public static final DeferredItem<Item> DS;
 	public static final DeferredItem<Item> EASY_BAKE_OVEN;
+	public static final DeferredItem<Item> METAL_GRATE_STAIRS;
+	public static final DeferredItem<Item> METAL_GRATE_SLAB;
+	public static final DeferredItem<Item> ONYX_NECKLACE;
 	static {
-		CREEPER_REPELLENT = register("creeper_repellent", CreeperRepellentItem::new);
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
 		ONYX_ORE = block(ExodusModBlocks.ONYX_ORE);
@@ -122,6 +123,9 @@ public class ExodusModItems {
 		CHEWING_GUM = register("chewing_gum", ChewingGumItem::new);
 		DS = block(ExodusModBlocks.DS);
 		EASY_BAKE_OVEN = block(ExodusModBlocks.EASY_BAKE_OVEN);
+		METAL_GRATE_STAIRS = block(ExodusModBlocks.METAL_GRATE_STAIRS);
+		METAL_GRATE_SLAB = block(ExodusModBlocks.METAL_GRATE_SLAB);
+		ONYX_NECKLACE = register("onyx_necklace", OnyxNecklaceItem::new);
 	}
 
 	// Start of user code block custom items
@@ -142,11 +146,11 @@ public class ExodusModItems {
 	public static class ItemsClientSideHandler {
 		@SubscribeEvent
 		public static void registerItemModelProperties(RegisterRangeSelectItemModelPropertyEvent event) {
-			event.register(Identifier.parse("exodus:creeper_repellent/has_biolum"), CreeperRepellentItem.HasBiolumProperty.MAP_CODEC);
-			event.register(Identifier.parse("exodus:creeper_repellent/range_level"), CreeperRepellentItem.RangeLevelProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:greed_relic/greed_level"), GreedRelicItem.GreedLevelProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:death_contract/is_signed"), DeathContractItem.IsSignedProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:ominous_lantern/ominous_level"), OminousLanternItem.OminousLevelProperty.MAP_CODEC);
+			event.register(Identifier.parse("exodus:onyx_necklace/has_biolum"), OnyxNecklaceItem.HasBiolumProperty.MAP_CODEC);
+			event.register(Identifier.parse("exodus:onyx_necklace/range_level"), OnyxNecklaceItem.RangeLevelProperty.MAP_CODEC);
 		}
 	}
 }

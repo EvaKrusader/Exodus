@@ -36,7 +36,7 @@ public class CreeperRepellentProcProcedure {
 						("execute if entity @e[type=creeper,distance=.." + new java.text.DecimalFormat("#").format(range) + "] run team join Creepers @e[type=creeper,distance=.." + new java.text.DecimalFormat("#").format(range) + "]"));
 			}
 		}
-		if ((itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:extra_bioluminescence")))) != 0) == true) {
+		if ((itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:bioluminescence")))) != 0) == true) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.level().getServer() != null) {

@@ -76,7 +76,7 @@ public class GreedLevelGoldProcedure {
 				_vars.markSyncDirty();
 			}
 		}
-		if (blockstate.is(BlockTags.create(Identifier.parse("the_better_server:gold_blocks"))) == true) {
+		if (blockstate.is(BlockTags.create(Identifier.parse("exodus:gold_blocks"))) == true) {
 			gold_rush_multiplier = 1;
 			gold_extra = 0;
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Items.GOLDEN_HELMET) {

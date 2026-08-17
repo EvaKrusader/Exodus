@@ -1,8 +1,8 @@
 {
   "description": {
-    "translate": "enchantment.exodus.extra_bioluminescence"
+    "translate": "enchantment.exodus.bioluminescence"
   },
-  "supported_items": "exodus:creeper_repellent",
+  "supported_items": "exodus:onyx_necklace",
   "weight": 10,
   "max_level": 1,
   "min_cost": {

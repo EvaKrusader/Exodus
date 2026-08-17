@@ -1,19 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Test",
-      "type": "curiosbauble",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/exodus/client/renderer/TestRenderer.java"
-        ]
-      },
-      "path": "~/Curio/Creeper Repellent"
-    },
-    {
       "name": "Baubles",
       "type": "tab",
       "compiles": true,
@@ -23,29 +10,6 @@
         "files": []
       },
       "path": "~/Curio"
-    },
-    {
-      "name": "CreeperRepellent",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "creeper_repellent",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_2.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_4.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_1.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_5.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent.json",
-          "src/main/java/net/mcreator/exodus/item/CreeperRepellentItem.java",
-          "src/main/resources/assets/exodus/items/creeper_repellent.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_0.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_6.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_3.json",
-          "src/main/resources/assets/exodus/models/item/creeper_repellent_7.json"
-        ]
-      },
-      "path": "~/Curio/Creeper Repellent"
     },
     {
       "name": "CreeperRepellentProc",
@@ -79,10 +43,10 @@
       "type": "enchantment",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "extra_bioluminescence",
+      "registry_name": "bioluminescence",
       "metadata": {
         "files": [
-          "src/main/resources/data/exodus/enchantment/extra_bioluminescence.json"
+          "src/main/resources/data/exodus/enchantment/bioluminescence.json"
         ]
       },
       "path": "~/Curio/Creeper Repellent"
@@ -875,7 +839,6 @@
       "registry_name": "recipe_creeper_repellent",
       "metadata": {
         "files": [
-          "src/main/resources/data/exodus/advancement/recipes/recipe_creeper_repellent.json",
           "src/main/resources/data/exodus/recipe/recipe_creeper_repellent.json"
         ]
       },
@@ -3186,7 +3149,6 @@
         "files": [
           "src/main/java/net/mcreator/exodus/block/EasyBakeOvenBlock.java",
           "src/main/resources/assets/exodus/blockstates/easy_bake_oven.json",
-          "src/main/java/net/mcreator/exodus/block/entity/EasyBakeOvenBlockEntity.java",
           "src/main/resources/assets/exodus/items/easy_bake_oven.json",
           "src/main/resources/data/exodus/loot_table/blocks/easy_bake_oven.json",
           "src/main/resources/assets/exodus/models/item/easy_bake_oven.json",
@@ -3225,6 +3187,118 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "CreeperRepellentBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_repellent_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "Knowledge",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knowledge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/potion/KnowledgeMobEffect.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "MetalGrateStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_grate_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/block/metal_grate_stairs.json",
+          "src/main/resources/assets/exodus/items/metal_grate_stairs.json",
+          "src/main/resources/assets/exodus/blockstates/metal_grate_stairs.json",
+          "src/main/java/net/mcreator/exodus/block/MetalGrateStairsBlock.java",
+          "src/main/resources/assets/exodus/models/item/metal_grate_stairs.json",
+          "src/main/resources/data/exodus/loot_table/blocks/metal_grate_stairs.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MetalGrateSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_grate_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/block/metal_grate_slab_full.json",
+          "src/main/resources/assets/exodus/models/block/metal_grate_slab_top.json",
+          "src/main/resources/assets/exodus/items/metal_grate_slab.json",
+          "src/main/resources/assets/exodus/models/block/metal_grate_slab.json",
+          "src/main/resources/assets/exodus/models/item/metal_grate_slab.json",
+          "src/main/resources/assets/exodus/blockstates/metal_grate_slab.json",
+          "src/main/resources/data/exodus/loot_table/blocks/metal_grate_slab.json",
+          "src/main/java/net/mcreator/exodus/block/MetalGrateSlabBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CurioTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curio_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CurioTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "OnyxNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/onyx_necklace.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_0.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_6.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_3.json",
+          "src/main/java/net/mcreator/exodus/item/OnyxNecklaceItem.java",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_5.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_1.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_2.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_4.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace_7.json",
+          "src/main/resources/assets/exodus/models/item/onyx_necklace.json"
+        ]
+      },
+      "path": "~/Curio/Creeper Repellent"
     }
   ],
   "variable_elements": [
@@ -3369,12 +3443,8 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:mod:baubles": [
-      "CUSTOM:CreeperRepellent"
-    ],
-    "ITEMS:mod:bauble_ranged": [
-      "CUSTOM:CreeperRepellent"
-    ],
+    "ITEMS:mod:baubles": [],
+    "ITEMS:mod:bauble_ranged": [],
     "ITEMS:mod:sinful_baubles": [],
     "BLOCKS:the_better_server:gold_blocks": [
       "Blocks.GOLD_ORE",
@@ -3395,24 +3465,78 @@
       "EntitySkeleton",
       "EntityBogged"
     ],
+    "ITEMS:exodus:onyx_pickaxe_repair_items": [
+      "~OnyxPickaxe@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:onyx_axe_repair_items": [
+      "~OnyxAxe@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:onyx_sword_repair_items": [
+      "~OnyxSword@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:onyx_shovel_repair_items": [
+      "~OnyxShovel@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:onyx_hoe_repair_items": [
+      "~OnyxHoe@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:onyx_armor_repair_items": [
+      "~OnyxArmor@CUSTOM:Onyx"
+    ],
+    "ITEMS:exodus:ruby_pickaxe_repair_items": [
+      "~RubyPickaxe@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:ruby_axe_repair_items": [
+      "~RubyAxe@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:ruby_sword_repair_items": [
+      "~RubySword@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:ruby_shovel_repair_items": [
+      "~RubyShovel@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:ruby_hoe_repair_items": [
+      "~RubyHoe@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:ruby_armor_repair_items": [
+      "~RubyArmor@CUSTOM:Ruby"
+    ],
+    "ITEMS:exodus:calidium_pickaxe_repair_items": [
+      "~CalidiumPickaxe@CUSTOM:Calidium"
+    ],
+    "ITEMS:exodus:calidium_axe_repair_items": [
+      "~CalidiumAxe@CUSTOM:Calidium"
+    ],
+    "ITEMS:exodus:calidium_sword_repair_items": [
+      "~CalidiumSword@CUSTOM:Calidium"
+    ],
+    "ITEMS:exodus:calidium_shovel_repair_items": [
+      "~CalidiumShovel@CUSTOM:Calidium"
+    ],
+    "ITEMS:exodus:calidium_hoe_repair_items": [
+      "~CalidiumHoe@CUSTOM:Calidium"
+    ],
+    "ITEMS:exodus:calidium_armor_repair_items": [
+      "~CalidiumArmor@CUSTOM:Calidium"
+    ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~OnyxNecklace@CUSTOM:OnyxNecklace",
       "~WaterStone@CUSTOM:WaterStone",
-      "~HermesWings@CUSTOM:HermesWings",
-      "~CreeperRepellent@CUSTOM:CreeperRepellent"
+      "~HermesWings@CUSTOM:HermesWings"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
       "~PlatformSoles@CUSTOM:PlatformSoles",
-      "~MysticalConductivity@CUSTOM:MysticalConductivity",
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+      "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
       "~PlatformSoles@CUSTOM:PlatformSoles",
-      "~MysticalConductivity@CUSTOM:MysticalConductivity",
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+      "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "ENCHANTMENTS:minecraft:treasure": [
-      "~PlatformSoles@CUSTOM:PlatformSoles",
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
+      "~PlatformSoles@CUSTOM:PlatformSoles"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~Authority@CUSTOM:Authority",
@@ -3439,40 +3563,25 @@
       "~RubyPickaxe@CUSTOM:RubyPickaxe",
       "~OnyxPickaxe@CUSTOM:OnyxPickaxe"
     ],
-    "ITEMS:exodus:onyx_pickaxe_repair_items": [
-      "~OnyxPickaxe@CUSTOM:Onyx"
-    ],
     "ITEMS:minecraft:axes": [
       "~CalidiumAxe@CUSTOM:CalidiumAxe",
       "~RubyAxe@CUSTOM:RubyAxe",
       "~OnyxAxe@CUSTOM:OnyxAxe"
-    ],
-    "ITEMS:exodus:onyx_axe_repair_items": [
-      "~OnyxAxe@CUSTOM:Onyx"
     ],
     "ITEMS:minecraft:swords": [
       "~CalidiumSword@CUSTOM:CalidiumSword",
       "~RubySword@CUSTOM:RubySword",
       "~OnyxSword@CUSTOM:OnyxSword"
     ],
-    "ITEMS:exodus:onyx_sword_repair_items": [
-      "~OnyxSword@CUSTOM:Onyx"
-    ],
     "ITEMS:minecraft:shovels": [
       "~CalidiumShovel@CUSTOM:CalidiumShovel",
       "~RubyShovel@CUSTOM:RubyShovel",
       "~OnyxShovel@CUSTOM:OnyxShovel"
     ],
-    "ITEMS:exodus:onyx_shovel_repair_items": [
-      "~OnyxShovel@CUSTOM:Onyx"
-    ],
     "ITEMS:minecraft:hoes": [
       "~CalidiumHoe@CUSTOM:CalidiumHoe",
       "~RubyHoe@CUSTOM:RubyHoe",
       "~OnyxHoe@CUSTOM:OnyxHoe"
-    ],
-    "ITEMS:exodus:onyx_hoe_repair_items": [
-      "~OnyxHoe@CUSTOM:Onyx"
     ],
     "ITEMS:minecraft:head_armor": [
       "~CalidiumArmor@CUSTOM:CalidiumArmor.helmet",
@@ -3494,48 +3603,12 @@
       "~RubyArmor@CUSTOM:RubyArmor.boots",
       "~OnyxArmor@CUSTOM:OnyxArmor.boots"
     ],
-    "ITEMS:exodus:onyx_armor_repair_items": [
-      "~OnyxArmor@CUSTOM:Onyx"
-    ],
-    "ITEMS:exodus:ruby_pickaxe_repair_items": [
-      "~RubyPickaxe@CUSTOM:Ruby"
-    ],
-    "ITEMS:exodus:ruby_axe_repair_items": [
-      "~RubyAxe@CUSTOM:Ruby"
-    ],
-    "ITEMS:exodus:ruby_sword_repair_items": [
-      "~RubySword@CUSTOM:Ruby"
-    ],
-    "ITEMS:exodus:ruby_shovel_repair_items": [
-      "~RubyShovel@CUSTOM:Ruby"
-    ],
-    "ITEMS:exodus:ruby_hoe_repair_items": [
-      "~RubyHoe@CUSTOM:Ruby"
-    ],
-    "ITEMS:exodus:ruby_armor_repair_items": [
-      "~RubyArmor@CUSTOM:Ruby"
-    ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
-    "ITEMS:exodus:calidium_pickaxe_repair_items": [
-      "~CalidiumPickaxe@CUSTOM:Calidium"
-    ],
-    "ITEMS:exodus:calidium_axe_repair_items": [
-      "~CalidiumAxe@CUSTOM:Calidium"
-    ],
-    "ITEMS:exodus:calidium_sword_repair_items": [
-      "~CalidiumSword@CUSTOM:Calidium"
-    ],
-    "ITEMS:exodus:calidium_shovel_repair_items": [
-      "~CalidiumShovel@CUSTOM:Calidium"
-    ],
-    "ITEMS:exodus:calidium_hoe_repair_items": [
-      "~CalidiumHoe@CUSTOM:Calidium"
-    ],
-    "ITEMS:exodus:calidium_armor_repair_items": [
-      "~CalidiumArmor@CUSTOM:Calidium"
+    "BLOCKS:minecraft:slabs": [
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
     ]
   },
   "tab_element_order": {},
@@ -3631,8 +3704,6 @@
       "item.the_better_server.ds": "Ds",
       "item.the_better_server.easy_bake_oven": "Easy Bake Oven",
       "item_group.exodus.baubles": "Baubles",
-      "item.exodus.creeper_repellent": "Creeper Repellent",
-      "enchantment.exodus.extra_bioluminescence": "Bioluminescence",
       "enchantment.exodus.mystical_conductivity": "Mystical Conductivity",
       "key.exodus.dev": "Dev",
       "item.exodus.creeper_patcher": "Creeper Patcher",
@@ -3687,7 +3758,12 @@
       "effect.exodus.adrenaline": "Adrenaline",
       "item.exodus.chewing_gum": "Chewing Gum",
       "item.exodus.ds": "Ds",
-      "item.exodus.easy_bake_oven": "Easy Bake Oven"
+      "item.exodus.easy_bake_oven": "Easy Bake Oven",
+      "enchantment.exodus.bioluminescence": "Bioluminescence",
+      "effect.exodus.knowledge": "Knowledge",
+      "item.exodus.metal_grate_stairs": "Metal Grate Stairs",
+      "item.exodus.metal_grate_slab": "Metal Grate Slab",
+      "item.exodus.onyx_necklace": "Creeper Repellent"
     }
   },
   "metadata": {
@@ -3710,7 +3786,6 @@
       "src/main/java/net/mcreator/exodus/init/ExodusModMobEffects.java",
       "src/main/java/net/mcreator/exodus/init/ExodusModPotions.java",
       "src/main/java/net/mcreator/exodus/init/ExodusModBlocks.java",
-      "src/main/java/net/mcreator/exodus/init/ExodusModBlockEntities.java",
       "src/main/java/net/mcreator/exodus/init/ExodusModItems.java",
       "src/main/java/net/mcreator/exodus/ExodusMod.java",
       "src/main/java/net/mcreator/exodus/network/ExodusModVariables.java",
@@ -3719,6 +3794,8 @@
       "src/main/java/net/mcreator/exodus/init/ExodusModRenderStateModifiers.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/exodus/init/ExodusModModels.java",
+      "src/main/java/net/mcreator/exodus/client/ClientHelper.java",
+      "src/main/java/net/mcreator/exodus/network/NbtArrayLists.java",
       "src/main/resources/assets/exodus/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml"
@@ -3838,6 +3915,10 @@
           },
           {
             "name": "Adrenaline",
+            "children": []
+          },
+          {
+            "name": "Knowledge",
             "children": []
           }
         ]

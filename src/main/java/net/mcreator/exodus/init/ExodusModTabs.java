@@ -21,13 +21,13 @@ import net.mcreator.exodus.ExodusMod;
 public class ExodusModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ExodusMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BAUBLES = REGISTRY.register("baubles",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.exodus.baubles")).icon(() -> new ItemStack(ExodusModItems.CREEPER_REPELLENT.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ExodusModItems.CREEPER_REPELLENT.get());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.exodus.baubles")).icon(() -> new ItemStack(ExodusModItems.ONYX_NECKLACE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ExodusModItems.GREED_RELIC.get());
 				tabData.accept(ExodusModItems.HERMES_WINGS.get());
 				tabData.accept(ExodusModItems.WATER_STONE.get());
 				tabData.accept(ExodusModItems.DEATH_CONTRACT.get());
 				tabData.accept(ExodusModItems.OMINOUS_LANTERN.get());
+				tabData.accept(ExodusModItems.ONYX_NECKLACE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -45,6 +45,8 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModBlocks.RUBY_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.CALIDIUM_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.METAL_GRATE_STAIRS.get().asItem());
+			tabData.accept(ExodusModBlocks.METAL_GRATE_SLAB.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ExodusModItems.ONYX_PICKAXE.get());
 			tabData.accept(ExodusModItems.ONYX_AXE.get());

@@ -62,7 +62,6 @@ public class ExodusMod {
 		}
 		ExodusModSounds.REGISTRY.register(modEventBus);
 		ExodusModBlocks.REGISTRY.register(modEventBus);
-		ExodusModBlockEntities.REGISTRY.register(modEventBus);
 		ExodusModItems.REGISTRY.register(modEventBus);
 		ExodusModTabs.REGISTRY.register(modEventBus);
 		ExodusModVariables.ATTACHMENT_TYPES.register(modEventBus);

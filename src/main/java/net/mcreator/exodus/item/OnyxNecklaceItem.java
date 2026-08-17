@@ -14,8 +14,8 @@ import javax.annotation.Nullable;
 
 import com.mojang.serialization.MapCodec;
 
-public class CreeperRepellentItem extends Item {
-	public CreeperRepellentItem(Item.Properties properties) {
+public class OnyxNecklaceItem extends Item {
+	public OnyxNecklaceItem(Item.Properties properties) {
 		super(properties.durability(100));
 	}
 

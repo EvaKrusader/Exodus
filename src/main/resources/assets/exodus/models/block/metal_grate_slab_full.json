@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "exodus:block/a",
+    "bottom": "exodus:block/a",
+    "top": "exodus:block/a",
+    "side": "exodus:block/a"
+  }
+}

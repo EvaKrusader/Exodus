@@ -17,6 +17,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.exodus.procedures.PhasingEffectExpiresProcedure;
 import net.mcreator.exodus.procedures.AdrenalineEffectExpiresProcedure;
 import net.mcreator.exodus.potion.PhasingMobEffect;
+import net.mcreator.exodus.potion.KnowledgeMobEffect;
 import net.mcreator.exodus.potion.GoldRushMobEffect;
 import net.mcreator.exodus.potion.AdrenalineMobEffect;
 import net.mcreator.exodus.ExodusMod;
@@ -27,6 +28,7 @@ public class ExodusModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> PHASING = REGISTRY.register("phasing", PhasingMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> GOLD_RUSH = REGISTRY.register("gold_rush", GoldRushMobEffect::new);
 	public static final DeferredHolder<MobEffect, MobEffect> ADRENALINE = REGISTRY.register("adrenaline", AdrenalineMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> KNOWLEDGE = REGISTRY.register("knowledge", KnowledgeMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

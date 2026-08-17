@@ -10,7 +10,7 @@
     "damageModifier": 0,
     "incompatibleEnchantments": [],
     "supportedItems": [
-      "CUSTOM:CreeperRepellent"
+      "CUSTOM:OnyxNecklace"
     ],
     "isTreasureEnchantment": true,
     "isCurse": false,
