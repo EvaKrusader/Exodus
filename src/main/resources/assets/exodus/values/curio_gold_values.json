@@ -1,10 +1,10 @@
 {
-  "ver1" : 0,
-  "ver2" : 0,
-  "ver3" : 1,
-  "day" : 26,
-  "month" : 8,
-  "year" : 2025,
+  "gold_block" : 0.3,
+  "raw_gold_block" : 0.17,
+  "gold_ore" : 0.04,
+  "deepslate_gold_ore" : 0.07,
+  "nether_gold_ore" : 0.055,
+  "gilded_blackstone" : 0.045,
   "send" : 0,
   "update":"https://youtu.be/G_8atE-Kj-0?si=LAbfE8vxvHNaLLos"
 }

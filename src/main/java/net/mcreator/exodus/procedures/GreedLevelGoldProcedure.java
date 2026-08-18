@@ -28,7 +28,10 @@ import net.mcreator.exodus.init.ExodusModMobEffects;
 
 import javax.annotation.Nullable;
 
+import java.io.IOException;
+import java.io.FileReader;
 import java.io.File;
+import java.io.BufferedReader;
 
 @EventBusSubscriber
 public class GreedLevelGoldProcedure {
@@ -51,6 +54,8 @@ public class GreedLevelGoldProcedure {
 		double gold_rush_multiplier = 0;
 		double gold_rush_additive = 0;
 		File file = new File("");
+		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
+		String checkValue = "";
 		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 0) {
 			{
 				ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
@@ -143,11 +148,29 @@ public class GreedLevelGoldProcedure {
 				}
 			}
 		}
+		{
+			try {
+				BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+				StringBuilder jsonstringbuilder = new StringBuilder();
+				String line;
+				while ((line = bufferedReader.readLine()) != null) {
+					jsonstringbuilder.append(line);
+				}
+				bufferedReader.close();
+				json = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
+				checkValue = new java.text.DecimalFormat("##.##").format(json.get((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString())).getAsDouble());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 		if (world instanceof ServerLevel _level) {
 			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(FMLPaths.GAMEDIR.get().toString()), false);
 		}
 		if (world instanceof ServerLevel _level) {
 			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((FMLPaths.GAMEDIR.get().toString().substring(0, (FMLPaths.GAMEDIR.get().toString()).length() - 3) + "src\\main\\resources\\assets\\exodus\\values\\")), false);
+		}
+		if (world instanceof ServerLevel _level) {
+			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString() + ": " + checkValue)), false);
 		}
 	}
 }
