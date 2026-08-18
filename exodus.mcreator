@@ -3299,25 +3299,6 @@
         ]
       },
       "path": "~/Curio/Creeper Repellent"
-    },
-    {
-      "name": "Devgithub",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "devgithub",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/exodus/procedures/DevgithubProcedure.java"
-        ]
-      },
-      "path": "~/Curio/Deadly Sins/Lustar Halo"
     }
   ],
   "variable_elements": [
