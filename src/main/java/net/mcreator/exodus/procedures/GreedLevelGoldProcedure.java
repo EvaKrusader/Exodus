@@ -170,7 +170,7 @@ public class GreedLevelGoldProcedure {
 			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((FMLPaths.GAMEDIR.get().toString().substring(0, (FMLPaths.GAMEDIR.get().toString()).length() - 3) + "src\\main\\resources\\assets\\exodus\\values\\")), false);
 		}
 		if (world instanceof ServerLevel _level) {
-			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString() + ": " + checkValue)), false);
+			_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString() + " : " + checkValue)), false);
 		}
 	}
 }
