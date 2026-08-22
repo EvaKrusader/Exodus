@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:copper_nugget",
+    "b": "minecraft:copper_ingot",
+    "c": "exodus:experience_gummy"
+  },
+  "result": {
+    "id": "exodus:ominous_lantern",
+    "count": 1
+  }
+}

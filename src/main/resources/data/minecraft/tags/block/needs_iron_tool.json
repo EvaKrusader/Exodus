@@ -1,7 +1,14 @@
 {
   "replace": false,
   "values": [
+    "exodus:tungsten_ore",
+    "exodus:squaline_ore",
     "exodus:ruby_ore",
+    "exodus:fluorite_ore",
+    "exodus:raw_tungsten_block",
+    "exodus:squaline_block",
+    "exodus:fluorite_block",
+    "exodus:tungsten_block",
     "exodus:calidium_block",
     "exodus:ruby_block",
     "exodus:onyx_ore",

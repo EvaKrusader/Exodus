@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "exodus:tungsten_block"
+  ],
+  "result": {
+    "id": "exodus:tungsten_ingot",
+    "count": 9
+  }
+}

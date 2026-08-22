@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exodus:block/raw_tungsten_block_top",
+    "up": "exodus:block/raw_tungsten_block_top",
+    "north": "exodus:block/raw_tungsten_block",
+    "east": "exodus:block/raw_tungsten_block",
+    "south": "exodus:block/raw_tungsten_block",
+    "west": "exodus:block/raw_tungsten_block",
+    "particle": "exodus:block/raw_tungsten_block_top"
+  }
+}

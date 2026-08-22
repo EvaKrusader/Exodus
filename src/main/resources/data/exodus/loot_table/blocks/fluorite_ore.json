@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "exodus:blocks/fluorite_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "exodus:fluorite"
+        }
+      ]
+    }
+  ]
+}

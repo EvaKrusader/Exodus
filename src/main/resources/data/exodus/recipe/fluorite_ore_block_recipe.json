@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "exodus:fluorite"
+  },
+  "result": {
+    "id": "exodus:fluorite_block",
+    "count": 1
+  }
+}

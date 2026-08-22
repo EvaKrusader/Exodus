@@ -100,6 +100,7 @@ public class ExodusModVariables {
 			clone.healthBeforeAdrenaline = original.healthBeforeAdrenaline;
 			clone.isChewingGum = original.isChewingGum;
 			clone.chewingGumCounter = original.chewingGumCounter;
+			clone.hasNetherCoalEnchant = original.hasNetherCoalEnchant;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -111,7 +112,7 @@ public class ExodusModVariables {
 		public double greedLevel = 0;
 		public double greedLeveler = 0;
 		public double goldAmount = 0;
-		public double goldGoal = 0;
+		public double goldGoal = 20.0;
 		public double fakeGoldLevel = 0;
 		public boolean hasDeathContract = false;
 		public boolean playContractSound = false;
@@ -123,6 +124,7 @@ public class ExodusModVariables {
 		public double howLongChewingGum = 0;
 		public double chewingGumCounter = 0;
 		public double chewingGumLevel = 0;
+		public boolean hasNetherCoalEnchant = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -143,6 +145,7 @@ public class ExodusModVariables {
 			output.putDouble("howLongChewingGum", howLongChewingGum);
 			output.putDouble("chewingGumCounter", chewingGumCounter);
 			output.putDouble("chewingGumLevel", chewingGumLevel);
+			output.putBoolean("hasNetherCoalEnchant", hasNetherCoalEnchant);
 		}
 
 		@Override
@@ -164,6 +167,7 @@ public class ExodusModVariables {
 			howLongChewingGum = input.getDoubleOr("howLongChewingGum", 0);
 			chewingGumCounter = input.getDoubleOr("chewingGumCounter", 0);
 			chewingGumLevel = input.getDoubleOr("chewingGumLevel", 0);
+			hasNetherCoalEnchant = input.getBooleanOr("hasNetherCoalEnchant", false);
 		}
 
 		public void markSyncDirty() {

@@ -9,6 +9,12 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
@@ -23,6 +29,12 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
@@ -37,6 +49,12 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 2
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
@@ -51,6 +69,12 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 3
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
@@ -65,6 +89,12 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 4
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
@@ -79,11 +109,137 @@
               "property": "exodus:ominous_lantern/ominous_level"
             },
             "value": 5
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 0
           }
         ],
         "model": {
           "type": "minecraft:model",
           "model": "exodus:item/ominous_lantern_5"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 0
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_6"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 1
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_7"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 2
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_8"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 3
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_9"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 4
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_10"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/ominous_level"
+            },
+            "value": 5
+          },
+          {
+            "property": {
+              "property": "exodus:ominous_lantern/has_nether_coal"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/ominous_lantern_11"
         }
       }
     ],

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:FluoriteNecklace"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "Items.STRING",
+      "",
+      "Items.AMETHYST_SHARD",
+      "",
+      "Items.AMETHYST_SHARD",
+      "CUSTOM:Fluorite",
+      "CUSTOM:Fluorite",
+      "CUSTOM:Fluorite"
+    ],
+    "recipeReturnStack": "CUSTOM:FluoriteNecklace",
+    "name": "fluorite_necklace_recipe",
+    "namespace": "mod"
+  }
+}

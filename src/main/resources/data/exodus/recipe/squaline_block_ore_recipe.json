@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "exodus:squaline_block"
+  ],
+  "result": {
+    "id": "exodus:squaline",
+    "count": 9
+  }
+}

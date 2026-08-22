@@ -28,6 +28,7 @@ public class ExodusModTabs {
 				tabData.accept(ExodusModItems.DEATH_CONTRACT.get());
 				tabData.accept(ExodusModItems.OMINOUS_LANTERN.get());
 				tabData.accept(ExodusModItems.ONYX_NECKLACE.get());
+				tabData.accept(ExodusModItems.FLUORITE_NECKLACE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -39,14 +40,29 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.ONYX.get());
 			tabData.accept(ExodusModItems.RUBY.get());
 			tabData.accept(ExodusModItems.CALIDIUM.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(ExodusModItems.TUNGSTEN_INGOT.get());
+			tabData.accept(ExodusModItems.TUNGSTEN.get());
+			tabData.accept(ExodusModItems.SQUALINE.get());
+			tabData.accept(ExodusModItems.FLUORITE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_ORE.get().asItem());
-			tabData.accept(ExodusModBlocks.ONYX_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.CALIDIUM_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.BASALT_CALIDIUM_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.TUNGSTEN_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.SQUALINE_ORE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(ExodusModBlocks.ONYX_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.CALIDIUM_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.METAL_GRATE_STAIRS.get().asItem());
 			tabData.accept(ExodusModBlocks.METAL_GRATE_SLAB.get().asItem());
+			tabData.accept(ExodusModBlocks.TUNGSTEN_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.RAW_TUNGSTEN_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.SQUALINE_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.EXPERIENCE_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.FLUORITE_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.FLUORITE_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ExodusModItems.ONYX_PICKAXE.get());
 			tabData.accept(ExodusModItems.ONYX_AXE.get());
@@ -76,12 +92,14 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.CALIDIUM_ARMOR_CHESTPLATE.get());
 			tabData.accept(ExodusModItems.CALIDIUM_ARMOR_LEGGINGS.get());
 			tabData.accept(ExodusModItems.CALIDIUM_ARMOR_BOOTS.get());
+			tabData.accept(ExodusModItems.SQUALINE_ARMOR_HELMET.get());
+			tabData.accept(ExodusModItems.SQUALINE_ARMOR_CHESTPLATE.get());
+			tabData.accept(ExodusModItems.SQUALINE_ARMOR_LEGGINGS.get());
+			tabData.accept(ExodusModItems.SQUALINE_ARMOR_BOOTS.get());
+			tabData.accept(ExodusModItems.NETHERITE_FULL_SET.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ExodusModItems.EXPERIENCE_GUMMY.get());
 			tabData.accept(ExodusModItems.CHEWING_GUM.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(ExodusModBlocks.CALIDIUM_ORE.get().asItem());
-			tabData.accept(ExodusModBlocks.BASALT_CALIDIUM_ORE.get().asItem());
 		}
 	}
 }

@@ -28,10 +28,17 @@ public class ExodusModBlocks {
 	public static final DeferredBlock<Block> CALIDIUM_ORE;
 	public static final DeferredBlock<Block> CALIDIUM_BLOCK;
 	public static final DeferredBlock<Block> BASALT_CALIDIUM_ORE;
-	public static final DeferredBlock<Block> DS;
 	public static final DeferredBlock<Block> EASY_BAKE_OVEN;
 	public static final DeferredBlock<Block> METAL_GRATE_STAIRS;
 	public static final DeferredBlock<Block> METAL_GRATE_SLAB;
+	public static final DeferredBlock<Block> TUNGSTEN_ORE;
+	public static final DeferredBlock<Block> TUNGSTEN_BLOCK;
+	public static final DeferredBlock<Block> RAW_TUNGSTEN_BLOCK;
+	public static final DeferredBlock<Block> SQUALINE_ORE;
+	public static final DeferredBlock<Block> SQUALINE_BLOCK;
+	public static final DeferredBlock<Block> EXPERIENCE_BLOCK;
+	public static final DeferredBlock<Block> FLUORITE_ORE;
+	public static final DeferredBlock<Block> FLUORITE_BLOCK;
 	static {
 		CREEPER_PATCHER = register("creeper_patcher", CreeperPatcherBlock::new);
 		ONYX_ORE = register("onyx_ore", OnyxOreBlock::new);
@@ -41,10 +48,17 @@ public class ExodusModBlocks {
 		CALIDIUM_ORE = register("calidium_ore", CalidiumOreBlock::new);
 		CALIDIUM_BLOCK = register("calidium_block", CalidiumBlockBlock::new);
 		BASALT_CALIDIUM_ORE = register("basalt_calidium_ore", BasaltCalidiumOreBlock::new);
-		DS = register("ds", DsBlock::new);
 		EASY_BAKE_OVEN = register("easy_bake_oven", EasyBakeOvenBlock::new);
 		METAL_GRATE_STAIRS = register("metal_grate_stairs", MetalGrateStairsBlock::new);
 		METAL_GRATE_SLAB = register("metal_grate_slab", MetalGrateSlabBlock::new);
+		TUNGSTEN_ORE = register("tungsten_ore", TungstenOreBlock::new);
+		TUNGSTEN_BLOCK = register("tungsten_block", TungstenBlockBlock::new);
+		RAW_TUNGSTEN_BLOCK = register("raw_tungsten_block", RawTungstenBlockBlock::new);
+		SQUALINE_ORE = register("squaline_ore", SqualineOreBlock::new);
+		SQUALINE_BLOCK = register("squaline_block", SqualineBlockBlock::new);
+		EXPERIENCE_BLOCK = register("experience_block", ExperienceBlockBlock::new);
+		FLUORITE_ORE = register("fluorite_ore", FluoriteOreBlock::new);
+		FLUORITE_BLOCK = register("fluorite_block", FluoriteBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -57,7 +71,7 @@ public class ExodusModBlocks {
 	public static class BlocksClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.BlockTintSources event) {
-			DsBlock.blockColorLoad(event);
+			SqualineOreBlock.blockColorLoad(event);
 		}
 	}
 }

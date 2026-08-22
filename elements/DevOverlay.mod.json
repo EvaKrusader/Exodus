@@ -17,9 +17,9 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "TOP_LEFT",
-          "x": 3,
-          "y": 2,
+          "anchorPoint": "CENTER",
+          "x": 341,
+          "y": 75,
           "locked": false
         }
       },
@@ -37,8 +37,8 @@
           },
           "hasShadow": false,
           "anchorPoint": "CENTER",
-          "x": 128,
-          "y": 4,
+          "x": 342,
+          "y": 121,
           "locked": false
         }
       },
@@ -56,8 +56,8 @@
           },
           "hasShadow": false,
           "anchorPoint": "CENTER",
-          "x": 128,
-          "y": 17,
+          "x": 343,
+          "y": 106,
           "locked": false
         }
       },
@@ -74,7 +74,7 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "CENTER",
+          "anchorPoint": "TOP_RIGHT",
           "x": 252,
           "y": 3,
           "locked": false
@@ -93,7 +93,7 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "CENTER",
+          "anchorPoint": "TOP_RIGHT",
           "x": 252,
           "y": 15,
           "locked": false
@@ -112,9 +112,9 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "CENTER",
-          "x": 7,
-          "y": 48,
+          "anchorPoint": "CENTER_LEFT",
+          "x": 1,
+          "y": 47,
           "locked": false
         }
       },
@@ -140,25 +140,6 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_return_chewing_gum_global",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnChewingGumGlobal"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "anchorPoint": "CENTER",
-          "x": 5,
-          "y": 82,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_proc_return_chewing_gum_counter",
           "text": {
             "fixedValue": "",
@@ -178,10 +159,10 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_return_chewing_gum_level",
+          "name": "label_proc_return_greedy",
           "text": {
             "fixedValue": "",
-            "name": "ReturnChewingGumLevel"
+            "name": "ReturnGreedy"
           },
           "color": {
             "value": -1,
@@ -189,8 +170,8 @@
           },
           "hasShadow": false,
           "anchorPoint": "CENTER",
-          "x": 6,
-          "y": 111,
+          "x": 341,
+          "y": 89,
           "locked": false
         }
       }

@@ -14,7 +14,7 @@
     "rewardRecipes": [],
     "rewardXP": 0,
     "achievementType": "challenge",
-    "parent": "CUSTOM:Sinful",
+    "parent": "CUSTOM:Greed",
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block><shadow type=\"custom_trigger\"></shadow></next></block></xml>"
   }
 }

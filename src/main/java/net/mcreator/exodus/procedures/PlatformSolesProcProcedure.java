@@ -18,6 +18,8 @@ import net.minecraft.core.registries.Registries;
 
 import javax.annotation.Nullable;
 
+import java.io.File;
+
 @EventBusSubscriber
 public class PlatformSolesProcProcedure {
 	@SubscribeEvent
@@ -32,6 +34,10 @@ public class PlatformSolesProcProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		String fileName = "";
+		String url = "";
+		File file = new File("");
+		com.google.gson.JsonObject jsonObject = new com.google.gson.JsonObject();
 		if (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:platform_soles")))) != 0) == true) {
 			if (entity instanceof LivingEntity _entity) {

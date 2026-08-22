@@ -51,7 +51,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "BUILDING_BLOCKS"
+      "DECORATIONS"
     ],
     "destroyTool": "pickaxe",
     "customDrop": "CUSTOM:Onyx",

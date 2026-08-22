@@ -94,12 +94,17 @@ public class ExodusModCuriosCompat {
 
 			@Override
 			public void curioTick(SlotContext slotContext) {
-				OminousLanternBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
+				OminousLanternBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
 			}
 
 			@Override
 			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
 				OminousLanternBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				OminousLanternBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
 			}
 		}, ExodusModItems.OMINOUS_LANTERN.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -118,5 +123,16 @@ public class ExodusModCuriosCompat {
 				TestBaubleIsEquippedProcedure.execute(slotContext.entity());
 			}
 		}, ExodusModItems.ONYX_NECKLACE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity(), stack);
+			}
+		}, ExodusModItems.FLUORITE_NECKLACE.get());
 	}
 }

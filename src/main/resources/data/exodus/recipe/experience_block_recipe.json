@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "exodus:experience_gummy"
+  },
+  "result": {
+    "id": "exodus:experience_block",
+    "count": 1
+  }
+}

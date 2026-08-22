@@ -69,11 +69,28 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> DEATH_CONTRACT;
 	public static final DeferredItem<Item> OMINOUS_LANTERN;
 	public static final DeferredItem<Item> CHEWING_GUM;
-	public static final DeferredItem<Item> DS;
 	public static final DeferredItem<Item> EASY_BAKE_OVEN;
 	public static final DeferredItem<Item> METAL_GRATE_STAIRS;
 	public static final DeferredItem<Item> METAL_GRATE_SLAB;
 	public static final DeferredItem<Item> ONYX_NECKLACE;
+	public static final DeferredItem<Item> TUNGSTEN_INGOT;
+	public static final DeferredItem<Item> TUNGSTEN_ORE;
+	public static final DeferredItem<Item> TUNGSTEN_BLOCK;
+	public static final DeferredItem<Item> TUNGSTEN;
+	public static final DeferredItem<Item> RAW_TUNGSTEN_BLOCK;
+	public static final DeferredItem<Item> SQUALINE;
+	public static final DeferredItem<Item> SQUALINE_ORE;
+	public static final DeferredItem<Item> SQUALINE_BLOCK;
+	public static final DeferredItem<Item> SQUALINE_ARMOR_HELMET;
+	public static final DeferredItem<Item> SQUALINE_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> SQUALINE_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> SQUALINE_ARMOR_BOOTS;
+	public static final DeferredItem<Item> NETHERITE_FULL_SET;
+	public static final DeferredItem<Item> EXPERIENCE_BLOCK;
+	public static final DeferredItem<Item> FLUORITE;
+	public static final DeferredItem<Item> FLUORITE_ORE;
+	public static final DeferredItem<Item> FLUORITE_BLOCK;
+	public static final DeferredItem<Item> FLUORITE_NECKLACE;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -121,11 +138,28 @@ public class ExodusModItems {
 		DEATH_CONTRACT = register("death_contract", DeathContractItem::new);
 		OMINOUS_LANTERN = register("ominous_lantern", OminousLanternItem::new);
 		CHEWING_GUM = register("chewing_gum", ChewingGumItem::new);
-		DS = block(ExodusModBlocks.DS);
 		EASY_BAKE_OVEN = block(ExodusModBlocks.EASY_BAKE_OVEN);
 		METAL_GRATE_STAIRS = block(ExodusModBlocks.METAL_GRATE_STAIRS);
 		METAL_GRATE_SLAB = block(ExodusModBlocks.METAL_GRATE_SLAB);
 		ONYX_NECKLACE = register("onyx_necklace", OnyxNecklaceItem::new);
+		TUNGSTEN_INGOT = register("tungsten_ingot", TungstenIngotItem::new);
+		TUNGSTEN_ORE = block(ExodusModBlocks.TUNGSTEN_ORE);
+		TUNGSTEN_BLOCK = block(ExodusModBlocks.TUNGSTEN_BLOCK);
+		TUNGSTEN = register("tungsten", TungstenItem::new);
+		RAW_TUNGSTEN_BLOCK = block(ExodusModBlocks.RAW_TUNGSTEN_BLOCK);
+		SQUALINE = register("squaline", SqualineItem::new);
+		SQUALINE_ORE = block(ExodusModBlocks.SQUALINE_ORE);
+		SQUALINE_BLOCK = block(ExodusModBlocks.SQUALINE_BLOCK);
+		SQUALINE_ARMOR_HELMET = register("squaline_armor_helmet", SqualineArmorItem.Helmet::new);
+		SQUALINE_ARMOR_CHESTPLATE = register("squaline_armor_chestplate", SqualineArmorItem.Chestplate::new);
+		SQUALINE_ARMOR_LEGGINGS = register("squaline_armor_leggings", SqualineArmorItem.Leggings::new);
+		SQUALINE_ARMOR_BOOTS = register("squaline_armor_boots", SqualineArmorItem.Boots::new);
+		NETHERITE_FULL_SET = register("netherite_full_set", NetheriteFullSetItem::new);
+		EXPERIENCE_BLOCK = block(ExodusModBlocks.EXPERIENCE_BLOCK);
+		FLUORITE = register("fluorite", FluoriteItem::new);
+		FLUORITE_ORE = block(ExodusModBlocks.FLUORITE_ORE);
+		FLUORITE_BLOCK = block(ExodusModBlocks.FLUORITE_BLOCK);
+		FLUORITE_NECKLACE = register("fluorite_necklace", FluoriteNecklaceItem::new);
 	}
 
 	// Start of user code block custom items
@@ -149,8 +183,10 @@ public class ExodusModItems {
 			event.register(Identifier.parse("exodus:greed_relic/greed_level"), GreedRelicItem.GreedLevelProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:death_contract/is_signed"), DeathContractItem.IsSignedProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:ominous_lantern/ominous_level"), OminousLanternItem.OminousLevelProperty.MAP_CODEC);
+			event.register(Identifier.parse("exodus:ominous_lantern/has_nether_coal"), OminousLanternItem.HasNetherCoalProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:onyx_necklace/has_biolum"), OnyxNecklaceItem.HasBiolumProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:onyx_necklace/range_level"), OnyxNecklaceItem.RangeLevelProperty.MAP_CODEC);
+			event.register(Identifier.parse("exodus:fluorite_necklace/power"), FluoriteNecklaceItem.PowerProperty.MAP_CODEC);
 		}
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "exodus:greed_relic"
+    },
+    "title": {
+      "translate": "advancements.greed.title"
+    },
+    "description": {
+      "translate": "advancements.greed.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "greed_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "exodus:sinful"
+}

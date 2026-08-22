@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:OminousLantern"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.COPPER_NUGGET",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_NUGGET",
+      "Items.COPPER_INGOT",
+      "CUSTOM:ExperienceGummy",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_NUGGET",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_NUGGET"
+    ],
+    "recipeReturnStack": "CUSTOM:OminousLantern",
+    "name": "ominous_lantern_recipe",
+    "namespace": "mod"
+  }
+}

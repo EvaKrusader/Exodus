@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "exodus:greed_relic"
+    },
+    "title": {
+      "translate": "advancements.auromania.title"
+    },
+    "description": {
+      "translate": "advancements.auromania.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "auromania_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "exodus:greed"
+}

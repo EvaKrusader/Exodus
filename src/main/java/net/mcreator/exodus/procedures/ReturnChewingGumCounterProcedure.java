@@ -8,6 +8,8 @@ public class ReturnChewingGumCounterProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "ChewingGumCounter : " + new java.text.DecimalFormat("##.##").format(entity.getData(ExodusModVariables.PLAYER_VARIABLES).chewingGumCounter);
+		return ("ChewingGum Counter/Global/Level : " + new java.text.DecimalFormat("##.##").format(entity.getData(ExodusModVariables.PLAYER_VARIABLES).chewingGumCounter)) + " | "
+				+ new java.text.DecimalFormat("##.##").format(entity.getData(ExodusModVariables.PLAYER_VARIABLES).howLongChewingGum) + " | "
+				+ new java.text.DecimalFormat("##.##").format(entity.getData(ExodusModVariables.PLAYER_VARIABLES).chewingGumLevel);
 	}
 }

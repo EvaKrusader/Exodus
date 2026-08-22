@@ -32,34 +32,31 @@ public class DevOverlayOverlay {
 		if (true) {
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnGreedLevelProcedure.execute(entity), 3, 2, -1, false);
+					ReturnGreedLevelProcedure.execute(entity), w / 2 + 128, h / 2 + -45, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnGoldValueProcedure.execute(entity), w / 2 + -85, h / 2 + -116, -1, false);
+					ReturnGoldValueProcedure.execute(entity), w / 2 + 129, h / 2 + 1, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnGoldGoalProcedure.execute(entity), w / 2 + -85, h / 2 + -103, -1, false);
+					ReturnGoldGoalProcedure.execute(entity), w / 2 + 130, h / 2 + -14, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnStepHeightBaseProcedure.execute(entity), w / 2 + 39, h / 2 + -117, -1, false);
+					ReturnStepHeightBaseProcedure.execute(entity), w - 175, 3, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnStepHeightModProcedure.execute(entity), w / 2 + 39, h / 2 + -105, -1, false);
+					ReturnStepHeightModProcedure.execute(entity), w - 175, 15, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnOminousLevelProcedure.execute(entity), w / 2 + -206, h / 2 + -72, -1, false);
+					ReturnOminousLevelProcedure.execute(entity), 1, h / 2 + -73, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ReturnAdrenalineDamageProcedure.execute(entity), w / 2 + 92, h / 2 + -76, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnChewingGumGlobalProcedure.execute(entity), w / 2 + -208, h / 2 + -38, -1, false);
-			event.getGuiGraphics().text(Minecraft.getInstance().font,
-
 					ReturnChewingGumCounterProcedure.execute(entity), w / 2 + -209, h / 2 + -24, -1, false);
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
-					ReturnChewingGumLevelProcedure.execute(entity), w / 2 + -207, h / 2 + -9, -1, false);
+					ReturnGreedyProcedure.execute(entity), w / 2 + 128, h / 2 + -31, -1, false);
 		}
 	}
 }

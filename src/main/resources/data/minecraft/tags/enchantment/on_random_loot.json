@@ -2,7 +2,10 @@
   "replace": false,
   "values": [
     "exodus:bioluminescence",
+    "exodus:spiky_cleats",
+    "exodus:vampirism",
     "exodus:platform_soles",
-    "exodus:mystical_conductivity"
+    "exodus:mystical_conductivity",
+    "exodus:trial_breaker"
   ]
 }

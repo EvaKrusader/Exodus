@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "exodus:experience_block"
+  ],
+  "result": {
+    "id": "exodus:experience_gummy",
+    "count": 9
+  }
+}

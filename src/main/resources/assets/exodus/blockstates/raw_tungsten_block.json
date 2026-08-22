@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "exodus:block/raw_tungsten_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "exodus:block/raw_tungsten_block"
+    },
+    "axis=z": {
+      "model": "exodus:block/raw_tungsten_block",
+      "x": 90
+    }
+  }
+}

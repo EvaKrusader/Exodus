@@ -2602,14 +2602,20 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/exodus/models/item/ominous_lantern_3.json",
-          "src/main/resources/assets/exodus/models/item/ominous_lantern_5.json",
           "src/main/resources/assets/exodus/models/item/ominous_lantern_0.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_6.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_11.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_10.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_8.json",
+          "src/main/resources/assets/exodus/items/ominous_lantern.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_5.json",
           "src/main/resources/assets/exodus/models/item/ominous_lantern_2.json",
           "src/main/resources/assets/exodus/models/item/ominous_lantern.json",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_7.json",
           "src/main/resources/assets/exodus/models/item/ominous_lantern_1.json",
           "src/main/resources/assets/exodus/models/item/ominous_lantern_4.json",
-          "src/main/resources/assets/exodus/items/ominous_lantern.json",
-          "src/main/java/net/mcreator/exodus/item/OminousLanternItem.java"
+          "src/main/java/net/mcreator/exodus/item/OminousLanternItem.java",
+          "src/main/resources/assets/exodus/models/item/ominous_lantern_9.json"
         ]
       },
       "path": "~/Curio/Ominous Lantern"
@@ -2668,6 +2674,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -2934,26 +2948,6 @@
       "path": "~/Items/Chewing Gum"
     },
     {
-      "name": "ReturnChewingGumGlobal",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "return_chewing_gum_global",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/exodus/procedures/ReturnChewingGumGlobalProcedure.java"
-        ]
-      },
-      "path": "~/Dev"
-    },
-    {
       "name": "ReturnChewingGumCounter",
       "type": "procedure",
       "compiles": true,
@@ -3049,26 +3043,6 @@
       "path": "~/Items/Chewing Gum"
     },
     {
-      "name": "ReturnChewingGumLevel",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "return_chewing_gum_level",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/exodus/procedures/ReturnChewingGumLevelProcedure.java"
-        ]
-      },
-      "path": "~/Dev"
-    },
-    {
       "name": "BoneBlockBig",
       "type": "recipe",
       "compiles": true,
@@ -3120,24 +3094,6 @@
         ]
       },
       "path": "~/QOL/Recipes"
-    },
-    {
-      "name": "Ds",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ds",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/exodus/loot_table/blocks/ds.json",
-          "src/main/resources/assets/exodus/items/ds.json",
-          "src/main/resources/assets/exodus/blockstates/ds.json",
-          "src/main/java/net/mcreator/exodus/block/DsBlock.java",
-          "src/main/resources/assets/exodus/models/block/ds.json",
-          "src/main/resources/assets/exodus/models/item/ds.json"
-        ]
-      },
-      "path": "~/Ores/Squaline"
     },
     {
       "name": "EasyBakeOven",
@@ -3299,6 +3255,898 @@
         ]
       },
       "path": "~/Curio/Creeper Repellent"
+    },
+    {
+      "name": "Auromania",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auromania",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/auromania.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo/Advancements"
+    },
+    {
+      "name": "Greed",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greed",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/greed.json"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo/Advancements"
+    },
+    {
+      "name": "SinfulProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sinful_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/SinfulProcProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins"
+    },
+    {
+      "name": "GoldPickEnchant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_pick_enchant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/GoldPickEnchantProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Deadly Sins/Lustar Halo/GoldPick Enchant"
+    },
+    {
+      "name": "TungstenIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/TungstenIngotItem.java",
+          "src/main/resources/assets/exodus/items/tungsten_ingot.json",
+          "src/main/resources/assets/exodus/models/item/tungsten_ingot.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "TungstenOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/neoforge/biome_modifier/tungsten_ore_biome_modifier.json",
+          "src/main/resources/assets/exodus/items/tungsten_ore.json",
+          "src/main/java/net/mcreator/exodus/block/TungstenOreBlock.java",
+          "src/main/resources/data/exodus/worldgen/placed_feature/tungsten_ore.json",
+          "src/main/resources/assets/exodus/blockstates/tungsten_ore.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/tungsten_ore.json",
+          "src/main/resources/data/exodus/loot_table/blocks/tungsten_ore.json",
+          "src/main/resources/assets/exodus/models/item/tungsten_ore.json",
+          "src/main/resources/assets/exodus/models/block/tungsten_ore.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "TungstenBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/blockstates/tungsten_block.json",
+          "src/main/resources/data/exodus/loot_table/blocks/tungsten_block.json",
+          "src/main/resources/assets/exodus/items/tungsten_block.json",
+          "src/main/java/net/mcreator/exodus/block/TungstenBlockBlock.java",
+          "src/main/resources/assets/exodus/models/item/tungsten_block.json",
+          "src/main/resources/assets/exodus/models/block/tungsten_block.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "TungstenOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/tungsten_ore_block_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/tungsten_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "TungstenBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/tungsten_block_ore_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/tungsten_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "TungstenOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/tungsten_ore_smelting.json",
+          "src/main/resources/data/exodus/advancement/recipes/tungsten_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "Tungsten",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/TungstenItem.java",
+          "src/main/resources/assets/exodus/models/item/tungsten.json",
+          "src/main/resources/assets/exodus/items/tungsten.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "RawTungstenBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_tungsten_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/blockstates/raw_tungsten_block.json",
+          "src/main/java/net/mcreator/exodus/block/RawTungstenBlockBlock.java",
+          "src/main/resources/assets/exodus/models/item/raw_tungsten_block.json",
+          "src/main/resources/assets/exodus/items/raw_tungsten_block.json",
+          "src/main/resources/data/exodus/loot_table/blocks/raw_tungsten_block.json",
+          "src/main/resources/assets/exodus/models/block/raw_tungsten_block.json"
+        ]
+      },
+      "path": "~/Ores/Tungsten"
+    },
+    {
+      "name": "Squaline",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/squaline.json",
+          "src/main/resources/assets/exodus/models/item/squaline.json",
+          "src/main/java/net/mcreator/exodus/item/SqualineItem.java"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/block/SqualineOreBlock.java",
+          "src/main/resources/assets/exodus/models/block/squaline_ore.json",
+          "src/main/resources/assets/exodus/blockstates/squaline_ore.json",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/squaline_ore_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/squaline_ore.json",
+          "src/main/resources/data/exodus/loot_table/blocks/squaline_ore.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/squaline_ore.json",
+          "src/main/resources/assets/exodus/models/item/squaline_ore.json",
+          "src/main/resources/assets/exodus/items/squaline_ore.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/loot_table/blocks/squaline_block.json",
+          "src/main/resources/assets/exodus/models/block/squaline_block.json",
+          "src/main/resources/assets/exodus/models/item/squaline_block.json",
+          "src/main/resources/assets/exodus/items/squaline_block.json",
+          "src/main/resources/assets/exodus/blockstates/squaline_block.json",
+          "src/main/java/net/mcreator/exodus/block/SqualineBlockBlock.java"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_ore_block_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_block_ore_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_ore_smelting.json",
+          "src/main/resources/data/exodus/recipe/squaline_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/equipment/squaline_armor.json",
+          "src/main/resources/assets/exodus/models/item/squaline_armor_helmet.json",
+          "src/main/resources/assets/exodus/models/item/squaline_armor_boots.json",
+          "src/main/resources/assets/exodus/items/squaline_armor_leggings.json",
+          "src/main/resources/assets/exodus/items/squaline_armor_helmet.json",
+          "src/main/java/net/mcreator/exodus/client/renderer/item/SqualineArmorArmor.java",
+          "src/main/resources/assets/exodus/items/squaline_armor_chestplate.json",
+          "src/main/java/net/mcreator/exodus/item/SqualineArmorItem.java",
+          "src/main/resources/assets/exodus/items/squaline_armor_boots.json",
+          "src/main/resources/assets/exodus/models/item/squaline_armor_leggings.json",
+          "src/main/resources/assets/exodus/models/item/squaline_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_armor_helmet_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_armor_chestplate_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_armor_leggings_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "SqualineArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/squaline_armor_boots_recipe.json",
+          "src/main/resources/data/exodus/recipe/squaline_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Squaline"
+    },
+    {
+      "name": "TrialBreaker",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trial_breaker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/enchantment/trial_breaker.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "TrialBreakerProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trial_breaker_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/TrialBreakerProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "NetheriteFullSet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_full_set",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/netherite_full_set.json",
+          "src/main/resources/assets/exodus/items/netherite_full_set.json",
+          "src/main/java/net/mcreator/exodus/item/NetheriteFullSetItem.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "NetheriteFullSetPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_full_set_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/NetheriteFullSetPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "ReturnGreedy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_greedy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ReturnGreedyProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "TrialDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trial_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/damage_type/trial_damage.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "NetherCoal",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_coal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/enchantment/nether_coal.json"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLanternBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/OminousLanternBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "OminousLanternRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/ominous_lantern_recipe.json",
+          "src/main/resources/data/exodus/recipe/ominous_lantern_recipe.json"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "ExperienceBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/loot_table/blocks/experience_block.json",
+          "src/main/java/net/mcreator/exodus/block/ExperienceBlockBlock.java",
+          "src/main/resources/assets/exodus/blockstates/experience_block.json",
+          "src/main/resources/assets/exodus/models/block/experience_block.json",
+          "src/main/resources/assets/exodus/models/item/experience_block.json",
+          "src/main/resources/assets/exodus/items/experience_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ExperienceBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/experience_block_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/experience_block_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ExperienceBlockUncraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_block_uncraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/experience_block_uncraft.json",
+          "src/main/resources/data/exodus/recipe/experience_block_uncraft.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "OminousLanternCoalProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ominous_lantern_coal_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/OminousLanternCoalProviderProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Ominous Lantern"
+    },
+    {
+      "name": "SpikyCleats",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiky_cleats",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/enchantment/spiky_cleats.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "SpikyCleatsProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiky_cleats_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/SpikyCleatsProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "Fluorite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/fluorite.json",
+          "src/main/resources/assets/exodus/models/item/fluorite.json",
+          "src/main/java/net/mcreator/exodus/item/FluoriteItem.java"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/block/fluorite_ore.json",
+          "src/main/resources/assets/exodus/blockstates/fluorite_ore.json",
+          "src/main/resources/data/exodus/loot_table/blocks/fluorite_ore.json",
+          "src/main/resources/assets/exodus/items/fluorite_ore.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/fluorite_ore.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_ore.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/fluorite_ore.json",
+          "src/main/java/net/mcreator/exodus/block/FluoriteOreBlock.java",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/fluorite_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/block/FluoriteBlockBlock.java",
+          "src/main/resources/assets/exodus/items/fluorite_block.json",
+          "src/main/resources/assets/exodus/models/block/fluorite_block.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_block.json",
+          "src/main/resources/data/exodus/loot_table/blocks/fluorite_block.json",
+          "src/main/resources/assets/exodus/blockstates/fluorite_block.json"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/fluorite_ore_block_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/fluorite_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/fluorite_block_ore_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/fluorite_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/fluorite_ore_smelting.json",
+          "src/main/resources/data/exodus/recipe/fluorite_ore_smelting.json"
+        ]
+      },
+      "path": "~/Ores/Fluorite"
+    },
+    {
+      "name": "FluoriteNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/fluorite_necklace.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_necklace_1.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_necklace_2.json",
+          "src/main/resources/assets/exodus/items/fluorite_necklace.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_necklace_3.json",
+          "src/main/resources/assets/exodus/models/item/fluorite_necklace_0.json",
+          "src/main/java/net/mcreator/exodus/item/FluoriteNecklaceItem.java"
+        ]
+      },
+      "path": "~/Curio/Fluorite Necklace"
+    },
+    {
+      "name": "FluoriteNecklaceBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_necklace_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Fluorite Necklace"
+    },
+    {
+      "name": "FluoriteNecklaceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_necklace_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/fluorite_necklace_recipe.json",
+          "src/main/resources/data/exodus/recipe/fluorite_necklace_recipe.json"
+        ]
+      },
+      "path": "~/Curio/Fluorite Necklace"
+    },
+    {
+      "name": "FluoriteNecklaceBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_necklace_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Fluorite Necklace"
+    },
+    {
+      "name": "DevGithubBaseProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_github_base_proc",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevGithubBaseProcProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "Vampirism",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/enchantment/vampirism.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "VampirismProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampirism_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/VampirismProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -3336,7 +4184,7 @@
       "name": "goldGoal",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "20.0"
     },
     {
       "name": "fakeGoldLevel",
@@ -3403,6 +4251,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "hasNetherCoalEnchant",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -3519,30 +4373,50 @@
     "ITEMS:exodus:calidium_armor_repair_items": [
       "~CalidiumArmor@CUSTOM:Calidium"
     ],
-    "ITEMS:minecraft:enchantable/durability": [
-      "~OnyxNecklace@CUSTOM:OnyxNecklace",
-      "~WaterStone@CUSTOM:WaterStone",
-      "~HermesWings@CUSTOM:HermesWings"
+    "ITEMS:exodus:squaline_pickaxe_repair_items": [],
+    "ITEMS:exodus:squaline_axe_repair_items": [],
+    "ITEMS:exodus:squaline_sword_repair_items": [],
+    "ITEMS:exodus:squaline_shovel_repair_items": [],
+    "ITEMS:exodus:squaline_hoe_repair_items": [],
+    "ITEMS:exodus:squaline_armor_repair_items": [
+      "~SqualineArmor@CUSTOM:Squaline"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
+      "~Vampirism@CUSTOM:Vampirism",
+      "~SpikyCleats@CUSTOM:SpikyCleats",
+      "~TrialBreaker@CUSTOM:TrialBreaker",
       "~PlatformSoles@CUSTOM:PlatformSoles",
-      "~MysticalConductivity@CUSTOM:MysticalConductivity"
+      "~MysticalConductivity@CUSTOM:MysticalConductivity",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
+      "~Vampirism@CUSTOM:Vampirism",
+      "~SpikyCleats@CUSTOM:SpikyCleats",
+      "~TrialBreaker@CUSTOM:TrialBreaker",
       "~PlatformSoles@CUSTOM:PlatformSoles",
-      "~MysticalConductivity@CUSTOM:MysticalConductivity"
+      "~MysticalConductivity@CUSTOM:MysticalConductivity",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
     ],
     "ENCHANTMENTS:minecraft:treasure": [
-      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence",
-      "~PlatformSoles@CUSTOM:PlatformSoles"
+      "~PlatformSoles@CUSTOM:PlatformSoles",
+      "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~Vampirism@CUSTOM:Vampirism",
+      "~SpikyCleats@CUSTOM:SpikyCleats",
+      "~NetherCoal@CUSTOM:NetherCoal",
+      "~TrialBreaker@CUSTOM:TrialBreaker",
       "~Authority@CUSTOM:Authority",
       "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~FluoriteBlock@CUSTOM:FluoriteBlock",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
+      "~SqualineBlock@CUSTOM:SqualineBlock",
+      "~SqualineOre@CUSTOM:SqualineOre",
+      "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
+      "~TungstenBlock@CUSTOM:TungstenBlock",
+      "~TungstenOre@CUSTOM:TungstenOre",
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~CalidiumOre@CUSTOM:CalidiumOre",
@@ -3552,6 +4426,13 @@
       "~OnyxOre@CUSTOM:OnyxOre"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~FluoriteBlock@CUSTOM:FluoriteBlock",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
+      "~SqualineBlock@CUSTOM:SqualineBlock",
+      "~SqualineOre@CUSTOM:SqualineOre",
+      "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
+      "~TungstenBlock@CUSTOM:TungstenBlock",
+      "~TungstenOre@CUSTOM:TungstenOre",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~RubyBlock@CUSTOM:RubyBlock",
       "~RubyOre@CUSTOM:RubyOre",
@@ -3584,21 +4465,25 @@
       "~OnyxHoe@CUSTOM:OnyxHoe"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~SqualineArmor@CUSTOM:SqualineArmor.helmet",
       "~CalidiumArmor@CUSTOM:CalidiumArmor.helmet",
       "~RubyArmor@CUSTOM:RubyArmor.helmet",
       "~OnyxArmor@CUSTOM:OnyxArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~SqualineArmor@CUSTOM:SqualineArmor.body",
       "~CalidiumArmor@CUSTOM:CalidiumArmor.body",
       "~RubyArmor@CUSTOM:RubyArmor.body",
       "~OnyxArmor@CUSTOM:OnyxArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~SqualineArmor@CUSTOM:SqualineArmor.legs",
       "~CalidiumArmor@CUSTOM:CalidiumArmor.legs",
       "~RubyArmor@CUSTOM:RubyArmor.legs",
       "~OnyxArmor@CUSTOM:OnyxArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~SqualineArmor@CUSTOM:SqualineArmor.boots",
       "~CalidiumArmor@CUSTOM:CalidiumArmor.boots",
       "~RubyArmor@CUSTOM:RubyArmor.boots",
       "~OnyxArmor@CUSTOM:OnyxArmor.boots"
@@ -3607,8 +4492,17 @@
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~OnyxNecklace@CUSTOM:OnyxNecklace",
+      "~WaterStone@CUSTOM:WaterStone",
+      "~HermesWings@CUSTOM:HermesWings"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
+    ],
+    "ITEMS:minecraft:swords_and_axes": [
+      "TAG:minecraft:axes",
+      "TAG:minecraft:swords"
     ]
   },
   "tab_element_order": {},
@@ -3757,13 +4651,41 @@
       "item.exodus.ominous_lantern": "Ominous Lantern",
       "effect.exodus.adrenaline": "Adrenaline",
       "item.exodus.chewing_gum": "Chewing Gum",
-      "item.exodus.ds": "Ds",
       "item.exodus.easy_bake_oven": "Easy Bake Oven",
       "enchantment.exodus.bioluminescence": "Bioluminescence",
       "effect.exodus.knowledge": "Knowledge",
       "item.exodus.metal_grate_stairs": "Metal Grate Stairs",
       "item.exodus.metal_grate_slab": "Metal Grate Slab",
-      "item.exodus.onyx_necklace": "Creeper Repellent"
+      "item.exodus.onyx_necklace": "Onyx Necklace",
+      "advancements.auromania.title": "Auromania",
+      "advancements.auromania.descr": "Mine a Gold Block with a Golden Pickaxe while wearing a full Gold Armor set",
+      "advancements.greed.title": "Greed",
+      "advancements.greed.descr": "Reach Authority I on a Halo of Avarice",
+      "item.exodus.tungsten_ingot": "Tungsten Ingot",
+      "item.exodus.tungsten_ore": "Tungsten Ore",
+      "item.exodus.tungsten_block": "Block of Tungsten",
+      "item.exodus.tungsten": "Tungsten",
+      "item.exodus.raw_tungsten_block": "Block of Tungsten",
+      "item.exodus.squaline": "Squaline",
+      "item.exodus.squaline_ore": "Squaline Ore",
+      "item.exodus.squaline_block": "Block of Squaline",
+      "item.exodus.squaline_armor_boots": "Squaline Boots",
+      "item.exodus.squaline_armor_chestplate": "Squaline Chestplate",
+      "item.exodus.squaline_armor_leggings": "Squaline Leggings",
+      "item.exodus.squaline_armor_helmet": "Squaline Helmet",
+      "enchantment.exodus.trial_breaker": "Trial Breaker",
+      "item.exodus.netherite_full_set": "Netherite Full Set",
+      "death.attack.trial_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.trial_damage.player": "%1$s died whilst trying to escape %2$s",
+      "death.attack.trial_damage": "%1$s died",
+      "enchantment.exodus.nether_coal": "Nether Coal",
+      "item.exodus.experience_block": "Experience Block",
+      "enchantment.exodus.spiky_cleats": "Spiky Cleats",
+      "item.exodus.fluorite": "Fluorite",
+      "item.exodus.fluorite_ore": "Fluorite Ore",
+      "item.exodus.fluorite_block": "Block of Fluorite",
+      "item.exodus.fluorite_necklace": "Fluorite Necklace",
+      "enchantment.exodus.vampirism": "Vampirism"
     }
   },
   "metadata": {
@@ -3817,10 +4739,6 @@
             ]
           },
           {
-            "name": "Reality Anchor",
-            "children": []
-          },
-          {
             "name": "Deadly Sins",
             "children": [
               {
@@ -3856,6 +4774,10 @@
           },
           {
             "name": "Ominous Lantern",
+            "children": []
+          },
+          {
+            "name": "Fluorite Necklace",
             "children": []
           }
         ]
@@ -3902,6 +4824,10 @@
           },
           {
             "name": "Tungsten",
+            "children": []
+          },
+          {
+            "name": "Fluorite",
             "children": []
           }
         ]

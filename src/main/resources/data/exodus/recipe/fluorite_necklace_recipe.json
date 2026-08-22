@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "b b",
+    "ccc"
+  ],
+  "key": {
+    "a": "minecraft:string",
+    "b": "minecraft:amethyst_shard",
+    "c": "exodus:fluorite"
+  },
+  "result": {
+    "id": "exodus:fluorite_necklace",
+    "count": 1
+  }
+}

@@ -15,6 +15,7 @@
     "baubleModelTexture": "",
     "curioTick": "OminousLanternBaubleWhileBaubleIsEquippedTick",
     "onEquip": "OminousLanternBaubleBaubleIsEquipped",
+    "onUnequip": "OminousLanternBaubleBaubleIsUnequipped",
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",

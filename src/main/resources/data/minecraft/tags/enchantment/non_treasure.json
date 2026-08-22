@@ -1,7 +1,11 @@
 {
   "replace": false,
   "values": [
+    "exodus:spiky_cleats",
+    "exodus:nether_coal",
     "exodus:authority",
-    "exodus:mystical_conductivity"
+    "exodus:vampirism",
+    "exodus:mystical_conductivity",
+    "exodus:trial_breaker"
   ]
 }

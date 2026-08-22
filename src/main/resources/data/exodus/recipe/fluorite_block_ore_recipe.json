@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "exodus:fluorite_block"
+  ],
+  "result": {
+    "id": "exodus:fluorite",
+    "count": 9
+  }
+}

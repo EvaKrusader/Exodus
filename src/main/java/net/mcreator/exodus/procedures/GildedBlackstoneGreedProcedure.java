@@ -33,7 +33,7 @@ public class GildedBlackstoneGreedProcedure {
 		double power = 0;
 		double durationSeconds = 0;
 		double startChance = 0;
-		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel != 0) {
+		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).isGreedy == true) {
 			startChance = entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel * 0.19;
 			durationSeconds = entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel * 7.4 + 3.6;
 			power = entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel * 0.65 + 0;
