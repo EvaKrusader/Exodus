@@ -17,7 +17,7 @@ public class ExperienceGummyItem extends Item {
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
-		ExperienceGummyPlayerFinishesUsingItemProcedure.execute(entity, itemstack);
+		ExperienceGummyPlayerFinishesUsingItemProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
 	}
 }

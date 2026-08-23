@@ -29,6 +29,9 @@ public class ExodusModTabs {
 				tabData.accept(ExodusModItems.OMINOUS_LANTERN.get());
 				tabData.accept(ExodusModItems.ONYX_NECKLACE.get());
 				tabData.accept(ExodusModItems.FLUORITE_NECKLACE.get());
+				tabData.accept(ExodusModItems.CHARM_OF_FIRE_RESISTANCE.get());
+				tabData.accept(ExodusModItems.CHARM_OF_FALL_CANCELLATION.get());
+				tabData.accept(ExodusModItems.CHARM_OF_EXPERIENCE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -36,6 +39,7 @@ public class ExodusModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(ExodusModBlocks.CREEPER_PATCHER.get().asItem());
 			tabData.accept(ExodusModBlocks.EASY_BAKE_OVEN.get().asItem());
+			tabData.accept(ExodusModBlocks.CREEPER_PATCHER_2.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(ExodusModItems.ONYX.get());
 			tabData.accept(ExodusModItems.RUBY.get());

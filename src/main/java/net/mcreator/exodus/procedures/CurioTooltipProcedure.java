@@ -34,13 +34,13 @@ public class CurioTooltipProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(ExodusModMobEffects.KNOWLEDGE)) == true) {
 			if (itemstack.getItem() == ExodusModItems.ONYX_NECKLACE.get()) {
-				tooltip.add(Component.literal("\u00A77Protects from Creepers"));
+				tooltip.add(Component.literal("\u00A77Keeps Creepers at bay"));
 			}
 			if (itemstack.getItem() == ExodusModItems.GREED_RELIC.get()) {
-				tooltip.add(Component.literal("\u00A77Your greed protects you"));
+				tooltip.add(Component.literal("\u00A77Wearing Golden Armor grants effects against Piglin Brutes"));
 			}
 			if (itemstack.getItem() == ExodusModItems.HERMES_WINGS.get()) {
-				tooltip.add(Component.literal("\u00A77Slows your fall when sneaking"));
+				tooltip.add(Component.literal("\u00A77Slows your fall when sneaking mid-air"));
 			}
 			if (itemstack.getItem() == ExodusModItems.OMINOUS_LANTERN.get()) {
 				tooltip.add(Component.literal("\u00A77Highlights mobs during ominous trials"));
@@ -49,7 +49,21 @@ public class CurioTooltipProcedure {
 				tooltip.add(Component.literal("\u00A77Extinguishes fire when you sneak"));
 			}
 			if (itemstack.getItem() == ExodusModItems.DEATH_CONTRACT.get()) {
-				tooltip.add(Component.literal("\u00A77Reverses death for a price"));
+				tooltip.add(Component.literal("\u00A77Reverses death for hearts"));
+			}
+			if (itemstack.getItem() == ExodusModItems.FLUORITE_NECKLACE.get()) {
+				tooltip.add(Component.literal("\u00A77Cures negative potion effects"));
+			}
+			if (itemstack.getItem() == ExodusModItems.CHARM_OF_EXPERIENCE.get()) {
+				tooltip.add(Component.literal("\u00A77Shares XP with players in a 16-block radius"));
+			}
+			if (itemstack.getItem() == ExodusModItems.CHARM_OF_FALL_CANCELLATION.get()) {
+				tooltip.add(Component.literal("\u00A77- Single Use"));
+				tooltip.add(Component.literal("\u00A77Reverses a death by fall damage"));
+			}
+			if (itemstack.getItem() == ExodusModItems.CHARM_OF_FIRE_RESISTANCE.get()) {
+				tooltip.add(Component.literal("\u00A77- Single Use"));
+				tooltip.add(Component.literal("\u00A77Grants \u00A79Fire Resistance (00:30)"));
 			}
 		}
 	}

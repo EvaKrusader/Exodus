@@ -134,5 +134,63 @@ public class ExodusModCuriosCompat {
 				FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity(), stack);
 			}
 		}, ExodusModItems.FLUORITE_NECKLACE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				CharmOfFireResistanceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+
+			@Override
+			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
+				CharmOfFireResistanceBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				CharmOfFireResistanceBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
+			}
+		}, ExodusModItems.CHARM_OF_FIRE_RESISTANCE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				CharmOfFallCancellationBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+
+			@Override
+			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
+				CharmOfFallCancellationBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				CharmOfFallCancellationBaubleBaubleIsUnequippedProcedure.execute();
+			}
+		}, ExodusModItems.CHARM_OF_FALL_CANCELLATION.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
+				CharmOfExperienceBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				CharmOfExperienceBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
+			}
+		}, ExodusModItems.CHARM_OF_EXPERIENCE.get());
 	}
 }

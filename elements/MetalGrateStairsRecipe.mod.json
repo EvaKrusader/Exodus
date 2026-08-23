@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:MetalGrateStairs"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Blocks.IRON_BARS",
+      "",
+      "",
+      "Blocks.IRON_BARS",
+      "Blocks.IRON_BARS",
+      "",
+      "Blocks.IRON_BARS",
+      "Blocks.IRON_BARS",
+      "Blocks.IRON_BARS"
+    ],
+    "recipeReturnStack": "CUSTOM:MetalGrateStairs",
+    "name": "metal_grate_stairs_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "exodus:water_stone"
+    "exodus:water_stone",
+    "exodus:charm_of_fire_resistance",
+    "exodus:charm_of_fall_cancellation",
+    "exodus:charm_of_experience"
   ]
 }

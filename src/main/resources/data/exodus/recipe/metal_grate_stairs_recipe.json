@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:iron_bars"
+  },
+  "result": {
+    "id": "exodus:metal_grate_stairs",
+    "count": 3
+  }
+}

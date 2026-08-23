@@ -91,6 +91,11 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> FLUORITE_ORE;
 	public static final DeferredItem<Item> FLUORITE_BLOCK;
 	public static final DeferredItem<Item> FLUORITE_NECKLACE;
+	public static final DeferredItem<Item> CREEPER_PATCHER_2;
+	public static final DeferredItem<Item> CHARM_OF_FIRE_RESISTANCE;
+	public static final DeferredItem<Item> CHARM_OF_FALL_CANCELLATION;
+	public static final DeferredItem<Item> CHARM_OF_EXPERIENCE;
+	public static final DeferredItem<Item> WEIRD_ARMOR_TRIM_SMITHING_TEMPLATE;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -160,6 +165,11 @@ public class ExodusModItems {
 		FLUORITE_ORE = block(ExodusModBlocks.FLUORITE_ORE);
 		FLUORITE_BLOCK = block(ExodusModBlocks.FLUORITE_BLOCK);
 		FLUORITE_NECKLACE = register("fluorite_necklace", FluoriteNecklaceItem::new);
+		CREEPER_PATCHER_2 = block(ExodusModBlocks.CREEPER_PATCHER_2);
+		CHARM_OF_FIRE_RESISTANCE = register("charm_of_fire_resistance", CharmOfFireResistanceItem::new);
+		CHARM_OF_FALL_CANCELLATION = register("charm_of_fall_cancellation", CharmOfFallCancellationItem::new);
+		CHARM_OF_EXPERIENCE = register("charm_of_experience", CharmOfExperienceItem::new);
+		WEIRD_ARMOR_TRIM_SMITHING_TEMPLATE = register("weird_armor_trim_smithing_template", WeirdArmorTrimSmithingTemplateItem::new);
 	}
 
 	// Start of user code block custom items

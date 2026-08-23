@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class MetalGrateSlabBlock extends SlabBlock {
 	public MetalGrateSlabBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.sound(SoundType.CHAIN).strength(4f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

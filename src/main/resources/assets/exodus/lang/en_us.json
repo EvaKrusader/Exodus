@@ -176,5 +176,11 @@
   "item.exodus.fluorite_ore": "Fluorite Ore",
   "item.exodus.fluorite_block": "Block of Fluorite",
   "item.exodus.fluorite_necklace": "Fluorite Necklace",
-  "enchantment.exodus.vampirism": "Vampirism"
+  "enchantment.exodus.vampirism": "Vampirism",
+  "item.exodus.creeper_patcher_2": "Creeper Patcher 2",
+  "item.exodus.charm_of_fire_resistance": "Charm Of Fire Resistance",
+  "item.exodus.charm_of_fall_cancellation": "Charm Of Fall Cancellation",
+  "item.exodus.charm_of_experience": "Charm Of Experience",
+  "item.exodus.weird_armor_trim_smithing_template": "§aWeird Armor Trim",
+  "trim_pattern.exodus.weird_armor_trim": "Weird Armor Trim"
 }

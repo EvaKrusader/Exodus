@@ -1125,6 +1125,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -1913,7 +1929,7 @@
           "src/main/java/net/mcreator/exodus/client/screens/DevOverlayOverlay.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "ReturnGreedLevel",
@@ -1933,7 +1949,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnGreedLevelProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "SinfulFaithValueProvider",
@@ -2051,7 +2067,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnGoldValueProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "ReturnGoldGoal",
@@ -2071,7 +2087,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnGoldGoalProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "PlatformSoles",
@@ -2097,6 +2113,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "newitemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -2286,7 +2306,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnStepHeightBaseProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "ReturnStepHeightMod",
@@ -2306,7 +2326,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnStepHeightModProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "FireAspectUpdate",
@@ -2638,7 +2658,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnOminousLevelProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "OminousPotionDrink",
@@ -2834,7 +2854,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnAdrenalineDamageProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "AdrenalineOnDeath",
@@ -2965,7 +2985,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnChewingGumCounterProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "Choking",
@@ -3748,7 +3768,7 @@
           "src/main/java/net/mcreator/exodus/procedures/ReturnGreedyProcedure.java"
         ]
       },
-      "path": "~/Dev"
+      "path": "~/Dev/Overlay"
     },
     {
       "name": "TrialDamage",
@@ -4126,10 +4146,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -4147,6 +4163,491 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "LiquidCreeperPatcherBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_creeper_patcher_block_added",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/LiquidCreeperPatcherBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "CreeperPatcher2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_patcher_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/block/CreeperPatcher2Block.java",
+          "src/main/resources/data/exodus/loot_table/blocks/creeper_patcher_2.json",
+          "src/main/resources/assets/exodus/models/block/creeper_patcher_2.json",
+          "src/main/resources/assets/exodus/items/creeper_patcher_2.json",
+          "src/main/resources/assets/exodus/blockstates/creeper_patcher_2.json",
+          "src/main/resources/assets/exodus/models/item/creeper_patcher_2.json"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "CreeperPatcher2OnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_patcher_2_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CreeperPatcher2OnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "CharmOfFireResistance",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/charm_of_fire_resistance.json",
+          "src/main/resources/assets/exodus/items/charm_of_fire_resistance.json",
+          "src/main/java/net/mcreator/exodus/item/CharmOfFireResistanceItem.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFireResistanceBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFireResistanceBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFireResistanceBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFireResistanceLastFireDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance_last_fire_damage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFireResistanceLastFireDamageProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFireResistanceBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFireResistanceBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFireResistanceBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fire_resistance_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFireResistanceBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fire Resistance Charm"
+    },
+    {
+      "name": "CharmOfFallCancellation",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/charm_of_fall_cancellation.json",
+          "src/main/java/net/mcreator/exodus/item/CharmOfFallCancellationItem.java",
+          "src/main/resources/assets/exodus/models/item/charm_of_fall_cancellation.json"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "CharmOfFallCancellationBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "CharmOfFallCancellationBaubleDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_bauble_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFallCancellationBaubleDeathProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "CharmOfFallCancellationBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFallCancellationBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "CharmOfFallCancellationBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFallCancellationBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "CharmOfFallCancellationBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfFallCancellationBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "XPCharmProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_charm_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/XPCharmProcProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/XP Charm"
+    },
+    {
+      "name": "CharmOfExperience",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_experience",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/charm_of_experience.json",
+          "src/main/resources/assets/exodus/items/charm_of_experience.json",
+          "src/main/java/net/mcreator/exodus/item/CharmOfExperienceItem.java"
+        ]
+      },
+      "path": "~/Curio/Charms/XP Charm"
+    },
+    {
+      "name": "CharmOfExperienceBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_experience_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfExperienceBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/XP Charm"
+    },
+    {
+      "name": "CharmOfExperienceBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_experience_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfExperienceBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/XP Charm"
+    },
+    {
+      "name": "CharmOfExperienceBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_experience_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Charms/XP Charm"
+    },
+    {
+      "name": "MetalGrateSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_grate_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/metal_grate_slab_recipe.json",
+          "src/main/resources/data/exodus/recipe/metal_grate_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MetalGrateStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_grate_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/metal_grate_stairs_recipe.json",
+          "src/main/resources/data/exodus/recipe/metal_grate_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "WeirdArmorTrimSmithingTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weird_armor_trim_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/weird_armor_trim_smithing_template.json",
+          "src/main/java/net/mcreator/exodus/item/WeirdArmorTrimSmithingTemplateItem.java",
+          "src/main/resources/assets/exodus/models/item/weird_armor_trim_smithing_template.json"
+        ]
+      },
+      "path": "~/Armor Trims"
+    },
+    {
+      "name": "WeirdArmorTrim",
+      "type": "armortrim",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weird_armor_trim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/trim_pattern/weird_armor_trim.json",
+          "src/main/resources/data/exodus/recipe/weird_armor_trim_armor_trim_smithing_template_smithing_trim.json"
+        ]
+      },
+      "path": "~/Armor Trims"
+    },
+    {
+      "name": "F",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "f",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/FProcedure.java"
+        ]
+      },
+      "path": "~/Dev/Overlay"
     }
   ],
   "variable_elements": [
@@ -4254,6 +4755,36 @@
     },
     {
       "name": "hasNetherCoalEnchant",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "lastFireDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "hasFireResCharm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "hasFallDamageCharm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "cancelFallDamageCharm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "hasXPCharm",
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
@@ -4410,6 +4941,8 @@
       "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
+      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
       "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
@@ -4426,6 +4959,8 @@
       "~OnyxOre@CUSTOM:OnyxOre"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
+      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
       "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
@@ -4493,16 +5028,18 @@
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CharmOfFallCancellation@CUSTOM:CharmOfFallCancellation",
+      "~CharmOfFireResistance@CUSTOM:CharmOfFireResistance",
       "~OnyxNecklace@CUSTOM:OnyxNecklace",
       "~WaterStone@CUSTOM:WaterStone",
       "~HermesWings@CUSTOM:HermesWings"
     ],
-    "BLOCKS:minecraft:slabs": [
-      "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
-    ],
     "ITEMS:minecraft:swords_and_axes": [
       "TAG:minecraft:axes",
       "TAG:minecraft:swords"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
     ]
   },
   "tab_element_order": {},
@@ -4685,11 +5222,18 @@
       "item.exodus.fluorite_ore": "Fluorite Ore",
       "item.exodus.fluorite_block": "Block of Fluorite",
       "item.exodus.fluorite_necklace": "Fluorite Necklace",
-      "enchantment.exodus.vampirism": "Vampirism"
+      "enchantment.exodus.vampirism": "Vampirism",
+      "item.exodus.creeper_patcher_2": "Creeper Patcher 2",
+      "item.exodus.charm_of_fire_resistance": "Charm Of Fire Resistance",
+      "item.exodus.charm_of_fall_cancellation": "Charm Of Fall Cancellation",
+      "item.exodus.charm_of_experience": "Charm Of Experience",
+      "item.exodus.weird_armor_trim_smithing_template": "§aWeird Armor Trim",
+      "trim_pattern.exodus.weird_armor_trim": "Weird Armor Trim"
     }
   },
   "metadata": {
     "files": [
+      "src/main/resources/assets/minecraft/atlases/armor_trims.json",
       "src/main/resources/data/exodus/curios/slots/body.json",
       "src/main/resources/data/exodus/curios/entities/slots.json",
       "src/main/resources/data/exodus/curios/slots/charm.json",
@@ -4779,12 +5323,34 @@
           {
             "name": "Fluorite Necklace",
             "children": []
+          },
+          {
+            "name": "Charms",
+            "children": [
+              {
+                "name": "Fire Resistance Charm",
+                "children": []
+              },
+              {
+                "name": "Fall Damage Charm",
+                "children": []
+              },
+              {
+                "name": "XP Charm",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "name": "Dev",
-        "children": []
+        "children": [
+          {
+            "name": "Overlay",
+            "children": []
+          }
+        ]
       },
       {
         "name": "QOL",
@@ -4872,6 +5438,10 @@
       },
       {
         "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Armor Trims",
         "children": []
       }
     ]

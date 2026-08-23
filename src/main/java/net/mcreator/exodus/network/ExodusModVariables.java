@@ -101,6 +101,11 @@ public class ExodusModVariables {
 			clone.isChewingGum = original.isChewingGum;
 			clone.chewingGumCounter = original.chewingGumCounter;
 			clone.hasNetherCoalEnchant = original.hasNetherCoalEnchant;
+			clone.lastFireDamage = original.lastFireDamage;
+			clone.hasFireResCharm = original.hasFireResCharm;
+			clone.hasFallDamageCharm = original.hasFallDamageCharm;
+			clone.cancelFallDamageCharm = original.cancelFallDamageCharm;
+			clone.hasXPCharm = original.hasXPCharm;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -125,6 +130,11 @@ public class ExodusModVariables {
 		public double chewingGumCounter = 0;
 		public double chewingGumLevel = 0;
 		public boolean hasNetherCoalEnchant = false;
+		public double lastFireDamage = 0;
+		public boolean hasFireResCharm = false;
+		public boolean hasFallDamageCharm = false;
+		public boolean cancelFallDamageCharm = false;
+		public boolean hasXPCharm = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -146,6 +156,11 @@ public class ExodusModVariables {
 			output.putDouble("chewingGumCounter", chewingGumCounter);
 			output.putDouble("chewingGumLevel", chewingGumLevel);
 			output.putBoolean("hasNetherCoalEnchant", hasNetherCoalEnchant);
+			output.putDouble("lastFireDamage", lastFireDamage);
+			output.putBoolean("hasFireResCharm", hasFireResCharm);
+			output.putBoolean("hasFallDamageCharm", hasFallDamageCharm);
+			output.putBoolean("cancelFallDamageCharm", cancelFallDamageCharm);
+			output.putBoolean("hasXPCharm", hasXPCharm);
 		}
 
 		@Override
@@ -168,6 +183,11 @@ public class ExodusModVariables {
 			chewingGumCounter = input.getDoubleOr("chewingGumCounter", 0);
 			chewingGumLevel = input.getDoubleOr("chewingGumLevel", 0);
 			hasNetherCoalEnchant = input.getBooleanOr("hasNetherCoalEnchant", false);
+			lastFireDamage = input.getDoubleOr("lastFireDamage", 0);
+			hasFireResCharm = input.getBooleanOr("hasFireResCharm", false);
+			hasFallDamageCharm = input.getBooleanOr("hasFallDamageCharm", false);
+			cancelFallDamageCharm = input.getBooleanOr("cancelFallDamageCharm", false);
+			hasXPCharm = input.getBooleanOr("hasXPCharm", false);
 		}
 
 		public void markSyncDirty() {

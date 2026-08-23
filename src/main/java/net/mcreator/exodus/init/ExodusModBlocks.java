@@ -39,6 +39,7 @@ public class ExodusModBlocks {
 	public static final DeferredBlock<Block> EXPERIENCE_BLOCK;
 	public static final DeferredBlock<Block> FLUORITE_ORE;
 	public static final DeferredBlock<Block> FLUORITE_BLOCK;
+	public static final DeferredBlock<Block> CREEPER_PATCHER_2;
 	static {
 		CREEPER_PATCHER = register("creeper_patcher", CreeperPatcherBlock::new);
 		ONYX_ORE = register("onyx_ore", OnyxOreBlock::new);
@@ -59,6 +60,7 @@ public class ExodusModBlocks {
 		EXPERIENCE_BLOCK = register("experience_block", ExperienceBlockBlock::new);
 		FLUORITE_ORE = register("fluorite_ore", FluoriteOreBlock::new);
 		FLUORITE_BLOCK = register("fluorite_block", FluoriteBlockBlock::new);
+		CREEPER_PATCHER_2 = register("creeper_patcher_2", CreeperPatcher2Block::new);
 	}
 
 	// Start of user code block custom blocks

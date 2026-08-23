@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:iron_bars"
+  },
+  "result": {
+    "id": "exodus:metal_grate_slab",
+    "count": 3
+  }
+}
