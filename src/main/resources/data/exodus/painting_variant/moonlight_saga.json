@@ -1,0 +1,13 @@
+{
+  "asset_id": "exodus:moonlight_saga",
+  "height": 4,
+  "width": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.exodus.moonlight_saga.title"
+  },
+  "author": {
+    "color": "gray",
+    "translate": "painting.exodus.moonlight_saga.author"
+  }
+}

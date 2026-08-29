@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "exodus:item/charm_experience_tome"
+  }
+}

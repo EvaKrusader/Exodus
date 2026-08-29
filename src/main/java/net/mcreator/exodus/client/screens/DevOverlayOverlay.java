@@ -29,7 +29,7 @@ public class DevOverlayOverlay {
 			y = entity.getY();
 			z = entity.getZ();
 		}
-		if (true) {
+		if (DevOverlayDisplayOverlayIngameProcedure.execute(entity)) {
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ReturnGreedLevelProcedure.execute(entity), w / 2 + 128, h / 2 + -45, -1, false);
@@ -57,6 +57,12 @@ public class DevOverlayOverlay {
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ReturnGreedyProcedure.execute(entity), w / 2 + 128, h / 2 + -31, -1, false);
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
+
+					ReturnGithubGoldValuesProcedure.execute(world), w / 2 + -62, h / 2 + 37, -1, false);
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
+
+					ReturnXPVALUEProcedure.execute(entity), 14, h / 2 + 2, -1, false);
 		}
 	}
 }

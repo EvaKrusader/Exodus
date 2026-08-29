@@ -32,6 +32,8 @@ public class ExodusModTabs {
 				tabData.accept(ExodusModItems.CHARM_OF_FIRE_RESISTANCE.get());
 				tabData.accept(ExodusModItems.CHARM_OF_FALL_CANCELLATION.get());
 				tabData.accept(ExodusModItems.CHARM_OF_EXPERIENCE.get());
+				tabData.accept(ExodusModItems.TOME_OF_KNOWLEDGE.get());
+				tabData.accept(ExodusModItems.EXPERIENCE_CRYSTAL.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

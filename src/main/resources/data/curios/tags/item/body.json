@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "exodus:death_contract"
+    "exodus:death_contract",
+    "exodus:tome_of_knowledge",
+    "exodus:experience_crystal"
   ]
 }

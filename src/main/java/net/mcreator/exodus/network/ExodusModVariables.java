@@ -5,6 +5,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.ValueIOSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -16,15 +17,23 @@ import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.TagValueOutput;
 import net.minecraft.world.level.storage.TagValueInput;
+import net.minecraft.world.level.saveddata.SavedDataType;
+import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.ProblemReporter;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.Identifier;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.HolderLookup;
 
 import net.mcreator.exodus.ExodusMod;
 
@@ -37,6 +46,7 @@ public class ExodusModVariables {
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
+		ExodusMod.addNetworkMessage(SavedDataSyncMessage.TYPE, SavedDataSyncMessage.STREAM_CODEC, SavedDataSyncMessage::handleData);
 		ExodusMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
@@ -84,6 +94,8 @@ public class ExodusModVariables {
 		PlayerVariables clone = new PlayerVariables();
 		clone.howLongChewingGum = original.howLongChewingGum;
 		clone.chewingGumLevel = original.chewingGumLevel;
+		clone.showDevUI = original.showDevUI;
+		clone.playerXPbeforeDeath = original.playerXPbeforeDeath;
 		if (!event.isWasDeath()) {
 			clone.phasing_overlay = original.phasing_overlay;
 			clone.isGreedy = original.isGreedy;
@@ -106,8 +118,243 @@ public class ExodusModVariables {
 			clone.hasFallDamageCharm = original.hasFallDamageCharm;
 			clone.cancelFallDamageCharm = original.cancelFallDamageCharm;
 			clone.hasXPCharm = original.hasXPCharm;
+			clone.playerKnowledge = original.playerKnowledge;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
+	@SubscribeEvent
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData mapdata = MapVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (mapdata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onWorldTick(LevelTickEvent.Post event) {
+		if (event.getLevel() instanceof ServerLevel level) {
+			WorldVariables worldVariables = WorldVariables.get(level);
+			if (worldVariables._syncDirty) {
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, worldVariables));
+				worldVariables._syncDirty = false;
+			}
+			MapVariables mapVariables = MapVariables.get(level);
+			if (mapVariables._syncDirty) {
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, mapVariables));
+				mapVariables._syncDirty = false;
+			}
+		}
+	}
+
+	public static class WorldVariables extends SavedData {
+		public static final SavedDataType<WorldVariables> TYPE = new SavedDataType<>(Identifier.parse("exodus:worldvars"), level -> new WorldVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
+			WorldVariables instance = new WorldVariables();
+			instance.read(tag, level.registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
+		boolean _syncDirty = false;
+		public double goldVal_gold_block = 0;
+		public double goldVal_raw_gold_block = 0;
+		public double goldVal_gold_ore = 0;
+		public double goldVal_deepslate_gold_ore = 0;
+		public double goldVal_nether_gold_ore = 0;
+		public double goldVal_gilded_blackstone = 0;
+		public double goldVal_golden_helmet = 0;
+		public double goldVal_golden_chestplate = 0;
+		public double goldVal_golden_leggings = 0;
+		public double goldVal_golden_boots = 0;
+		public double goldVal_golden_pickaxe = 0;
+		public double goldVal_gold_rush_mult = 0;
+		public double goldVal_gold_rush_add = 0;
+		public double goldVal_greed_lvl_1 = 0;
+		public double goldVal_greed_lvl_2 = 0;
+		public double goldVal_greed_lvl_3 = 0;
+		public double goldVal_greed_lvl_4 = 0;
+		public double goldVal_greed_lvl_5 = 0;
+		public double EnchVal_trial_breaker_damage = 0;
+		public double EnchVal_vampirism_chance_1 = 0;
+		public double EnchVal_vampirism_chance_2 = 0;
+		public double EnchVal_vampirism_chance_3 = 0;
+		public double EnchVal_vampirism_chance_4 = 0;
+		public double EnchVal_vampirism_chance_5 = 0;
+		public double EnchVal_vampirism_percentage_1 = 0.0;
+		public double EnchVal_vampirism_percentage_2 = 0;
+		public double EnchVal_vampirism_percentage_3 = 0;
+		public double EnchVal_vampirism_percentage_4 = 0;
+		public double EnchVal_vampirism_percentage_5 = 0;
+		public double EnchVal_fluorite_necklace_cooldown = 0;
+		public double EnchVal_fluorite_necklace_reduction = 0;
+
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			goldVal_gold_block = nbt.getDoubleOr("goldVal_gold_block", 0);
+			goldVal_raw_gold_block = nbt.getDoubleOr("goldVal_raw_gold_block", 0);
+			goldVal_gold_ore = nbt.getDoubleOr("goldVal_gold_ore", 0);
+			goldVal_deepslate_gold_ore = nbt.getDoubleOr("goldVal_deepslate_gold_ore", 0);
+			goldVal_nether_gold_ore = nbt.getDoubleOr("goldVal_nether_gold_ore", 0);
+			goldVal_gilded_blackstone = nbt.getDoubleOr("goldVal_gilded_blackstone", 0);
+			goldVal_golden_helmet = nbt.getDoubleOr("goldVal_golden_helmet", 0);
+			goldVal_golden_chestplate = nbt.getDoubleOr("goldVal_golden_chestplate", 0);
+			goldVal_golden_leggings = nbt.getDoubleOr("goldVal_golden_leggings", 0);
+			goldVal_golden_boots = nbt.getDoubleOr("goldVal_golden_boots", 0);
+			goldVal_golden_pickaxe = nbt.getDoubleOr("goldVal_golden_pickaxe", 0);
+			goldVal_gold_rush_mult = nbt.getDoubleOr("goldVal_gold_rush_mult", 0);
+			goldVal_gold_rush_add = nbt.getDoubleOr("goldVal_gold_rush_add", 0);
+			goldVal_greed_lvl_1 = nbt.getDoubleOr("goldVal_greed_lvl_1", 0);
+			goldVal_greed_lvl_2 = nbt.getDoubleOr("goldVal_greed_lvl_2", 0);
+			goldVal_greed_lvl_3 = nbt.getDoubleOr("goldVal_greed_lvl_3", 0);
+			goldVal_greed_lvl_4 = nbt.getDoubleOr("goldVal_greed_lvl_4", 0);
+			goldVal_greed_lvl_5 = nbt.getDoubleOr("goldVal_greed_lvl_5", 0);
+			EnchVal_trial_breaker_damage = nbt.getDoubleOr("EnchVal_trial_breaker_damage", 0);
+			EnchVal_vampirism_chance_1 = nbt.getDoubleOr("EnchVal_vampirism_chance_1", 0);
+			EnchVal_vampirism_chance_2 = nbt.getDoubleOr("EnchVal_vampirism_chance_2", 0);
+			EnchVal_vampirism_chance_3 = nbt.getDoubleOr("EnchVal_vampirism_chance_3", 0);
+			EnchVal_vampirism_chance_4 = nbt.getDoubleOr("EnchVal_vampirism_chance_4", 0);
+			EnchVal_vampirism_chance_5 = nbt.getDoubleOr("EnchVal_vampirism_chance_5", 0);
+			EnchVal_vampirism_percentage_1 = nbt.getDoubleOr("EnchVal_vampirism_percentage_1", 0);
+			EnchVal_vampirism_percentage_2 = nbt.getDoubleOr("EnchVal_vampirism_percentage_2", 0);
+			EnchVal_vampirism_percentage_3 = nbt.getDoubleOr("EnchVal_vampirism_percentage_3", 0);
+			EnchVal_vampirism_percentage_4 = nbt.getDoubleOr("EnchVal_vampirism_percentage_4", 0);
+			EnchVal_vampirism_percentage_5 = nbt.getDoubleOr("EnchVal_vampirism_percentage_5", 0);
+			EnchVal_fluorite_necklace_cooldown = nbt.getDoubleOr("EnchVal_fluorite_necklace_cooldown", 0);
+			EnchVal_fluorite_necklace_reduction = nbt.getDoubleOr("EnchVal_fluorite_necklace_reduction", 0);
+		}
+
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			nbt.putDouble("goldVal_gold_block", goldVal_gold_block);
+			nbt.putDouble("goldVal_raw_gold_block", goldVal_raw_gold_block);
+			nbt.putDouble("goldVal_gold_ore", goldVal_gold_ore);
+			nbt.putDouble("goldVal_deepslate_gold_ore", goldVal_deepslate_gold_ore);
+			nbt.putDouble("goldVal_nether_gold_ore", goldVal_nether_gold_ore);
+			nbt.putDouble("goldVal_gilded_blackstone", goldVal_gilded_blackstone);
+			nbt.putDouble("goldVal_golden_helmet", goldVal_golden_helmet);
+			nbt.putDouble("goldVal_golden_chestplate", goldVal_golden_chestplate);
+			nbt.putDouble("goldVal_golden_leggings", goldVal_golden_leggings);
+			nbt.putDouble("goldVal_golden_boots", goldVal_golden_boots);
+			nbt.putDouble("goldVal_golden_pickaxe", goldVal_golden_pickaxe);
+			nbt.putDouble("goldVal_gold_rush_mult", goldVal_gold_rush_mult);
+			nbt.putDouble("goldVal_gold_rush_add", goldVal_gold_rush_add);
+			nbt.putDouble("goldVal_greed_lvl_1", goldVal_greed_lvl_1);
+			nbt.putDouble("goldVal_greed_lvl_2", goldVal_greed_lvl_2);
+			nbt.putDouble("goldVal_greed_lvl_3", goldVal_greed_lvl_3);
+			nbt.putDouble("goldVal_greed_lvl_4", goldVal_greed_lvl_4);
+			nbt.putDouble("goldVal_greed_lvl_5", goldVal_greed_lvl_5);
+			nbt.putDouble("EnchVal_trial_breaker_damage", EnchVal_trial_breaker_damage);
+			nbt.putDouble("EnchVal_vampirism_chance_1", EnchVal_vampirism_chance_1);
+			nbt.putDouble("EnchVal_vampirism_chance_2", EnchVal_vampirism_chance_2);
+			nbt.putDouble("EnchVal_vampirism_chance_3", EnchVal_vampirism_chance_3);
+			nbt.putDouble("EnchVal_vampirism_chance_4", EnchVal_vampirism_chance_4);
+			nbt.putDouble("EnchVal_vampirism_chance_5", EnchVal_vampirism_chance_5);
+			nbt.putDouble("EnchVal_vampirism_percentage_1", EnchVal_vampirism_percentage_1);
+			nbt.putDouble("EnchVal_vampirism_percentage_2", EnchVal_vampirism_percentage_2);
+			nbt.putDouble("EnchVal_vampirism_percentage_3", EnchVal_vampirism_percentage_3);
+			nbt.putDouble("EnchVal_vampirism_percentage_4", EnchVal_vampirism_percentage_4);
+			nbt.putDouble("EnchVal_vampirism_percentage_5", EnchVal_vampirism_percentage_5);
+			nbt.putDouble("EnchVal_fluorite_necklace_cooldown", EnchVal_fluorite_necklace_cooldown);
+			nbt.putDouble("EnchVal_fluorite_necklace_reduction", EnchVal_fluorite_necklace_reduction);
+			return nbt;
+		}
+
+		public void markSyncDirty() {
+			this.setDirty();
+			this._syncDirty = true;
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(WorldVariables.TYPE);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final SavedDataType<MapVariables> TYPE = new SavedDataType<>(Identifier.parse("exodus:mapvars"), level -> new MapVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
+			MapVariables instance = new MapVariables();
+			instance.read(tag, level.registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
+		boolean _syncDirty = false;
+
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+		}
+
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			return nbt;
+		}
+
+		public void markSyncDirty() {
+			this.setDirty();
+			this._syncDirty = true;
+		}
+
+		static MapVariables clientSide = new MapVariables();
+
+		public static MapVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevelAccessor serverLevelAccessor) {
+				return serverLevelAccessor.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(MapVariables.TYPE);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public record SavedDataSyncMessage(int dataType, SavedData data) implements CustomPacketPayload {
+		public static final Type<SavedDataSyncMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(ExodusMod.MODID, "saved_data_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, SavedDataSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SavedDataSyncMessage message) -> {
+			buffer.writeInt(message.dataType);
+			if (message.data instanceof MapVariables mapVariables)
+				buffer.writeNbt(mapVariables.save(new CompoundTag(), buffer.registryAccess()));
+			else if (message.data instanceof WorldVariables worldVariables)
+				buffer.writeNbt(worldVariables.save(new CompoundTag(), buffer.registryAccess()));
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			int dataType = buffer.readInt();
+			CompoundTag nbt = buffer.readNbt();
+			SavedData data = null;
+			if (nbt != null) {
+				data = dataType == 0 ? new MapVariables() : new WorldVariables();
+				if (data instanceof MapVariables mapVariables)
+					mapVariables.read(nbt, buffer.registryAccess());
+				else if (data instanceof WorldVariables worldVariables)
+					worldVariables.read(nbt, buffer.registryAccess());
+			}
+			return new SavedDataSyncMessage(dataType, data);
+		});
+
+		@Override
+		public Type<SavedDataSyncMessage> type() {
+			return TYPE;
+		}
+
+		public static void handleData(final SavedDataSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.enqueueWork(() -> {
+					if (message.dataType == 0)
+						MapVariables.clientSide.read(((MapVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+					else
+						WorldVariables.clientSide.read(((WorldVariables) message.data).save(new CompoundTag(), context.player().registryAccess()), context.player().registryAccess());
+				}).exceptionally(e -> {
+					context.connection().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
+		}
 	}
 
 	public static class PlayerVariables implements ValueIOSerializable {
@@ -135,6 +382,9 @@ public class ExodusModVariables {
 		public boolean hasFallDamageCharm = false;
 		public boolean cancelFallDamageCharm = false;
 		public boolean hasXPCharm = false;
+		public boolean showDevUI = true;
+		public boolean playerKnowledge = false;
+		public double playerXPbeforeDeath = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -161,6 +411,9 @@ public class ExodusModVariables {
 			output.putBoolean("hasFallDamageCharm", hasFallDamageCharm);
 			output.putBoolean("cancelFallDamageCharm", cancelFallDamageCharm);
 			output.putBoolean("hasXPCharm", hasXPCharm);
+			output.putBoolean("showDevUI", showDevUI);
+			output.putBoolean("playerKnowledge", playerKnowledge);
+			output.putDouble("playerXPbeforeDeath", playerXPbeforeDeath);
 		}
 
 		@Override
@@ -188,6 +441,9 @@ public class ExodusModVariables {
 			hasFallDamageCharm = input.getBooleanOr("hasFallDamageCharm", false);
 			cancelFallDamageCharm = input.getBooleanOr("cancelFallDamageCharm", false);
 			hasXPCharm = input.getBooleanOr("hasXPCharm", false);
+			showDevUI = input.getBooleanOr("showDevUI", false);
+			playerKnowledge = input.getBooleanOr("playerKnowledge", false);
+			playerXPbeforeDeath = input.getDoubleOr("playerXPbeforeDeath", 0);
 		}
 
 		public void markSyncDirty() {

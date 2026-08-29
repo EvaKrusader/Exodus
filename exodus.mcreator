@@ -4102,6 +4102,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -4648,6 +4664,453 @@
         ]
       },
       "path": "~/Dev/Overlay"
+    },
+    {
+      "name": "DevUI",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/network/DevUIMessage.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "DevUIOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_ui_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevUIOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "DevOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      },
+      "path": "~/Dev/Overlay"
+    },
+    {
+      "name": "DitherArmorTrimSmithingTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dither_armor_trim_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/dither_armor_trim_smithing_template.json",
+          "src/main/java/net/mcreator/exodus/item/DitherArmorTrimSmithingTemplateItem.java",
+          "src/main/resources/assets/exodus/items/dither_armor_trim_smithing_template.json"
+        ]
+      },
+      "path": "~/Armor Trims"
+    },
+    {
+      "name": "DitherArmorTrim",
+      "type": "armortrim",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dither_armor_trim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/trim_pattern/dither_armor_trim.json",
+          "src/main/resources/data/exodus/recipe/dither_armor_trim_armor_trim_smithing_template_smithing_trim.json"
+        ]
+      },
+      "path": "~/Armor Trims"
+    },
+    {
+      "name": "Exodus",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exodus",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/painting_variant/exodus.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "HerobrineSighting",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrine_sighting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/painting_variant/herobrine_sighting.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "MoonlightSaga",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonlight_saga",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/painting_variant/moonlight_saga.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "AlphacryMemories",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alphacry_memories",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/painting_variant/alphacry_memories.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "CrystalSun",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_sun",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/painting_variant/crystal_sun.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "ReturnGithubGoldValues",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_github_gold_values",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ReturnGithubGoldValuesProcedure.java"
+        ]
+      },
+      "path": "~/Dev/Overlay"
+    },
+    {
+      "name": "DevLoadGoldValues",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_load_gold_values",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevLoadGoldValuesProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "DevLoadEnchantmentValues",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_load_enchantment_values",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevLoadEnchantmentValuesProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
+    },
+    {
+      "name": "TomeOfKnowledge",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tome_of_knowledge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/TomeOfKnowledgeItem.java",
+          "src/main/resources/assets/exodus/models/item/tome_of_knowledge.json",
+          "src/main/resources/assets/exodus/items/tome_of_knowledge.json"
+        ]
+      },
+      "path": "~/Curio/Tome of Knowledge"
+    },
+    {
+      "name": "TomeOfKnowledgeBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tome_of_knowledge_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Tome of Knowledge"
+    },
+    {
+      "name": "TomeOfKnowledgeBaubleBaubleIsEquipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tome_of_knowledge_bauble_bauble_is_equipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/TomeOfKnowledgeBaubleBaubleIsEquippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Tome of Knowledge"
+    },
+    {
+      "name": "TomeOfKnowledgeBaubleBaubleIsUnequipped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tome_of_knowledge_bauble_bauble_is_unequipped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/TomeOfKnowledgeBaubleBaubleIsUnequippedProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Tome of Knowledge"
+    },
+    {
+      "name": "ExperienceCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/experience_crystal.json",
+          "src/main/resources/assets/exodus/models/item/experience_crystal_1.json",
+          "src/main/resources/assets/exodus/items/experience_crystal.json",
+          "src/main/resources/assets/exodus/models/item/experience_crystal_0.json",
+          "src/main/java/net/mcreator/exodus/item/ExperienceCrystalItem.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "ExperienceCrystalBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_crystal_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "XPCrystalBeforeDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_crystal_before_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/XPCrystalBeforeDeathProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "ExperienceCrystalPropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_crystal_property_value_provider",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ExperienceCrystalPropertyValueProviderProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "ExperienceCrystalBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_crystal_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ExperienceCrystalBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "Xptooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xptooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/XptooltipProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "ReturnXPVALUE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_xpvalue",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ReturnXPVALUEProcedure.java"
+        ]
+      },
+      "path": "~/Dev/Overlay"
+    },
+    {
+      "name": "XpCrystalRespawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_crystal_respawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/XpCrystalRespawnProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "ExperienceCrystalPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "experience_crystal_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ExperienceCrystalPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Curio/XP Crystal"
     }
   ],
   "variable_elements": [
@@ -4788,6 +5251,210 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "showDevUI",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "goldVal_gold_block",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_raw_gold_block",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_gold_ore",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_deepslate_gold_ore",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_nether_gold_ore",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_gilded_blackstone",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_golden_helmet",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_golden_chestplate",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_golden_leggings",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_golden_boots",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_golden_pickaxe",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_gold_rush_mult",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_gold_rush_add",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_greed_lvl_1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_greed_lvl_2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_greed_lvl_3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_greed_lvl_4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "goldVal_greed_lvl_5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_trial_breaker_damage",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_chance_1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_chance_2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_chance_3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_chance_4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_chance_5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_percentage_1",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "EnchVal_vampirism_percentage_2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_percentage_3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_percentage_4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_vampirism_percentage_5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "playerKnowledge",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "playerXPbeforeDeath",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_fluorite_necklace_cooldown",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_fluorite_necklace_reduction",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -4941,8 +5608,8 @@
       "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
       "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
@@ -4959,8 +5626,8 @@
       "~OnyxOre@CUSTOM:OnyxOre"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
       "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
@@ -5037,6 +5704,13 @@
     "ITEMS:minecraft:swords_and_axes": [
       "TAG:minecraft:axes",
       "TAG:minecraft:swords"
+    ],
+    "PAINTING_VARIANTS:minecraft:placeable": [
+      "~MoonlightSaga@CUSTOM:MoonlightSaga",
+      "~HerobrineSighting@CUSTOM:HerobrineSighting",
+      "~Exodus@CUSTOM:Exodus",
+      "~CrystalSun@CUSTOM:CrystalSun",
+      "~AlphacryMemories@CUSTOM:AlphacryMemories"
     ],
     "BLOCKS:minecraft:slabs": [
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
@@ -5136,7 +5810,7 @@
       "item.the_better_server.easy_bake_oven": "Easy Bake Oven",
       "item_group.exodus.baubles": "Baubles",
       "enchantment.exodus.mystical_conductivity": "Mystical Conductivity",
-      "key.exodus.dev": "Dev",
+      "key.exodus.dev": "Dev Gamemode Switch",
       "item.exodus.creeper_patcher": "Creeper Patcher",
       "item.exodus.onyx": "Onyx",
       "item.exodus.onyx_ore": "Onyx Ore",
@@ -5228,7 +5902,22 @@
       "item.exodus.charm_of_fall_cancellation": "Charm Of Fall Cancellation",
       "item.exodus.charm_of_experience": "Charm Of Experience",
       "item.exodus.weird_armor_trim_smithing_template": "§aWeird Armor Trim",
-      "trim_pattern.exodus.weird_armor_trim": "Weird Armor Trim"
+      "trim_pattern.exodus.weird_armor_trim": "Weird Armor Trim",
+      "key.exodus.dev_ui": "Dev UI",
+      "item.exodus.dither_armor_trim_smithing_template": "§aDither Armor Trim",
+      "trim_pattern.exodus.dither_armor_trim": "Dither Armor Trim",
+      "painting.exodus.exodus.title": "Exodus",
+      "painting.exodus.exodus.author": "Lost Cascades",
+      "painting.exodus.herobrine_sighting.author": "EvaKrusader",
+      "painting.exodus.herobrine_sighting.title": "Herobrine Sighting",
+      "painting.exodus.moonlight_saga.title": "Moonlight Saga",
+      "painting.exodus.moonlight_saga.author": "Lost Cascades",
+      "painting.exodus.alphacry_memories.author": "Lost Cascades",
+      "painting.exodus.alphacry_memories.title": "Alphacry Memories",
+      "painting.exodus.crystal_sun.title": "Crystal Sun",
+      "painting.exodus.crystal_sun.author": "Lost Cascades",
+      "item.exodus.tome_of_knowledge": "Tome Of Knowledge",
+      "item.exodus.experience_crystal": "Experience Crystal"
     }
   },
   "metadata": {
@@ -5340,6 +6029,14 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Tome of Knowledge",
+            "children": []
+          },
+          {
+            "name": "XP Crystal",
+            "children": []
           }
         ]
       },
@@ -5442,6 +6139,14 @@
       },
       {
         "name": "Armor Trims",
+        "children": []
+      },
+      {
+        "name": "Discs",
+        "children": []
+      },
+      {
+        "name": "Paintings",
         "children": []
       }
     ]

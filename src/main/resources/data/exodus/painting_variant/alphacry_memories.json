@@ -1,0 +1,13 @@
+{
+  "asset_id": "exodus:alphacry_memories",
+  "height": 4,
+  "width": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.exodus.alphacry_memories.title"
+  },
+  "author": {
+    "color": "gray",
+    "translate": "painting.exodus.alphacry_memories.author"
+  }
+}

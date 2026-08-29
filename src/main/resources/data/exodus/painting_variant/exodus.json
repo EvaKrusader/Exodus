@@ -1,0 +1,13 @@
+{
+  "asset_id": "exodus:exodus",
+  "height": 4,
+  "width": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.exodus.exodus.title"
+  },
+  "author": {
+    "color": "gray",
+    "translate": "painting.exodus.exodus.author"
+  }
+}

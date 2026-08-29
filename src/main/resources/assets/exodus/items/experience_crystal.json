@@ -1,0 +1,39 @@
+{
+  "model": {
+    "type": "exodus:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:experience_crystal/xp_value"
+            },
+            "value": 0
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/experience_crystal_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "exodus:experience_crystal/xp_value"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "exodus:item/experience_crystal_1"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "exodus:item/experience_crystal"
+    }
+  }
+}

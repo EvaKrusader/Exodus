@@ -10,5 +10,7 @@
   "vampirism_percentage_3" : 0.5,
   "vampirism_percentage_4" : 0.75,
   "vampirism_percentage_5" : 1,
+  "fluorite_necklace_base_cooldown" : 30,
+  "fluorite_necklace_reduc_per_level" : 5,
   "update":"https://youtu.be/G_8atE-Kj-0?si=LAbfE8vxvHNaLLos"
 }

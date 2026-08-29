@@ -1,0 +1,13 @@
+{
+  "asset_id": "exodus:herobrine_sighting",
+  "height": 2,
+  "width": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.exodus.herobrine_sighting.title"
+  },
+  "author": {
+    "color": "gray",
+    "translate": "painting.exodus.herobrine_sighting.author"
+  }
+}

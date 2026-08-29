@@ -15,11 +15,12 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.exodus.network.DevUIMessage;
 import net.mcreator.exodus.network.DevMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ExodusModKeyMappings {
-	public static final KeyMapping DEV = new KeyMapping("key.exodus.dev", GLFW.GLFW_KEY_0, KeyMapping.Category.CREATIVE) {
+	public static final KeyMapping DEV = new KeyMapping("key.exodus.dev", GLFW.GLFW_KEY_0, KeyMapping.Category.MOVEMENT) {
 		private boolean isDownOld = false;
 
 		@Override
@@ -32,10 +33,24 @@ public class ExodusModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping DEV_UI = new KeyMapping("key.exodus.dev_ui", GLFW.GLFW_KEY_KP_DECIMAL, KeyMapping.Category.MOVEMENT) {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ClientPacketDistributor.sendToServer(new DevUIMessage(0, 0));
+				DevUIMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DEV);
+		event.register(DEV_UI);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -44,6 +59,7 @@ public class ExodusModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				DEV.consumeClick();
+				DEV_UI.consumeClick();
 			}
 		}
 	}

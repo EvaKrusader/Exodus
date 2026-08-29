@@ -29,12 +29,7 @@ import net.mcreator.exodus.init.ExodusModMobEffects;
 
 import javax.annotation.Nullable;
 
-import java.net.URL;
-
-import java.io.IOException;
-import java.io.FileReader;
 import java.io.File;
-import java.io.BufferedReader;
 
 @EventBusSubscriber
 public class GreedLevelGoldProcedure {
@@ -60,48 +55,41 @@ public class GreedLevelGoldProcedure {
 		com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 		String url = "";
 		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).isGreedy == true && blockstate.is(BlockTags.create(Identifier.parse("exodus:gold_blocks"))) == true) {
+			goldAmount = 0;
 			gold_rush_multiplier = 1;
+			gold_rush_additive = 0;
 			gold_extra = 0;
-			url = "https://raw.githubusercontent.com/EvaKrusader/" + "Exodus" + "/refs/heads/master/hotfixable/curio_gold_values.json";
-			file = new File(System.getProperty("java.io.tmpdir"), File.separator + "curio_gold_values.json");
-			try {
-				org.apache.commons.io.FileUtils.copyURLToFile(new URL(url), file, 1000, 1000);
-			} catch (IOException e) {
-				e.printStackTrace();
+			if (blockstate.getBlock() == Blocks.GOLD_BLOCK) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gold_block;
+			} else if (blockstate.getBlock() == Blocks.RAW_GOLD_BLOCK) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_raw_gold_block;
+			} else if (blockstate.getBlock() == Blocks.GOLD_ORE) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gold_ore;
+			} else if (blockstate.getBlock() == Blocks.DEEPSLATE_GOLD_ORE) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_deepslate_gold_ore;
+			} else if (blockstate.getBlock() == Blocks.NETHER_GOLD_ORE) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_nether_gold_ore;
+			} else if (blockstate.getBlock() == Blocks.GILDED_BLACKSTONE) {
+				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gilded_blackstone;
 			}
-			{
-				try {
-					BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-					StringBuilder jsonstringbuilder = new StringBuilder();
-					String line;
-					while ((line = bufferedReader.readLine()) != null) {
-						jsonstringbuilder.append(line);
-					}
-					bufferedReader.close();
-					json = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-					goldAmount = json.get((BuiltInRegistries.BLOCK.getKey(blockstate.getBlock()).toString())).getAsDouble();
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Items.GOLDEN_HELMET) {
-						gold_extra = gold_extra + json.get("helmet").getAsDouble();
-					}
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == Items.GOLDEN_CHESTPLATE) {
-						gold_extra = gold_extra + json.get("chestplate").getAsDouble();
-					}
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == Items.GOLDEN_LEGGINGS) {
-						gold_extra = gold_extra + json.get("leggings").getAsDouble();
-					}
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Items.GOLDEN_BOOTS) {
-						gold_extra = gold_extra + json.get("boots").getAsDouble();
-					}
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_PICKAXE) {
-						gold_extra = gold_extra + json.get("pickaxe").getAsDouble();
-					}
-					if ((entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(ExodusModMobEffects.GOLD_RUSH)) == true) {
-						gold_rush_multiplier = json.get("gold_rush_multiplier").getAsDouble();
-						gold_rush_additive = json.get("gold_rush_additive").getAsDouble();
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Items.GOLDEN_HELMET) {
+				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_helmet;
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == Items.GOLDEN_CHESTPLATE) {
+				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_chestplate;
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == Items.GOLDEN_LEGGINGS) {
+				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_leggings;
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Items.GOLDEN_BOOTS) {
+				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_boots;
+			}
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_PICKAXE) {
+				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_pickaxe;
+			}
+			if ((entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(ExodusModMobEffects.GOLD_RUSH)) == true) {
+				gold_rush_multiplier = ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_mult;
+				gold_rush_additive = ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_add;
 			}
 		}
 		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel < 5) {
@@ -117,25 +105,35 @@ public class GreedLevelGoldProcedure {
 					_vars.greedLevel = entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel + 1;
 					_vars.markSyncDirty();
 				}
-				{
-					try {
-						BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-						StringBuilder jsonstringbuilder = new StringBuilder();
-						String line;
-						while ((line = bufferedReader.readLine()) != null) {
-							jsonstringbuilder.append(line);
-						}
-						bufferedReader.close();
-						json = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-						if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel < 5) {
-							{
-								ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-								_vars.goldGoal = json.get(("greedlevel" + new java.text.DecimalFormat("#").format(entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel + 1))).getAsDouble();
-								_vars.markSyncDirty();
-							}
-						}
-					} catch (IOException e) {
-						e.printStackTrace();
+				if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 0) {
+					{
+						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_1;
+						_vars.markSyncDirty();
+					}
+				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 1) {
+					{
+						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_2;
+						_vars.markSyncDirty();
+					}
+				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 2) {
+					{
+						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_3;
+						_vars.markSyncDirty();
+					}
+				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 3) {
+					{
+						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_4;
+						_vars.markSyncDirty();
+					}
+				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 4) {
+					{
+						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_5;
+						_vars.markSyncDirty();
 					}
 				}
 				if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel > 0) {

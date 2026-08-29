@@ -1,0 +1,9 @@
+{
+  "_fv": 89,
+  "_type": "armortrim",
+  "definition": {
+    "name": "Dither Armor Trim",
+    "item": "CUSTOM:DitherArmorTrimSmithingTemplate",
+    "armorTextureFile": "dither"
+  }
+}

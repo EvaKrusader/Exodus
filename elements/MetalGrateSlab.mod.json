@@ -2,10 +2,10 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "a",
-    "textureTop": "a",
+    "texture": "metal_grate",
+    "textureTop": "metal_grate",
     "textureLeft": "",
-    "textureFront": "a",
+    "textureFront": "metal_grate",
     "textureRight": "",
     "textureBack": "",
     "renderType": 11,

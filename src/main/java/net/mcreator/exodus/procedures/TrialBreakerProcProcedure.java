@@ -3,7 +3,6 @@ package net.mcreator.exodus.procedures;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -17,14 +16,11 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.exodus.network.ExodusModVariables;
+
 import javax.annotation.Nullable;
 
-import java.net.URL;
-
-import java.io.IOException;
-import java.io.FileReader;
 import java.io.File;
-import java.io.BufferedReader;
 
 @EventBusSubscriber
 public class TrialBreakerProcProcedure {
@@ -49,37 +45,12 @@ public class TrialBreakerProcProcedure {
 		if (damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("exodus:trial_damage"))) == false && entity.is(TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("exodus:trial_mobs"))) == true
 				&& ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 						.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:trial_breaker")))) != 0) == true) {
-			fileName = "enchantment_values" + ".json";
-			url = "https://raw.githubusercontent.com/EvaKrusader/" + "Exodus" + "/refs/heads/master/hotfixable/" + fileName;
-			file = new File(System.getProperty("java.io.tmpdir"), File.separator + fileName);
-			try {
-				org.apache.commons.io.FileUtils.copyURLToFile(new URL(url), file, 1000, 1000);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 			{
-				try {
-					BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-					StringBuilder jsonstringbuilder = new StringBuilder();
-					String line;
-					while ((line = bufferedReader.readLine()) != null) {
-						jsonstringbuilder.append(line);
-					}
-					bufferedReader.close();
-					jsonObject = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					{
-						Entity _ent = entity;
-						if (_ent.level() instanceof ServerLevel _serverLevel) {
-							_ent.hurtServer(_serverLevel, new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("exodus:trial_damage"))), immediatesourceentity, sourceentity),
-									(float) (amount + jsonObject.get("trial_breaker_damage").getAsDouble() * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-											.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:trial_breaker"))))));
-						}
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
+				Entity _ent = entity;
+				if (_ent.level() instanceof ServerLevel _serverLevel) {
+					_ent.hurtServer(_serverLevel, new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("exodus:trial_damage"))), immediatesourceentity, sourceentity),
+							(float) (amount + ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+									.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:trial_breaker"))))));
 				}
 			}
 		}

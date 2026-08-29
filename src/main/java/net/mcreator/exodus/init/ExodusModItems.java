@@ -96,6 +96,9 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> CHARM_OF_FALL_CANCELLATION;
 	public static final DeferredItem<Item> CHARM_OF_EXPERIENCE;
 	public static final DeferredItem<Item> WEIRD_ARMOR_TRIM_SMITHING_TEMPLATE;
+	public static final DeferredItem<Item> DITHER_ARMOR_TRIM_SMITHING_TEMPLATE;
+	public static final DeferredItem<Item> TOME_OF_KNOWLEDGE;
+	public static final DeferredItem<Item> EXPERIENCE_CRYSTAL;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -170,6 +173,9 @@ public class ExodusModItems {
 		CHARM_OF_FALL_CANCELLATION = register("charm_of_fall_cancellation", CharmOfFallCancellationItem::new);
 		CHARM_OF_EXPERIENCE = register("charm_of_experience", CharmOfExperienceItem::new);
 		WEIRD_ARMOR_TRIM_SMITHING_TEMPLATE = register("weird_armor_trim_smithing_template", WeirdArmorTrimSmithingTemplateItem::new);
+		DITHER_ARMOR_TRIM_SMITHING_TEMPLATE = register("dither_armor_trim_smithing_template", DitherArmorTrimSmithingTemplateItem::new);
+		TOME_OF_KNOWLEDGE = register("tome_of_knowledge", TomeOfKnowledgeItem::new);
+		EXPERIENCE_CRYSTAL = register("experience_crystal", ExperienceCrystalItem::new);
 	}
 
 	// Start of user code block custom items
@@ -197,6 +203,7 @@ public class ExodusModItems {
 			event.register(Identifier.parse("exodus:onyx_necklace/has_biolum"), OnyxNecklaceItem.HasBiolumProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:onyx_necklace/range_level"), OnyxNecklaceItem.RangeLevelProperty.MAP_CODEC);
 			event.register(Identifier.parse("exodus:fluorite_necklace/power"), FluoriteNecklaceItem.PowerProperty.MAP_CODEC);
+			event.register(Identifier.parse("exodus:experience_crystal/xp_value"), ExperienceCrystalItem.XpValueProperty.MAP_CODEC);
 		}
 	}
 }

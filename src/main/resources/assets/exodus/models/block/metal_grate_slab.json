@@ -1,9 +1,9 @@
 {
   "parent": "block/slab",
   "textures": {
-    "particle": "exodus:block/a",
-    "bottom": "exodus:block/a",
-    "top": "exodus:block/a",
-    "side": "exodus:block/a"
+    "particle": "exodus:block/metal_grate",
+    "bottom": "exodus:block/metal_grate",
+    "top": "exodus:block/metal_grate",
+    "side": "exodus:block/metal_grate"
   }
 }

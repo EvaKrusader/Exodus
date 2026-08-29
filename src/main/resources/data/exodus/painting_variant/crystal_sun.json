@@ -1,0 +1,13 @@
+{
+  "asset_id": "exodus:crystal_sun",
+  "height": 4,
+  "width": 4,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.exodus.crystal_sun.title"
+  },
+  "author": {
+    "color": "gray",
+    "translate": "painting.exodus.crystal_sun.author"
+  }
+}

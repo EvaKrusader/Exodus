@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "experience_gummy",
+    "texture": "charm_experience",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

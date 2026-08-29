@@ -3,8 +3,8 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "0",
-    "keyBindingName": "Dev",
-    "keyBindingCategoryKey": "creative",
+    "keyBindingName": "Dev Gamemode Switch",
+    "keyBindingCategoryKey": "movement",
     "onKeyPressed": "DevOnKeyPressed"
   }
 }

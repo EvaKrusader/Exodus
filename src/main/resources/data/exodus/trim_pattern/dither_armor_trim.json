@@ -1,0 +1,7 @@
+{
+  "asset_id": "exodus:dither_armor_trim",
+  "description": {
+    "translate": "trim_pattern.exodus.dither_armor_trim"
+  },
+  "template_item": "exodus:dither_armor_trim_smithing_template"
+}

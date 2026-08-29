@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": "#minecraft:trim_materials",
+  "base": "#minecraft:trimmable_armor",
+  "pattern": "exodus:dither_armor_trim",
+  "template": "exodus:dither_armor_trim_smithing_template"
+}

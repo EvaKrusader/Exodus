@@ -1,0 +1,26 @@
+{
+  "_fv": 89,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "ExperienceCrystal",
+    "slotType": "BODY",
+    "slotAmount": 1,
+    "addSlot": false,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": "",
+    "hasModel": false,
+    "baubleModel": "Default",
+    "baubleModelTexture": "",
+    "curioTick": "ExperienceCrystalBaubleWhileBaubleIsEquippedTick",
+    "onUnequip": "WaterStoneBaubleWhileBaubleIsEquippedTick",
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Empty",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": []
+  }
+}

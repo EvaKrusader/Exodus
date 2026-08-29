@@ -131,7 +131,7 @@ public class ExodusModCuriosCompat {
 
 			@Override
 			public void curioTick(SlotContext slotContext) {
-				FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity(), stack);
+				FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
 			}
 		}, ExodusModItems.FLUORITE_NECKLACE.get());
 		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
@@ -192,5 +192,37 @@ public class ExodusModCuriosCompat {
 				CharmOfExperienceBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
 			}
 		}, ExodusModItems.CHARM_OF_EXPERIENCE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void onEquip(SlotContext slotContext, ItemStack prevStack) {
+				TomeOfKnowledgeBaubleBaubleIsEquippedProcedure.execute(slotContext.entity());
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				TomeOfKnowledgeBaubleBaubleIsUnequippedProcedure.execute(slotContext.entity());
+			}
+		}, ExodusModItems.TOME_OF_KNOWLEDGE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				ExperienceCrystalBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity(), stack);
+			}
+
+			@Override
+			public void onUnequip(SlotContext slotContext, ItemStack newStack) {
+				WaterStoneBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
+			}
+		}, ExodusModItems.EXPERIENCE_CRYSTAL.get());
 	}
 }
