@@ -197,5 +197,13 @@
   "painting.exodus.crystal_sun.title": "Crystal Sun",
   "painting.exodus.crystal_sun.author": "Lost Cascades",
   "item.exodus.tome_of_knowledge": "Tome Of Knowledge",
-  "item.exodus.experience_crystal": "Experience Crystal"
+  "item.exodus.experience_crystal": "Experience Crystal",
+  "item.exodus.stone_onyx_ore": "Onyx Ore",
+  "gui.exodus.dev_menu.button_night_vision": "Night Vision",
+  "gui.exodus.dev_menu.button_nether": "Nether",
+  "gui.exodus.dev_menu.button_overworld": "Overworld",
+  "gui.exodus.dev_menu.button_end": "End",
+  "item.exodus.caelite_ore": "Caelite Ore",
+  "item.exodus.caelite": "Caelite",
+  "item.exodus.crescent_necklace": "Crescent Necklace"
 }

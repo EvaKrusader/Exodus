@@ -34,6 +34,7 @@ public class ExodusModTabs {
 				tabData.accept(ExodusModItems.CHARM_OF_EXPERIENCE.get());
 				tabData.accept(ExodusModItems.TOME_OF_KNOWLEDGE.get());
 				tabData.accept(ExodusModItems.EXPERIENCE_CRYSTAL.get());
+				tabData.accept(ExodusModItems.CRESCENT_NECKLACE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -50,6 +51,7 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.TUNGSTEN.get());
 			tabData.accept(ExodusModItems.SQUALINE.get());
 			tabData.accept(ExodusModItems.FLUORITE.get());
+			tabData.accept(ExodusModItems.CAELITE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_ORE.get().asItem());
@@ -57,6 +59,8 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModBlocks.BASALT_CALIDIUM_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.TUNGSTEN_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.SQUALINE_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.STONE_ONYX_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.CAELITE_ORE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_BLOCK.get().asItem());

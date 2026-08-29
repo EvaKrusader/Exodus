@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 24,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "minecraft:onyx_deepslate_replaceable"
+        },
+        "state": {
+          "Name": "exodus:onyx_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "minecraft:onyx_ore_replaceable"
+        },
+        "state": {
+          "Name": "exodus:stone_onyx_ore"
+        }
+      }
+    ]
+  }
+}

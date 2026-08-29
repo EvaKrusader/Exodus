@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "exodus:block/fluorite_ore_block",
+    "particle": "minecraft:block/beacon"
+  }
+}

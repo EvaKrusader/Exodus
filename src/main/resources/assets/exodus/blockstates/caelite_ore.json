@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "weather=0": {
+      "model": "exodus:block/caelite_ore_0"
+    },
+    "weather=1": {
+      "model": "exodus:block/caelite_ore_1"
+    },
+    "weather=2": {
+      "model": "exodus:block/caelite_ore_2"
+    }
+  }
+}

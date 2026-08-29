@@ -1,0 +1,16 @@
+{
+  "feature": "exodus:fluorite_ore_feature",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "uniform",
+        "min_inclusive": 4,
+        "max_inclusive": 8
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

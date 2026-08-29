@@ -52,7 +52,7 @@ public record DevUIMessage(int eventType, int pressedms) implements CustomPacket
 			return;
 		if (type == 0) {
 
-			DevUIOnKeyPressedProcedure.execute(entity);
+			DevUIOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

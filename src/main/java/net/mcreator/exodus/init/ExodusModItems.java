@@ -99,6 +99,10 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> DITHER_ARMOR_TRIM_SMITHING_TEMPLATE;
 	public static final DeferredItem<Item> TOME_OF_KNOWLEDGE;
 	public static final DeferredItem<Item> EXPERIENCE_CRYSTAL;
+	public static final DeferredItem<Item> STONE_ONYX_ORE;
+	public static final DeferredItem<Item> CAELITE_ORE;
+	public static final DeferredItem<Item> CAELITE;
+	public static final DeferredItem<Item> CRESCENT_NECKLACE;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -176,6 +180,10 @@ public class ExodusModItems {
 		DITHER_ARMOR_TRIM_SMITHING_TEMPLATE = register("dither_armor_trim_smithing_template", DitherArmorTrimSmithingTemplateItem::new);
 		TOME_OF_KNOWLEDGE = register("tome_of_knowledge", TomeOfKnowledgeItem::new);
 		EXPERIENCE_CRYSTAL = register("experience_crystal", ExperienceCrystalItem::new);
+		STONE_ONYX_ORE = block(ExodusModBlocks.STONE_ONYX_ORE);
+		CAELITE_ORE = block(ExodusModBlocks.CAELITE_ORE);
+		CAELITE = register("caelite", CaeliteItem::new);
+		CRESCENT_NECKLACE = register("crescent_necklace", CrescentNecklaceItem::new);
 	}
 
 	// Start of user code block custom items

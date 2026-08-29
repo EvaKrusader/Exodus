@@ -224,5 +224,16 @@ public class ExodusModCuriosCompat {
 				WaterStoneBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity(), stack);
 			}
 		}, ExodusModItems.EXPERIENCE_CRYSTAL.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				CrescentNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity());
+			}
+		}, ExodusModItems.CRESCENT_NECKLACE.get());
 	}
 }

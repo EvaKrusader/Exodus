@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Blocks.CHAIN",
+      "Items.CHAINMAIL_CHESTPLATE"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Blocks.CHAIN",
+      "",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN",
+      "Blocks.CHAIN"
+    ],
+    "recipeReturnStack": "Items.CHAINMAIL_CHESTPLATE",
+    "name": "chainmail_chestplate_recipe",
+    "namespace": "mod"
+  }
+}

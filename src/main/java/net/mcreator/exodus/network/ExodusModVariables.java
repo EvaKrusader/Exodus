@@ -119,6 +119,7 @@ public class ExodusModVariables {
 			clone.cancelFallDamageCharm = original.cancelFallDamageCharm;
 			clone.hasXPCharm = original.hasXPCharm;
 			clone.playerKnowledge = original.playerKnowledge;
+			clone.crescent_chance = original.crescent_chance;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -385,6 +386,7 @@ public class ExodusModVariables {
 		public boolean showDevUI = true;
 		public boolean playerKnowledge = false;
 		public double playerXPbeforeDeath = 0;
+		public double crescent_chance = 0;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -414,6 +416,7 @@ public class ExodusModVariables {
 			output.putBoolean("showDevUI", showDevUI);
 			output.putBoolean("playerKnowledge", playerKnowledge);
 			output.putDouble("playerXPbeforeDeath", playerXPbeforeDeath);
+			output.putDouble("crescent_chance", crescent_chance);
 		}
 
 		@Override
@@ -444,6 +447,7 @@ public class ExodusModVariables {
 			showDevUI = input.getBooleanOr("showDevUI", false);
 			playerKnowledge = input.getBooleanOr("playerKnowledge", false);
 			playerXPbeforeDeath = input.getDoubleOr("playerXPbeforeDeath", 0);
+			crescent_chance = input.getDoubleOr("crescent_chance", 0);
 		}
 
 		public void markSyncDirty() {

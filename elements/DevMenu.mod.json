@@ -1,0 +1,78 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nether",
+          "text": "Nether",
+          "isUndecorated": false,
+          "onClick": "DevProcNether",
+          "width": 55,
+          "height": 20,
+          "x": 138,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_overworld",
+          "text": "Overworld",
+          "isUndecorated": false,
+          "onClick": "DevProcOver",
+          "width": 70,
+          "height": 20,
+          "x": 137,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_end",
+          "text": "End",
+          "isUndecorated": false,
+          "onClick": "DevProcEnd",
+          "width": 40,
+          "height": 20,
+          "x": 138,
+          "y": 140,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_night_vision",
+          "text": "Night Vision",
+          "isUndecorated": false,
+          "onClick": "DevProcnightvis",
+          "width": 85,
+          "height": 20,
+          "x": 208,
+          "y": 45,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

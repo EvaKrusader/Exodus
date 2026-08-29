@@ -67,6 +67,7 @@ public class ExodusMod {
 		ExodusModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		ExodusModPotions.REGISTRY.register(modEventBus);
 		ExodusModMobEffects.REGISTRY.register(modEventBus);
+		ExodusModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

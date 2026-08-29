@@ -217,11 +217,8 @@
           "src/main/java/net/mcreator/exodus/block/OnyxOreBlock.java",
           "src/main/resources/data/exodus/loot_table/blocks/onyx_ore.json",
           "src/main/resources/assets/exodus/blockstates/onyx_ore.json",
-          "src/main/resources/data/exodus/worldgen/placed_feature/onyx_ore.json",
           "src/main/resources/assets/exodus/models/item/onyx_ore.json",
-          "src/main/resources/data/exodus/neoforge/biome_modifier/onyx_ore_biome_modifier.json",
           "src/main/resources/assets/exodus/models/block/onyx_ore.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/onyx_ore.json",
           "src/main/resources/assets/exodus/items/onyx_ore.json"
         ]
       },
@@ -536,9 +533,6 @@
         "files": [
           "src/main/java/net/mcreator/exodus/block/RubyOreBlock.java",
           "src/main/resources/assets/exodus/items/ruby_ore.json",
-          "src/main/resources/data/exodus/neoforge/biome_modifier/ruby_ore_biome_modifier.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/ruby_ore.json",
-          "src/main/resources/data/exodus/worldgen/placed_feature/ruby_ore.json",
           "src/main/resources/assets/exodus/models/item/ruby_ore.json",
           "src/main/resources/assets/exodus/blockstates/ruby_ore.json",
           "src/main/resources/assets/exodus/models/block/ruby_ore.json",
@@ -1579,7 +1573,7 @@
           "src/main/resources/data/exodus/worldgen/placed_feature/calidium_blackstone_feature.json"
         ]
       },
-      "path": "~/Ores/Calidium"
+      "path": "~/Ores"
     },
     {
       "name": "BasaltCalidiumOre",
@@ -3383,12 +3377,9 @@
       "registry_name": "tungsten_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/exodus/neoforge/biome_modifier/tungsten_ore_biome_modifier.json",
           "src/main/resources/assets/exodus/items/tungsten_ore.json",
           "src/main/java/net/mcreator/exodus/block/TungstenOreBlock.java",
-          "src/main/resources/data/exodus/worldgen/placed_feature/tungsten_ore.json",
           "src/main/resources/assets/exodus/blockstates/tungsten_ore.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/tungsten_ore.json",
           "src/main/resources/data/exodus/loot_table/blocks/tungsten_ore.json",
           "src/main/resources/assets/exodus/models/item/tungsten_ore.json",
           "src/main/resources/assets/exodus/models/block/tungsten_ore.json"
@@ -3515,10 +3506,7 @@
           "src/main/java/net/mcreator/exodus/block/SqualineOreBlock.java",
           "src/main/resources/assets/exodus/models/block/squaline_ore.json",
           "src/main/resources/assets/exodus/blockstates/squaline_ore.json",
-          "src/main/resources/data/exodus/neoforge/biome_modifier/squaline_ore_biome_modifier.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/squaline_ore.json",
           "src/main/resources/data/exodus/loot_table/blocks/squaline_ore.json",
-          "src/main/resources/data/exodus/worldgen/placed_feature/squaline_ore.json",
           "src/main/resources/assets/exodus/models/item/squaline_ore.json",
           "src/main/resources/assets/exodus/items/squaline_ore.json"
         ]
@@ -3978,11 +3966,8 @@
           "src/main/resources/assets/exodus/blockstates/fluorite_ore.json",
           "src/main/resources/data/exodus/loot_table/blocks/fluorite_ore.json",
           "src/main/resources/assets/exodus/items/fluorite_ore.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/fluorite_ore.json",
           "src/main/resources/assets/exodus/models/item/fluorite_ore.json",
-          "src/main/resources/data/exodus/worldgen/placed_feature/fluorite_ore.json",
-          "src/main/java/net/mcreator/exodus/block/FluoriteOreBlock.java",
-          "src/main/resources/data/exodus/neoforge/biome_modifier/fluorite_ore_biome_modifier.json"
+          "src/main/java/net/mcreator/exodus/block/FluoriteOreBlock.java"
         ]
       },
       "path": "~/Ores/Fluorite"
@@ -4693,6 +4678,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -5134,6 +5135,408 @@
         ]
       },
       "path": "~/Dev"
+    },
+    {
+      "name": "GiveKnowledgeEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_knowledge_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/GiveKnowledgeEffectProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "EnchantTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchant_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/EnchantTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "GiveKnowledgeEffectLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_knowledge_effect_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/GiveKnowledgeEffectLevelProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "ChainmailHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/chainmail_helmet_recipe.json",
+          "src/main/resources/data/exodus/recipe/chainmail_helmet_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "ChainmailChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/chainmail_chestplate_recipe.json",
+          "src/main/resources/data/exodus/recipe/chainmail_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "ChainmailLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/chainmail_leggings_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/chainmail_leggings_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "ChainmailBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainmail_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/advancement/recipes/chainmail_boots_recipe.json",
+          "src/main/resources/data/exodus/recipe/chainmail_boots_recipe.json"
+        ]
+      },
+      "path": "~/QOL/Recipes"
+    },
+    {
+      "name": "StoneOnyxOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_onyx_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/stone_onyx_ore.json",
+          "src/main/resources/assets/exodus/models/block/stone_onyx_ore.json",
+          "src/main/resources/assets/exodus/items/stone_onyx_ore.json",
+          "src/main/resources/data/exodus/loot_table/blocks/stone_onyx_ore.json",
+          "src/main/resources/assets/exodus/blockstates/stone_onyx_ore.json",
+          "src/main/java/net/mcreator/exodus/block/StoneOnyxOreBlock.java"
+        ]
+      },
+      "path": "~/Ores/Onyx"
+    },
+    {
+      "name": "SqualineOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squaline_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/worldgen/placed_feature/squaline_ore_feature.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/squaline_ore_feature.json",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/squaline_ore_feature_biome_modifier.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "FluoriteOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/neoforge/biome_modifier/fluorite_ore_feature_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/fluorite_ore_feature.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/fluorite_ore_feature.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "OnyxOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/neoforge/biome_modifier/onyx_ore_feature_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/onyx_ore_feature.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/onyx_ore_feature.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "DevMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/world/inventory/DevMenuMenu.java",
+          "src/main/java/net/mcreator/exodus/network/DevMenuButtonMessage.java",
+          "src/main/java/net/mcreator/exodus/client/gui/DevMenuScreen.java"
+        ]
+      },
+      "path": "~/Dev/devmenu"
+    },
+    {
+      "name": "DevProcNether",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_proc_nether",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevProcNetherProcedure.java"
+        ]
+      },
+      "path": "~/Dev/devmenu"
+    },
+    {
+      "name": "DevProcOver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_proc_over",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevProcOverProcedure.java"
+        ]
+      },
+      "path": "~/Dev/devmenu"
+    },
+    {
+      "name": "DevProcEnd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_proc_end",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevProcEndProcedure.java"
+        ]
+      },
+      "path": "~/Dev/devmenu"
+    },
+    {
+      "name": "DevProcnightvis",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_procnightvis",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/DevProcnightvisProcedure.java"
+        ]
+      },
+      "path": "~/Dev/devmenu"
+    },
+    {
+      "name": "RubyOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/worldgen/placed_feature/ruby_ore_feature.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/ruby_ore_feature.json",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/ruby_ore_feature_biome_modifier.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "TungstenOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tungsten_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/neoforge/biome_modifier/tungsten_ore_feature_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/configured_feature/tungsten_ore_feature.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/tungsten_ore_feature.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "CaeliteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/block/CaeliteOreBlock.java",
+          "src/main/resources/assets/exodus/models/block/caelite_ore_0.json",
+          "src/main/resources/assets/exodus/items/caelite_ore.json",
+          "src/main/resources/assets/exodus/models/block/caelite_ore.json",
+          "src/main/resources/assets/exodus/models/block/caelite_ore_1.json",
+          "src/main/resources/data/exodus/loot_table/blocks/caelite_ore.json",
+          "src/main/resources/assets/exodus/blockstates/caelite_ore.json",
+          "src/main/resources/assets/exodus/models/block/caelite_ore_2.json",
+          "src/main/resources/assets/exodus/models/item/caelite_ore.json"
+        ]
+      },
+      "path": "~/Ores/Atmosphere"
+    },
+    {
+      "name": "Caelite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/CaeliteItem.java",
+          "src/main/resources/assets/exodus/models/item/caelite.json",
+          "src/main/resources/assets/exodus/items/caelite.json"
+        ]
+      },
+      "path": "~/Ores/Atmosphere"
+    },
+    {
+      "name": "CrescentNecklace",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_necklace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/crescent_necklace.json",
+          "src/main/java/net/mcreator/exodus/item/CrescentNecklaceItem.java",
+          "src/main/resources/assets/exodus/items/crescent_necklace.json"
+        ]
+      },
+      "path": "~/Curio/Crescent Necklace"
+    },
+    {
+      "name": "CrescentNecklaceBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_necklace_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Crescent Necklace"
+    },
+    {
+      "name": "CrescentNecklaceBaubleWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_necklace_bauble_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CrescentNecklaceBaubleWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Crescent Necklace"
     }
   ],
   "variable_elements": [
@@ -5478,6 +5881,12 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "crescent_chance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -5523,7 +5932,9 @@
       "CUSTOM:FluoriteNecklace",
       "CUSTOM:OnyxNecklace"
     ],
-    "ITEMS:mod:sinful_baubles": [],
+    "ITEMS:mod:sinful_baubles": [
+      "CUSTOM:GreedRelic"
+    ],
     "BLOCKS:the_better_server:gold_blocks": [
       "Blocks.GOLD_ORE",
       "Blocks.DEEPSLATE_GOLD_ORE",
@@ -5634,38 +6045,40 @@
       "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~TungstenOre@CUSTOM:TungstenOre",
+      "~StoneOnyxOre@CUSTOM:StoneOnyxOre",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~SqualineOre@CUSTOM:SqualineOre",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
+      "~OnyxOre@CUSTOM:OnyxOre",
       "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
-      "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
-      "~SqualineOre@CUSTOM:SqualineOre",
       "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
       "~TungstenBlock@CUSTOM:TungstenBlock",
-      "~TungstenOre@CUSTOM:TungstenOre",
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~CalidiumOre@CUSTOM:CalidiumOre",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~RubyOre@CUSTOM:RubyOre",
-      "~OnyxBlock@CUSTOM:OnyxBlock",
-      "~OnyxOre@CUSTOM:OnyxOre"
+      "~OnyxBlock@CUSTOM:OnyxBlock"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~TungstenOre@CUSTOM:TungstenOre",
+      "~StoneOnyxOre@CUSTOM:StoneOnyxOre",
+      "~RubyOre@CUSTOM:RubyOre",
+      "~SqualineOre@CUSTOM:SqualineOre",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
+      "~OnyxOre@CUSTOM:OnyxOre",
       "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
-      "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
-      "~SqualineOre@CUSTOM:SqualineOre",
       "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
       "~TungstenBlock@CUSTOM:TungstenBlock",
-      "~TungstenOre@CUSTOM:TungstenOre",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~RubyOre@CUSTOM:RubyOre",
-      "~OnyxBlock@CUSTOM:OnyxBlock",
-      "~OnyxOre@CUSTOM:OnyxOre"
+      "~OnyxBlock@CUSTOM:OnyxBlock"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CalidiumPickaxe@CUSTOM:CalidiumPickaxe",
@@ -5721,8 +6134,8 @@
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
     "ITEMS:minecraft:enchantable/durability": [
-      "~CharmOfFallCancellation@CUSTOM:CharmOfFallCancellation",
       "~CharmOfFireResistance@CUSTOM:CharmOfFireResistance",
+      "~CharmOfFallCancellation@CUSTOM:CharmOfFallCancellation",
       "~OnyxNecklace@CUSTOM:OnyxNecklace",
       "~WaterStone@CUSTOM:WaterStone",
       "~HermesWings@CUSTOM:HermesWings"
@@ -5740,6 +6153,16 @@
     ],
     "BLOCKS:minecraft:slabs": [
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
+    ],
+    "BLOCKS:minecraft:onyx_ore_replaceable": [
+      "Blocks.COAL_ORE",
+      "Blocks.IRON_ORE",
+      "Blocks.COPPER_ORE"
+    ],
+    "BLOCKS:minecraft:onyx_deepslate_replaceable": [
+      "Blocks.DEEPSLATE_COAL_ORE",
+      "Blocks.DEEPSLATE_IRON_ORE",
+      "Blocks.DEEPSLATE_COPPER_ORE"
     ]
   },
   "tab_element_order": {},
@@ -5943,7 +6366,15 @@
       "painting.exodus.crystal_sun.title": "Crystal Sun",
       "painting.exodus.crystal_sun.author": "Lost Cascades",
       "item.exodus.tome_of_knowledge": "Tome Of Knowledge",
-      "item.exodus.experience_crystal": "Experience Crystal"
+      "item.exodus.experience_crystal": "Experience Crystal",
+      "item.exodus.stone_onyx_ore": "Onyx Ore",
+      "gui.exodus.dev_menu.button_night_vision": "Night Vision",
+      "gui.exodus.dev_menu.button_nether": "Nether",
+      "gui.exodus.dev_menu.button_overworld": "Overworld",
+      "gui.exodus.dev_menu.button_end": "End",
+      "item.exodus.caelite_ore": "Caelite Ore",
+      "item.exodus.caelite": "Caelite",
+      "item.exodus.crescent_necklace": "Crescent Necklace"
     }
   },
   "metadata": {
@@ -5962,6 +6393,9 @@
       "src/main/resources/data/exodus/curios/slots/necklace.json",
       "src/main/resources/data/curios/tags/item/charm.json",
       "src/main/java/net/mcreator/exodus/init/ExodusModCuriosCompat.java",
+      "src/main/java/net/mcreator/exodus/init/ExodusModMenus.java",
+      "src/main/java/net/mcreator/exodus/init/ExodusModScreens.java",
+      "src/main/java/net/mcreator/exodus/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/exodus/client/renderer/item/LegacyOverrideSelectItemModel.java",
       "src/main/java/net/mcreator/exodus/init/ExodusModKeyMappings.java",
       "src/main/java/net/mcreator/exodus/init/ExodusModMobEffects.java",
@@ -6063,6 +6497,10 @@
           {
             "name": "XP Crystal",
             "children": []
+          },
+          {
+            "name": "Crescent Necklace",
+            "children": []
           }
         ]
       },
@@ -6071,6 +6509,10 @@
         "children": [
           {
             "name": "Overlay",
+            "children": []
+          },
+          {
+            "name": "devmenu",
             "children": []
           }
         ]
@@ -6118,6 +6560,10 @@
           {
             "name": "Fluorite",
             "children": []
+          },
+          {
+            "name": "Atmosphere",
+            "children": []
           }
         ]
       },
@@ -6138,6 +6584,10 @@
           },
           {
             "name": "Knowledge",
+            "children": []
+          },
+          {
+            "name": "Liveleak",
             "children": []
           }
         ]
