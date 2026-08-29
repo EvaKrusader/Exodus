@@ -147,22 +147,25 @@ public class FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure {
 			}
 		}
 		if ((entity instanceof Player _plrCldCheck93 && _plrCldCheck93.getCooldowns().isOnCooldown(itemstack)) == false) {
-			if ((entity instanceof LivingEntity _livEnt94 && _livEnt94.hasEffect(MobEffects.OOZING)) == true || (entity instanceof LivingEntity _livEnt95 && _livEnt95.hasEffect(MobEffects.WEAVING)) == true
-					|| (entity instanceof LivingEntity _livEnt96 && _livEnt96.hasEffect(MobEffects.WIND_CHARGED)) == true) {
+			if ((entity instanceof LivingEntity _livEnt94 && _livEnt94.hasEffect(MobEffects.INFESTED)) == true || (entity instanceof LivingEntity _livEnt95 && _livEnt95.hasEffect(MobEffects.OOZING)) == true
+					|| (entity instanceof LivingEntity _livEnt96 && _livEnt96.hasEffect(MobEffects.WEAVING)) == true || (entity instanceof LivingEntity _livEnt97 && _livEnt97.hasEffect(MobEffects.WIND_CHARGED)) == true) {
 				if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).playerKnowledge == true) {
-					if ((entity instanceof LivingEntity _livEnt97 && _livEnt97.hasEffect(MobEffects.OOZING)) == true && (entity instanceof LivingEntity _livEnt98 && _livEnt98.hasEffect(MobEffects.WEAVING)) == true
-							&& (entity instanceof LivingEntity _livEnt99 && _livEnt99.hasEffect(MobEffects.WIND_CHARGED)) == true) {
+					if ((entity instanceof LivingEntity _livEnt98 && _livEnt98.hasEffect(MobEffects.INFESTED)) == true && (entity instanceof LivingEntity _livEnt99 && _livEnt99.hasEffect(MobEffects.OOZING)) == true
+							&& (entity instanceof LivingEntity _livEnt100 && _livEnt100.hasEffect(MobEffects.WEAVING)) == true && (entity instanceof LivingEntity _livEnt101 && _livEnt101.hasEffect(MobEffects.WIND_CHARGED)) == true) {
 						if (entity instanceof ServerPlayer _player)
-							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Oozing, Weaving & Wind Charged" + " effects")), true);
-					} else if ((entity instanceof LivingEntity _livEnt103 && _livEnt103.hasEffect(MobEffects.OOZING)) == true) {
+							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Oozing, Weaving, Infested & Wind Charged" + " effects")), true);
+					} else if ((entity instanceof LivingEntity _livEnt105 && _livEnt105.hasEffect(MobEffects.OOZING)) == true) {
 						if (entity instanceof ServerPlayer _player)
 							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Oozing" + " effect")), true);
-					} else if ((entity instanceof LivingEntity _livEnt107 && _livEnt107.hasEffect(MobEffects.WEAVING)) == true) {
+					} else if ((entity instanceof LivingEntity _livEnt109 && _livEnt109.hasEffect(MobEffects.WEAVING)) == true) {
 						if (entity instanceof ServerPlayer _player)
 							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Weaving" + " effect")), true);
-					} else if ((entity instanceof LivingEntity _livEnt111 && _livEnt111.hasEffect(MobEffects.WIND_CHARGED)) == true) {
+					} else if ((entity instanceof LivingEntity _livEnt113 && _livEnt113.hasEffect(MobEffects.WIND_CHARGED)) == true) {
 						if (entity instanceof ServerPlayer _player)
 							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Wind Charged" + " effect")), true);
+					} else if ((entity instanceof LivingEntity _livEnt117 && _livEnt117.hasEffect(MobEffects.INFESTED)) == true) {
+						if (entity instanceof ServerPlayer _player)
+							_player.sendSystemMessage(Component.literal(("Your " + ((itemstack.getDisplayName().getString()).replace("]", "")).replace("[", "") + " cured your " + "Infested" + " effect")), true);
 					}
 				}
 				if (entity instanceof LivingEntity _entity)
@@ -171,6 +174,8 @@ public class FluoriteNecklaceBaubleWhileBaubleIsEquippedTickProcedure {
 					_entity.removeEffect(MobEffects.WEAVING);
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.WIND_CHARGED);
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(MobEffects.INFESTED);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.amethyst_block.resonate")), SoundSource.NEUTRAL, 1, (float) 1.5);

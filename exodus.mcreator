@@ -3245,6 +3245,10 @@
           {
             "name": "tooltip",
             "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -5111,6 +5115,25 @@
         ]
       },
       "path": "~/Curio/XP Crystal"
+    },
+    {
+      "name": "CreeperPatcher2BlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_patcher_2_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CreeperPatcher2BlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Dev"
     }
   ],
   "variable_elements": [
@@ -5496,7 +5519,10 @@
   ],
   "tag_elements": {
     "ITEMS:mod:baubles": [],
-    "ITEMS:mod:bauble_ranged": [],
+    "ITEMS:mod:bauble_ranged": [
+      "CUSTOM:FluoriteNecklace",
+      "CUSTOM:OnyxNecklace"
+    ],
     "ITEMS:mod:sinful_baubles": [],
     "BLOCKS:the_better_server:gold_blocks": [
       "Blocks.GOLD_ORE",

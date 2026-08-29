@@ -6,11 +6,17 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
 
+import net.mcreator.exodus.network.ExodusModVariables;
 import net.mcreator.exodus.init.ExodusModMobEffects;
 import net.mcreator.exodus.init.ExodusModItems;
 
@@ -22,14 +28,14 @@ import java.util.List;
 public class CurioTooltipProcedure {
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
-		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());
+		execute(event, Minecraft.getInstance().level, event.getEntity(), event.getItemStack(), event.getToolTip());
 	}
 
-	public static void execute(Entity entity, ItemStack itemstack, List<Component> tooltip) {
-		execute(null, entity, itemstack, tooltip);
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+		execute(null, world, entity, itemstack, tooltip);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack, List<Component> tooltip) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, ItemStack itemstack, List<Component> tooltip) {
 		if (entity == null || tooltip == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(ExodusModMobEffects.KNOWLEDGE)) == true) {
@@ -53,6 +59,12 @@ public class CurioTooltipProcedure {
 			}
 			if (itemstack.getItem() == ExodusModItems.FLUORITE_NECKLACE.get()) {
 				tooltip.add(Component.literal("\u00A77Cures negative potion effects"));
+				if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).playerKnowledge == true) {
+					tooltip.add(Component.literal(("\u00A77Has a " + new java.text.DecimalFormat("##").format((ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_cooldown * 20
+							- itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:mystical_conductivity"))))
+									* ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_reduction * 20)
+							/ 20) + " second cooldown")));
+				}
 			}
 			if (itemstack.getItem() == ExodusModItems.CHARM_OF_EXPERIENCE.get()) {
 				tooltip.add(Component.literal("\u00A77Shares XP with players in a 16-block radius"));
@@ -64,6 +76,13 @@ public class CurioTooltipProcedure {
 			if (itemstack.getItem() == ExodusModItems.CHARM_OF_FIRE_RESISTANCE.get()) {
 				tooltip.add(Component.literal("\u00A77- Single Use"));
 				tooltip.add(Component.literal("\u00A77Grants \u00A79Fire Resistance (00:30)"));
+			}
+			if (itemstack.getItem() == ExodusModItems.EXPERIENCE_CRYSTAL.get()) {
+				tooltip.add(Component.literal("\u00A77Stores experience on death"));
+			}
+			if (itemstack.getItem() == ExodusModItems.TOME_OF_KNOWLEDGE.get()) {
+				tooltip.add(Component.literal("\u00A77Grants more specific info about items"));
+				tooltip.add(Component.literal("\u00A77Enhances the knowledge effect"));
 			}
 		}
 	}
