@@ -101,8 +101,14 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> EXPERIENCE_CRYSTAL;
 	public static final DeferredItem<Item> STONE_ONYX_ORE;
 	public static final DeferredItem<Item> CAELITE_ORE;
-	public static final DeferredItem<Item> CAELITE;
 	public static final DeferredItem<Item> CRESCENT_NECKLACE;
+	public static final DeferredItem<Item> CAELITE_CLEAR;
+	public static final DeferredItem<Item> CAELITE_RAIN;
+	public static final DeferredItem<Item> CAELITE_THUNDER;
+	public static final DeferredItem<Item> CAELITE_BLOCK_CLEAR;
+	public static final DeferredItem<Item> CAELITE_BLOCK_RAIN;
+	public static final DeferredItem<Item> CAELITE_BLOCK_THUNDER;
+	public static final DeferredItem<Item> RAZOR_EDGE;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -182,8 +188,14 @@ public class ExodusModItems {
 		EXPERIENCE_CRYSTAL = register("experience_crystal", ExperienceCrystalItem::new);
 		STONE_ONYX_ORE = block(ExodusModBlocks.STONE_ONYX_ORE);
 		CAELITE_ORE = block(ExodusModBlocks.CAELITE_ORE);
-		CAELITE = register("caelite", CaeliteItem::new);
 		CRESCENT_NECKLACE = register("crescent_necklace", CrescentNecklaceItem::new);
+		CAELITE_CLEAR = register("caelite_clear", CaeliteClearItem::new);
+		CAELITE_RAIN = register("caelite_rain", CaeliteRainItem::new);
+		CAELITE_THUNDER = register("caelite_thunder", CaeliteThunderItem::new);
+		CAELITE_BLOCK_CLEAR = block(ExodusModBlocks.CAELITE_BLOCK_CLEAR);
+		CAELITE_BLOCK_RAIN = block(ExodusModBlocks.CAELITE_BLOCK_RAIN);
+		CAELITE_BLOCK_THUNDER = block(ExodusModBlocks.CAELITE_BLOCK_THUNDER);
+		RAZOR_EDGE = register("razor_edge", RazorEdgeItem::new);
 	}
 
 	// Start of user code block custom items

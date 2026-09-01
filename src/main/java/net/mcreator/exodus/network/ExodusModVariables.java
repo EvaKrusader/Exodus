@@ -120,6 +120,7 @@ public class ExodusModVariables {
 			clone.hasXPCharm = original.hasXPCharm;
 			clone.playerKnowledge = original.playerKnowledge;
 			clone.crescent_chance = original.crescent_chance;
+			clone.hasNightEffect = original.hasNightEffect;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -199,6 +200,16 @@ public class ExodusModVariables {
 		public double EnchVal_vampirism_percentage_5 = 0;
 		public double EnchVal_fluorite_necklace_cooldown = 0;
 		public double EnchVal_fluorite_necklace_reduction = 0;
+		public double EnchVal_poison_coating_chance_1 = 0;
+		public double EnchVal_poison_coating_chance_2 = 0;
+		public double EnchVal_poison_coating_chance_3 = 0;
+		public double EnchVal_poison_coating_chance_4 = 0;
+		public double EnchVal_poison_coating_chance_5 = 0;
+		public double EnchVal_poison_coating_length_1 = 0;
+		public double EnchVal_poison_coating_length_2 = 0;
+		public double EnchVal_poison_coating_length_3 = 0;
+		public double EnchVal_poison_coating_length_4 = 0;
+		public double EnchVal_poison_coating_length_5 = 0;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			goldVal_gold_block = nbt.getDoubleOr("goldVal_gold_block", 0);
@@ -232,6 +243,16 @@ public class ExodusModVariables {
 			EnchVal_vampirism_percentage_5 = nbt.getDoubleOr("EnchVal_vampirism_percentage_5", 0);
 			EnchVal_fluorite_necklace_cooldown = nbt.getDoubleOr("EnchVal_fluorite_necklace_cooldown", 0);
 			EnchVal_fluorite_necklace_reduction = nbt.getDoubleOr("EnchVal_fluorite_necklace_reduction", 0);
+			EnchVal_poison_coating_chance_1 = nbt.getDoubleOr("EnchVal_poison_coating_chance_1", 0);
+			EnchVal_poison_coating_chance_2 = nbt.getDoubleOr("EnchVal_poison_coating_chance_2", 0);
+			EnchVal_poison_coating_chance_3 = nbt.getDoubleOr("EnchVal_poison_coating_chance_3", 0);
+			EnchVal_poison_coating_chance_4 = nbt.getDoubleOr("EnchVal_poison_coating_chance_4", 0);
+			EnchVal_poison_coating_chance_5 = nbt.getDoubleOr("EnchVal_poison_coating_chance_5", 0);
+			EnchVal_poison_coating_length_1 = nbt.getDoubleOr("EnchVal_poison_coating_length_1", 0);
+			EnchVal_poison_coating_length_2 = nbt.getDoubleOr("EnchVal_poison_coating_length_2", 0);
+			EnchVal_poison_coating_length_3 = nbt.getDoubleOr("EnchVal_poison_coating_length_3", 0);
+			EnchVal_poison_coating_length_4 = nbt.getDoubleOr("EnchVal_poison_coating_length_4", 0);
+			EnchVal_poison_coating_length_5 = nbt.getDoubleOr("EnchVal_poison_coating_length_5", 0);
 		}
 
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
@@ -266,6 +287,16 @@ public class ExodusModVariables {
 			nbt.putDouble("EnchVal_vampirism_percentage_5", EnchVal_vampirism_percentage_5);
 			nbt.putDouble("EnchVal_fluorite_necklace_cooldown", EnchVal_fluorite_necklace_cooldown);
 			nbt.putDouble("EnchVal_fluorite_necklace_reduction", EnchVal_fluorite_necklace_reduction);
+			nbt.putDouble("EnchVal_poison_coating_chance_1", EnchVal_poison_coating_chance_1);
+			nbt.putDouble("EnchVal_poison_coating_chance_2", EnchVal_poison_coating_chance_2);
+			nbt.putDouble("EnchVal_poison_coating_chance_3", EnchVal_poison_coating_chance_3);
+			nbt.putDouble("EnchVal_poison_coating_chance_4", EnchVal_poison_coating_chance_4);
+			nbt.putDouble("EnchVal_poison_coating_chance_5", EnchVal_poison_coating_chance_5);
+			nbt.putDouble("EnchVal_poison_coating_length_1", EnchVal_poison_coating_length_1);
+			nbt.putDouble("EnchVal_poison_coating_length_2", EnchVal_poison_coating_length_2);
+			nbt.putDouble("EnchVal_poison_coating_length_3", EnchVal_poison_coating_length_3);
+			nbt.putDouble("EnchVal_poison_coating_length_4", EnchVal_poison_coating_length_4);
+			nbt.putDouble("EnchVal_poison_coating_length_5", EnchVal_poison_coating_length_5);
 			return nbt;
 		}
 
@@ -387,6 +418,7 @@ public class ExodusModVariables {
 		public boolean playerKnowledge = false;
 		public double playerXPbeforeDeath = 0;
 		public double crescent_chance = 0;
+		public boolean hasNightEffect = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -417,6 +449,7 @@ public class ExodusModVariables {
 			output.putBoolean("playerKnowledge", playerKnowledge);
 			output.putDouble("playerXPbeforeDeath", playerXPbeforeDeath);
 			output.putDouble("crescent_chance", crescent_chance);
+			output.putBoolean("hasNightEffect", hasNightEffect);
 		}
 
 		@Override
@@ -448,6 +481,7 @@ public class ExodusModVariables {
 			playerKnowledge = input.getBooleanOr("playerKnowledge", false);
 			playerXPbeforeDeath = input.getDoubleOr("playerXPbeforeDeath", 0);
 			crescent_chance = input.getDoubleOr("crescent_chance", 0);
+			hasNightEffect = input.getBooleanOr("hasNightEffect", false);
 		}
 
 		public void markSyncDirty() {

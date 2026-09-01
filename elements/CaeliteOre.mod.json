@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:beacon",
+    "texture": "caelite_ore_clear",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -16,7 +16,7 @@
     "displayFluidOverlay": false,
     "states": [
       {
-        "texture": "fluorite_ore_block",
+        "texture": "caelite_ore_clear",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -24,7 +24,7 @@
         "textureBack": "",
         "renderType": 11,
         "customModelName": "Single texture",
-        "particleTexture": "",
+        "particleTexture": "caelite_ore_clear",
         "hasCustomBoundingBox": false,
         "boundingBoxes": [
           {
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "texture": "ruby_ore_block",
+        "texture": "caelite_ore_rain",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -58,7 +58,7 @@
         "textureBack": "",
         "renderType": 11,
         "customModelName": "Single texture",
-        "particleTexture": "",
+        "particleTexture": "caelite_ore_rain",
         "hasCustomBoundingBox": false,
         "boundingBoxes": [
           {
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "texture": "squaline_ore_block",
+        "texture": "caelite_ore_thunder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -92,7 +92,7 @@
         "textureBack": "",
         "renderType": 11,
         "customModelName": "Single texture",
-        "particleTexture": "",
+        "particleTexture": "caelite_ore_thunder",
         "hasCustomBoundingBox": false,
         "boundingBoxes": [
           {
@@ -165,8 +165,8 @@
       "DECORATIONS"
     ],
     "destroyTool": "Not specified",
-    "customDrop": "CUSTOM:Caelite",
-    "dropAmount": 1,
+    "customDrop": "",
+    "dropAmount": 0,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
     "useLootTableForDrops": false,
@@ -176,8 +176,8 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": false,
     "lightOpacity": 15,
-    "tickRate": 0,
-    "tickRandomly": false,
+    "tickRate": 100,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -232,6 +232,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "CaeliteOreOnTickUpdate",
+    "onNeighbourBlockChanges": "CaeliteOreOnTickUpdate",
+    "onTickUpdate": "CaeliteOreOnTickUpdate",
+    "onDestroyedByPlayer": "CaeliteOreBlockDestroyedByPlayer",
+    "onStartToDestroy": "CaeliteOreOnTickUpdate",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

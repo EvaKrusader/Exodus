@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft:block/beacon",
-    "particle": "minecraft:block/beacon"
+    "all": "exodus:block/caelite_ore_clear",
+    "particle": "exodus:block/caelite_ore_clear"
   }
 }

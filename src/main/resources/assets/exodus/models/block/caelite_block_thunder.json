@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "exodus:block/caelite_block_thunder",
+    "particle": "exodus:block/caelite_block_thunder"
+  }
+}

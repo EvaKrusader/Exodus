@@ -204,6 +204,13 @@
   "gui.exodus.dev_menu.button_overworld": "Overworld",
   "gui.exodus.dev_menu.button_end": "End",
   "item.exodus.caelite_ore": "Caelite Ore",
-  "item.exodus.caelite": "Caelite",
-  "item.exodus.crescent_necklace": "Crescent Necklace"
+  "item.exodus.crescent_necklace": "Crescent Necklace",
+  "item.exodus.caelite_clear": "Clear Caelite",
+  "item.exodus.caelite_rain": "Rainy Caelite",
+  "item.exodus.caelite_thunder": "Thundery Caelite",
+  "item.exodus.caelite_block_clear": "Clear Caelite Block",
+  "item.exodus.caelite_block_rain": "Clear Caelite Block",
+  "item.exodus.caelite_block_thunder": "Clear Caelite Block",
+  "item.exodus.razor_edge": "Razor Edge",
+  "enchantment.exodus.poison_coating": "Poison Coating"
 }

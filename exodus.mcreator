@@ -5472,22 +5472,7 @@
           "src/main/resources/assets/exodus/models/item/caelite_ore.json"
         ]
       },
-      "path": "~/Ores/Atmosphere"
-    },
-    {
-      "name": "Caelite",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "caelite",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/exodus/item/CaeliteItem.java",
-          "src/main/resources/assets/exodus/models/item/caelite.json",
-          "src/main/resources/assets/exodus/items/caelite.json"
-        ]
-      },
-      "path": "~/Ores/Atmosphere"
+      "path": "~/Ores/Caelite"
     },
     {
       "name": "CrescentNecklace",
@@ -5537,6 +5522,268 @@
         ]
       },
       "path": "~/Curio/Crescent Necklace"
+    },
+    {
+      "name": "CaeliteOreOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_ore_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CaeliteOreOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteOreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_ore_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CaeliteOreBlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteClear",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_clear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/caelite_clear.json",
+          "src/main/java/net/mcreator/exodus/item/CaeliteClearItem.java",
+          "src/main/resources/assets/exodus/models/item/caelite_clear.json"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteRain",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_rain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/CaeliteRainItem.java",
+          "src/main/resources/assets/exodus/models/item/caelite_rain.json",
+          "src/main/resources/assets/exodus/items/caelite_rain.json"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteThunder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_thunder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/caelite_thunder.json",
+          "src/main/resources/assets/exodus/models/item/caelite_thunder.json",
+          "src/main/java/net/mcreator/exodus/item/CaeliteThunderItem.java"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/worldgen/configured_feature/caelite_ore_feature.json",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/caelite_ore_feature_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/caelite_ore_feature.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "CaeliteBlockClear",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_block_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/block/CaeliteBlockClearBlock.java",
+          "src/main/resources/data/exodus/loot_table/blocks/caelite_block_clear.json",
+          "src/main/resources/assets/exodus/items/caelite_block_clear.json",
+          "src/main/resources/assets/exodus/blockstates/caelite_block_clear.json",
+          "src/main/resources/assets/exodus/models/block/caelite_block_clear.json",
+          "src/main/resources/assets/exodus/models/item/caelite_block_clear.json"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteBlockRain",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_block_rain",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/blockstates/caelite_block_rain.json",
+          "src/main/resources/assets/exodus/models/item/caelite_block_rain.json",
+          "src/main/resources/data/exodus/loot_table/blocks/caelite_block_rain.json",
+          "src/main/resources/assets/exodus/items/caelite_block_rain.json",
+          "src/main/resources/assets/exodus/models/block/caelite_block_rain.json",
+          "src/main/java/net/mcreator/exodus/block/CaeliteBlockRainBlock.java"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "CaeliteBlockThunder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caelite_block_thunder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/caelite_block_thunder.json",
+          "src/main/resources/assets/exodus/blockstates/caelite_block_thunder.json",
+          "src/main/resources/assets/exodus/items/caelite_block_thunder.json",
+          "src/main/java/net/mcreator/exodus/block/CaeliteBlockThunderBlock.java",
+          "src/main/resources/assets/exodus/models/block/caelite_block_thunder.json",
+          "src/main/resources/data/exodus/loot_table/blocks/caelite_block_thunder.json"
+        ]
+      },
+      "path": "~/Ores/Caelite"
+    },
+    {
+      "name": "RazorEdgeLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "razor_edge_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/RazorEdgeLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Special Weapons"
+    },
+    {
+      "name": "RazorEdge",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "razor_edge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/RazorEdgeItem.java",
+          "src/main/resources/assets/exodus/models/item/razor_edge.json",
+          "src/main/resources/assets/exodus/items/razor_edge.json"
+        ]
+      },
+      "path": "~/Special Weapons"
+    },
+    {
+      "name": "PoisonCoating",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_coating",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/enchantment/poison_coating.json"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "PoisonCoatingProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_coating_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/PoisonCoatingProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -5887,6 +6134,72 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "hasNightEffect",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "EnchVal_poison_coating_chance_1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_chance_2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_chance_3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_chance_4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_chance_5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_length_1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_length_2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_length_3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_length_4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "EnchVal_poison_coating_length_5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -6016,7 +6329,22 @@
     "ITEMS:exodus:squaline_armor_repair_items": [
       "~SqualineArmor@CUSTOM:Squaline"
     ],
+    "ITEMS:minecraft:swords_and_axes": [
+      "TAG:minecraft:axes",
+      "TAG:minecraft:swords"
+    ],
+    "BLOCKS:minecraft:onyx_ore_replaceable": [
+      "Blocks.COAL_ORE",
+      "Blocks.IRON_ORE",
+      "Blocks.COPPER_ORE"
+    ],
+    "BLOCKS:minecraft:onyx_deepslate_replaceable": [
+      "Blocks.DEEPSLATE_COAL_ORE",
+      "Blocks.DEEPSLATE_IRON_ORE",
+      "Blocks.DEEPSLATE_COPPER_ORE"
+    ],
     "ENCHANTMENTS:minecraft:tradeable": [
+      "~PoisonCoating@CUSTOM:PoisonCoating",
       "~Vampirism@CUSTOM:Vampirism",
       "~SpikyCleats@CUSTOM:SpikyCleats",
       "~TrialBreaker@CUSTOM:TrialBreaker",
@@ -6025,6 +6353,7 @@
       "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~PoisonCoating@CUSTOM:PoisonCoating",
       "~Vampirism@CUSTOM:Vampirism",
       "~SpikyCleats@CUSTOM:SpikyCleats",
       "~TrialBreaker@CUSTOM:TrialBreaker",
@@ -6037,6 +6366,7 @@
       "~ExtraBioluminescence@CUSTOM:ExtraBioluminescence"
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
+      "~PoisonCoating@CUSTOM:PoisonCoating",
       "~Vampirism@CUSTOM:Vampirism",
       "~SpikyCleats@CUSTOM:SpikyCleats",
       "~NetherCoal@CUSTOM:NetherCoal",
@@ -6045,40 +6375,40 @@
       "~MysticalConductivity@CUSTOM:MysticalConductivity"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~TungstenOre@CUSTOM:TungstenOre",
       "~StoneOnyxOre@CUSTOM:StoneOnyxOre",
-      "~RubyOre@CUSTOM:RubyOre",
-      "~SqualineOre@CUSTOM:SqualineOre",
-      "~FluoriteOre@CUSTOM:FluoriteOre",
-      "~OnyxOre@CUSTOM:OnyxOre",
-      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
-      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
+      "~SqualineOre@CUSTOM:SqualineOre",
       "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
       "~TungstenBlock@CUSTOM:TungstenBlock",
+      "~TungstenOre@CUSTOM:TungstenOre",
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
+      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~BasaltCalidiumOre@CUSTOM:BasaltCalidiumOre",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~CalidiumOre@CUSTOM:CalidiumOre",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~OnyxBlock@CUSTOM:OnyxBlock"
+      "~RubyOre@CUSTOM:RubyOre",
+      "~OnyxBlock@CUSTOM:OnyxBlock",
+      "~OnyxOre@CUSTOM:OnyxOre"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~TungstenOre@CUSTOM:TungstenOre",
       "~StoneOnyxOre@CUSTOM:StoneOnyxOre",
-      "~RubyOre@CUSTOM:RubyOre",
-      "~SqualineOre@CUSTOM:SqualineOre",
-      "~FluoriteOre@CUSTOM:FluoriteOre",
-      "~OnyxOre@CUSTOM:OnyxOre",
-      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
-      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
       "~FluoriteBlock@CUSTOM:FluoriteBlock",
+      "~FluoriteOre@CUSTOM:FluoriteOre",
       "~SqualineBlock@CUSTOM:SqualineBlock",
+      "~SqualineOre@CUSTOM:SqualineOre",
       "~RawTungstenBlock@CUSTOM:RawTungstenBlock",
       "~TungstenBlock@CUSTOM:TungstenBlock",
+      "~TungstenOre@CUSTOM:TungstenOre",
+      "~MetalGrateSlab@CUSTOM:MetalGrateSlab",
+      "~MetalGrateStairs@CUSTOM:MetalGrateStairs",
       "~CalidiumBlock@CUSTOM:CalidiumBlock",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~OnyxBlock@CUSTOM:OnyxBlock"
+      "~RubyOre@CUSTOM:RubyOre",
+      "~OnyxBlock@CUSTOM:OnyxBlock",
+      "~OnyxOre@CUSTOM:OnyxOre"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CalidiumPickaxe@CUSTOM:CalidiumPickaxe",
@@ -6091,6 +6421,7 @@
       "~OnyxAxe@CUSTOM:OnyxAxe"
     ],
     "ITEMS:minecraft:swords": [
+      "~RazorEdge@CUSTOM:RazorEdge",
       "~CalidiumSword@CUSTOM:CalidiumSword",
       "~RubySword@CUSTOM:RubySword",
       "~OnyxSword@CUSTOM:OnyxSword"
@@ -6134,35 +6465,21 @@
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
     "ITEMS:minecraft:enchantable/durability": [
-      "~CharmOfFireResistance@CUSTOM:CharmOfFireResistance",
       "~CharmOfFallCancellation@CUSTOM:CharmOfFallCancellation",
+      "~CharmOfFireResistance@CUSTOM:CharmOfFireResistance",
       "~OnyxNecklace@CUSTOM:OnyxNecklace",
       "~WaterStone@CUSTOM:WaterStone",
       "~HermesWings@CUSTOM:HermesWings"
     ],
-    "ITEMS:minecraft:swords_and_axes": [
-      "TAG:minecraft:axes",
-      "TAG:minecraft:swords"
-    ],
-    "PAINTING_VARIANTS:minecraft:placeable": [
-      "~MoonlightSaga@CUSTOM:MoonlightSaga",
-      "~HerobrineSighting@CUSTOM:HerobrineSighting",
-      "~Exodus@CUSTOM:Exodus",
-      "~CrystalSun@CUSTOM:CrystalSun",
-      "~AlphacryMemories@CUSTOM:AlphacryMemories"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~MetalGrateSlab@CUSTOM:MetalGrateSlab"
     ],
-    "BLOCKS:minecraft:onyx_ore_replaceable": [
-      "Blocks.COAL_ORE",
-      "Blocks.IRON_ORE",
-      "Blocks.COPPER_ORE"
-    ],
-    "BLOCKS:minecraft:onyx_deepslate_replaceable": [
-      "Blocks.DEEPSLATE_COAL_ORE",
-      "Blocks.DEEPSLATE_IRON_ORE",
-      "Blocks.DEEPSLATE_COPPER_ORE"
+    "PAINTING_VARIANTS:minecraft:placeable": [
+      "~CrystalSun@CUSTOM:CrystalSun",
+      "~AlphacryMemories@CUSTOM:AlphacryMemories",
+      "~MoonlightSaga@CUSTOM:MoonlightSaga",
+      "~HerobrineSighting@CUSTOM:HerobrineSighting",
+      "~Exodus@CUSTOM:Exodus"
     ]
   },
   "tab_element_order": {},
@@ -6373,8 +6690,15 @@
       "gui.exodus.dev_menu.button_overworld": "Overworld",
       "gui.exodus.dev_menu.button_end": "End",
       "item.exodus.caelite_ore": "Caelite Ore",
-      "item.exodus.caelite": "Caelite",
-      "item.exodus.crescent_necklace": "Crescent Necklace"
+      "item.exodus.crescent_necklace": "Crescent Necklace",
+      "item.exodus.caelite_clear": "Clear Caelite",
+      "item.exodus.caelite_rain": "Rainy Caelite",
+      "item.exodus.caelite_thunder": "Thundery Caelite",
+      "item.exodus.caelite_block_clear": "Clear Caelite Block",
+      "item.exodus.caelite_block_rain": "Clear Caelite Block",
+      "item.exodus.caelite_block_thunder": "Clear Caelite Block",
+      "item.exodus.razor_edge": "Razor Edge",
+      "enchantment.exodus.poison_coating": "Poison Coating"
     }
   },
   "metadata": {
@@ -6562,7 +6886,7 @@
             "children": []
           },
           {
-            "name": "Atmosphere",
+            "name": "Caelite",
             "children": []
           }
         ]
@@ -6623,6 +6947,10 @@
       },
       {
         "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "Special Weapons",
         "children": []
       }
     ]

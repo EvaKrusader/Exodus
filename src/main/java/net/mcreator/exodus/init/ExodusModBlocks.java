@@ -42,6 +42,9 @@ public class ExodusModBlocks {
 	public static final DeferredBlock<Block> CREEPER_PATCHER_2;
 	public static final DeferredBlock<Block> STONE_ONYX_ORE;
 	public static final DeferredBlock<Block> CAELITE_ORE;
+	public static final DeferredBlock<Block> CAELITE_BLOCK_CLEAR;
+	public static final DeferredBlock<Block> CAELITE_BLOCK_RAIN;
+	public static final DeferredBlock<Block> CAELITE_BLOCK_THUNDER;
 	static {
 		CREEPER_PATCHER = register("creeper_patcher", CreeperPatcherBlock::new);
 		ONYX_ORE = register("onyx_ore", OnyxOreBlock::new);
@@ -65,6 +68,9 @@ public class ExodusModBlocks {
 		CREEPER_PATCHER_2 = register("creeper_patcher_2", CreeperPatcher2Block::new);
 		STONE_ONYX_ORE = register("stone_onyx_ore", StoneOnyxOreBlock::new);
 		CAELITE_ORE = register("caelite_ore", CaeliteOreBlock::new);
+		CAELITE_BLOCK_CLEAR = register("caelite_block_clear", CaeliteBlockClearBlock::new);
+		CAELITE_BLOCK_RAIN = register("caelite_block_rain", CaeliteBlockRainBlock::new);
+		CAELITE_BLOCK_THUNDER = register("caelite_block_thunder", CaeliteBlockThunderBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "calidium_evil_eye",
+    "texture": "caelite_thunder",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Caelite",
+    "name": "Thundery Caelite",
     "rarity": "COMMON",
     "creativeTabs": [
       "MATERIALS"
     ],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

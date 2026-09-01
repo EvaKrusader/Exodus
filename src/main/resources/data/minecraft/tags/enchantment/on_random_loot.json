@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "exodus:poison_coating",
     "exodus:bioluminescence",
     "exodus:spiky_cleats",
     "exodus:vampirism",

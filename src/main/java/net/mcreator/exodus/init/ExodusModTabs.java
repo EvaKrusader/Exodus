@@ -51,7 +51,9 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.TUNGSTEN.get());
 			tabData.accept(ExodusModItems.SQUALINE.get());
 			tabData.accept(ExodusModItems.FLUORITE.get());
-			tabData.accept(ExodusModItems.CAELITE.get());
+			tabData.accept(ExodusModItems.CAELITE_CLEAR.get());
+			tabData.accept(ExodusModItems.CAELITE_RAIN.get());
+			tabData.accept(ExodusModItems.CAELITE_THUNDER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_ORE.get().asItem());
@@ -73,6 +75,9 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModBlocks.EXPERIENCE_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.FLUORITE_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.FLUORITE_BLOCK.get().asItem());
+			tabData.accept(ExodusModBlocks.CAELITE_BLOCK_CLEAR.get().asItem());
+			tabData.accept(ExodusModBlocks.CAELITE_BLOCK_RAIN.get().asItem());
+			tabData.accept(ExodusModBlocks.CAELITE_BLOCK_THUNDER.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(ExodusModItems.ONYX_PICKAXE.get());
 			tabData.accept(ExodusModItems.ONYX_AXE.get());
@@ -86,6 +91,7 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.CALIDIUM_AXE.get());
 			tabData.accept(ExodusModItems.CALIDIUM_SHOVEL.get());
 			tabData.accept(ExodusModItems.CALIDIUM_HOE.get());
+			tabData.accept(ExodusModItems.RAZOR_EDGE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ExodusModItems.ONYX_SWORD.get());
 			tabData.accept(ExodusModItems.ONYX_ARMOR_HELMET.get());

@@ -39,6 +39,8 @@ public class DevLoadEnchantmentValuesProcedure {
 		double VampirismChance = 0;
 		double VampirismPercentage = 0;
 		double NumberValues = 0;
+		double PoisonChance = 0;
+		double PoisonLength = 0;
 		VampirismChance = 0;
 		VampirismPercentage = 0;
 		NumberValues = 0;
@@ -60,70 +62,130 @@ public class DevLoadEnchantmentValuesProcedure {
 				}
 				bufferedReader.close();
 				jsonObject = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1 != jsonObject.get("vampirism_chance_1").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1 = jsonObject.get("vampirism_chance_1").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismChance = VampirismChance + 1;
+				if (NumberValues == 0) {
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage != jsonObject.get("trial_breaker_damage").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage = jsonObject.get("trial_breaker_damage").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						NumberValues = NumberValues + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_cooldown != jsonObject.get("fluorite_necklace_base_cooldown").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_cooldown = jsonObject.get("fluorite_necklace_base_cooldown").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						NumberValues = NumberValues + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_reduction != jsonObject.get("fluorite_necklace_reduc_per_level").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_reduction = jsonObject.get("fluorite_necklace_reduc_per_level").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						NumberValues = NumberValues + 1;
+					}
 				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2 != jsonObject.get("vampirism_chance_2").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2 = jsonObject.get("vampirism_chance_2").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismChance = VampirismChance + 1;
+				if (VampirismChance == 0) {
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1 != jsonObject.get("vampirism_chance_1").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1 = jsonObject.get("vampirism_chance_1").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismChance = VampirismChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2 != jsonObject.get("vampirism_chance_2").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2 = jsonObject.get("vampirism_chance_2").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismChance = VampirismChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3 != jsonObject.get("vampirism_chance_3").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3 = jsonObject.get("vampirism_chance_3").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismChance = VampirismChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4 != jsonObject.get("vampirism_chance_4").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4 = jsonObject.get("vampirism_chance_4").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismChance = VampirismChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5 != jsonObject.get("vampirism_chance_5").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5 = jsonObject.get("vampirism_chance_5").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismChance = VampirismChance + 1;
+					}
 				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3 != jsonObject.get("vampirism_chance_3").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3 = jsonObject.get("vampirism_chance_3").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismChance = VampirismChance + 1;
+				if (VampirismPercentage == 0) {
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1 != jsonObject.get("vampirism_percentage_1").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1 = jsonObject.get("vampirism_percentage_1").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismPercentage = VampirismPercentage + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2 != jsonObject.get("vampirism_percentage_2").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2 = jsonObject.get("vampirism_percentage_2").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismPercentage = VampirismPercentage + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_3 != jsonObject.get("vampirism_percentage_3").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_3 = jsonObject.get("vampirism_percentage_3").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismPercentage = VampirismPercentage + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4 != jsonObject.get("vampirism_percentage_4").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4 = jsonObject.get("vampirism_percentage_4").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismPercentage = VampirismPercentage + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5 != jsonObject.get("vampirism_percentage_5").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5 = jsonObject.get("vampirism_percentage_5").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						VampirismPercentage = VampirismPercentage + 1;
+					}
 				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4 != jsonObject.get("vampirism_chance_4").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4 = jsonObject.get("vampirism_chance_4").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismChance = VampirismChance + 1;
+				if (PoisonChance == 0) {
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_1 != jsonObject.get("poison_coating_chance_1").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_1 = jsonObject.get("poison_coating_chance_1").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonChance = PoisonChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_2 != jsonObject.get("poison_coating_chance_2").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_2 = jsonObject.get("poison_coating_chance_2").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonChance = PoisonChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_3 != jsonObject.get("poison_coating_chance_3").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_3 = jsonObject.get("poison_coating_chance_3").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonChance = PoisonChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_4 != jsonObject.get("poison_coating_chance_4").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_4 = jsonObject.get("poison_coating_chance_4").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonChance = PoisonChance + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_5 != jsonObject.get("poison_coating_chance_5").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_5 = jsonObject.get("poison_coating_chance_5").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonChance = PoisonChance + 1;
+					}
 				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5 != jsonObject.get("vampirism_chance_5").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5 = jsonObject.get("vampirism_chance_5").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismChance = VampirismChance + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1 != jsonObject.get("vampirism_percentage_1").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1 = jsonObject.get("vampirism_percentage_1").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismPercentage = VampirismPercentage + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2 != jsonObject.get("vampirism_percentage_2").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2 = jsonObject.get("vampirism_percentage_2").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismPercentage = VampirismPercentage + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_3 != jsonObject.get("vampirism_percentage_3").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_3 = jsonObject.get("vampirism_percentage_3").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismPercentage = VampirismPercentage + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4 != jsonObject.get("vampirism_percentage_4").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4 = jsonObject.get("vampirism_percentage_4").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismPercentage = VampirismPercentage + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5 != jsonObject.get("vampirism_percentage_5").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5 = jsonObject.get("vampirism_percentage_5").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					VampirismPercentage = VampirismPercentage + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage != jsonObject.get("trial_breaker_damage").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage = jsonObject.get("trial_breaker_damage").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					NumberValues = NumberValues + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_cooldown != jsonObject.get("fluorite_necklace_base_cooldown").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_cooldown = jsonObject.get("fluorite_necklace_base_cooldown").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					NumberValues = NumberValues + 1;
-				}
-				if (ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_reduction != jsonObject.get("fluorite_necklace_reduc_per_level").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).EnchVal_fluorite_necklace_reduction = jsonObject.get("fluorite_necklace_reduc_per_level").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
-					NumberValues = NumberValues + 1;
+				if (PoisonLength == 0) {
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_1 != jsonObject.get("poison_coating_length_1").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_1 = jsonObject.get("poison_coating_length_1").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonLength = PoisonLength + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_2 != jsonObject.get("poison_coating_length_2").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_2 = jsonObject.get("poison_coating_length_2").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonLength = PoisonLength + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_3 != jsonObject.get("poison_coating_length_3").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_3 = jsonObject.get("poison_coating_length_3").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonLength = PoisonLength + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_4 != jsonObject.get("poison_coating_length_4").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_4 = jsonObject.get("poison_coating_length_4").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonLength = PoisonLength + 1;
+					}
+					if (ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_5 != jsonObject.get("poison_coating_length_5").getAsDouble()) {
+						ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_5 = jsonObject.get("poison_coating_length_5").getAsDouble();
+						ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+						PoisonLength = PoisonLength + 1;
+					}
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -142,6 +204,16 @@ public class DevLoadEnchantmentValuesProcedure {
 		if (NumberValues > 0) {
 			if (world instanceof ServerLevel _level) {
 				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("#").format(NumberValues) + " number values updated")).withColor(0xff00ff), false);
+			}
+		}
+		if (PoisonChance > 0) {
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("#").format(VampirismPercentage) + " poison chance values updated")).withColor(0xff00ff), false);
+			}
+		}
+		if (PoisonLength > 0) {
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new java.text.DecimalFormat("#").format(VampirismPercentage) + " poison length values updated")).withColor(0xff00ff), false);
 			}
 		}
 	}

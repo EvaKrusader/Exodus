@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "exodus:poison_coating",
     "exodus:spiky_cleats",
     "exodus:nether_coal",
     "exodus:authority",

@@ -20,19 +20,6 @@ public class DevUIOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).showDevUI == true) {
-			{
-				ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-				_vars.showDevUI = false;
-				_vars.markSyncDirty();
-			}
-		} else {
-			{
-				ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-				_vars.showDevUI = true;
-				_vars.markSyncDirty();
-			}
-		}
 		if (entity.isShiftKeyDown()) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
@@ -52,6 +39,20 @@ public class DevUIOnKeyPressedProcedure {
 						return new DevMenuMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
+			}
+		} else {
+			if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).showDevUI == true) {
+				{
+					ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+					_vars.showDevUI = false;
+					_vars.markSyncDirty();
+				}
+			} else {
+				{
+					ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
+					_vars.showDevUI = true;
+					_vars.markSyncDirty();
+				}
 			}
 		}
 	}
