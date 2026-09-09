@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "daytime=false": {
+      "model": "exodus:block/phasem_ore_0"
+    },
+    "daytime=true": {
+      "model": "exodus:block/phasem_ore_1"
+    }
+  }
+}

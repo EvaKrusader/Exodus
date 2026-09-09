@@ -18,4 +18,7 @@ public class ExodusModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> GOLD_RUSH_KACHING = REGISTRY.register("gold_rush_kaching", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "gold_rush_kaching")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> GREED_UPGRADE = REGISTRY.register("greed_upgrade", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "greed_upgrade")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> CHOKE_COUGH = REGISTRY.register("choke_cough", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "choke_cough")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ESCAPE_ROPE = REGISTRY.register("escape_rope", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "escape_rope")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> RECORD_2000 = REGISTRY.register("record_2000", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "record_2000")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> RECORD_GLACEIR = REGISTRY.register("record_glaceir", () -> SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath("exodus", "record_glaceir")));
 }

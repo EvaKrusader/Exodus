@@ -235,5 +235,11 @@ public class ExodusModCuriosCompat {
 				CrescentNecklaceBaubleWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity());
 			}
 		}, ExodusModItems.CRESCENT_NECKLACE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, ExodusModItems.CHARM_OF_NATURE.get());
 	}
 }

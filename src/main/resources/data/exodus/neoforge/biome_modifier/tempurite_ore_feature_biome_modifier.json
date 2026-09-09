@@ -3,6 +3,6 @@
   "biomes": {
     "type": "neoforge:any"
   },
-  "features": "exodus:squaline_ore_feature",
+  "features": "exodus:tempurite_ore_feature",
   "step": "underground_ores"
 }

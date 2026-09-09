@@ -60,36 +60,36 @@ public class GreedLevelGoldProcedure {
 			gold_rush_additive = 0;
 			gold_extra = 0;
 			if (blockstate.getBlock() == Blocks.GOLD_BLOCK) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gold_block;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_gold_block;
 			} else if (blockstate.getBlock() == Blocks.RAW_GOLD_BLOCK) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_raw_gold_block;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_raw_gold_block;
 			} else if (blockstate.getBlock() == Blocks.GOLD_ORE) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gold_ore;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_gold_ore;
 			} else if (blockstate.getBlock() == Blocks.DEEPSLATE_GOLD_ORE) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_deepslate_gold_ore;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_deepslate_gold_ore;
 			} else if (blockstate.getBlock() == Blocks.NETHER_GOLD_ORE) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_nether_gold_ore;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_nether_gold_ore;
 			} else if (blockstate.getBlock() == Blocks.GILDED_BLACKSTONE) {
-				goldAmount = ExodusModVariables.WorldVariables.get(world).goldVal_gilded_blackstone;
+				goldAmount = ExodusModVariables.MapVariables.get(world).goldVal_gilded_blackstone;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Items.GOLDEN_HELMET) {
-				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_helmet;
+				gold_extra = gold_extra + ExodusModVariables.MapVariables.get(world).goldVal_golden_helmet;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == Items.GOLDEN_CHESTPLATE) {
-				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_chestplate;
+				gold_extra = gold_extra + ExodusModVariables.MapVariables.get(world).goldVal_golden_chestplate;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == Items.GOLDEN_LEGGINGS) {
-				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_leggings;
+				gold_extra = gold_extra + ExodusModVariables.MapVariables.get(world).goldVal_golden_leggings;
 			}
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == Items.GOLDEN_BOOTS) {
-				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_boots;
+				gold_extra = gold_extra + ExodusModVariables.MapVariables.get(world).goldVal_golden_boots;
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_PICKAXE) {
-				gold_extra = gold_extra + ExodusModVariables.WorldVariables.get(world).goldVal_golden_pickaxe;
+				gold_extra = gold_extra + ExodusModVariables.MapVariables.get(world).goldVal_golden_pickaxe;
 			}
 			if ((entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(ExodusModMobEffects.GOLD_RUSH)) == true) {
-				gold_rush_multiplier = ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_mult;
-				gold_rush_additive = ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_add;
+				gold_rush_multiplier = ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_mult;
+				gold_rush_additive = ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_add;
 			}
 		}
 		if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel < 5) {
@@ -108,31 +108,31 @@ public class GreedLevelGoldProcedure {
 				if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 0) {
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_1;
+						_vars.goldGoal = ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_1;
 						_vars.markSyncDirty();
 					}
 				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 1) {
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_2;
+						_vars.goldGoal = ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_2;
 						_vars.markSyncDirty();
 					}
 				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 2) {
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_3;
+						_vars.goldGoal = ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_3;
 						_vars.markSyncDirty();
 					}
 				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 3) {
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_4;
+						_vars.goldGoal = ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_4;
 						_vars.markSyncDirty();
 					}
 				} else if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).greedLevel == 4) {
 					{
 						ExodusModVariables.PlayerVariables _vars = entity.getData(ExodusModVariables.PLAYER_VARIABLES);
-						_vars.goldGoal = ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_5;
+						_vars.goldGoal = ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_5;
 						_vars.markSyncDirty();
 					}
 				}

@@ -42,20 +42,20 @@ public class EnchantTooltipProcedure {
 		double vampirism_chance = 0;
 		double vampirism_heal = 0;
 		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 1) {
-			vampirism_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1;
-			vampirism_heal = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1;
+			vampirism_chance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_1;
+			vampirism_heal = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_1;
 		} else if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 2) {
-			vampirism_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2;
-			vampirism_heal = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2;
+			vampirism_chance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_2;
+			vampirism_heal = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_2;
 		} else if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 3) {
-			vampirism_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3;
-			vampirism_heal = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3;
+			vampirism_chance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_3;
+			vampirism_heal = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_3;
 		} else if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 4) {
-			vampirism_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4;
-			vampirism_heal = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4;
+			vampirism_chance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_4;
+			vampirism_heal = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_4;
 		} else if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 5) {
-			vampirism_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5;
-			vampirism_heal = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5;
+			vampirism_chance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_5;
+			vampirism_heal = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_5;
 		}
 		if ((entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(ExodusModMobEffects.KNOWLEDGE)) == true) {
 			if (itemstack.getItem() == Items.ENCHANTED_BOOK) {
@@ -83,7 +83,7 @@ public class EnchantTooltipProcedure {
 					tooltip.add(Component.literal("\u00A77- Deals extra damage to mobs that spawn in Trial Chambers"));
 					if (entity.getData(ExodusModVariables.PLAYER_VARIABLES).playerKnowledge == true) {
 						tooltip.add(Component.literal(("\u00A77* Deals "
-								+ new java.text.DecimalFormat("##.##").format(ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage
+								+ new java.text.DecimalFormat("##.##").format(ExodusModVariables.MapVariables.get(world).EnchVal_trial_breaker_damage
 										* itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:trial_breaker")))))
 								+ " extra damage")));
 					}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": "minecraft:string",
+    "b": "#minecraft:wool",
+    "c": "exodus:experience_gummy",
+    "d": "minecraft:feather",
+    "e": "minecraft:water_bucket"
+  },
+  "result": {
+    "id": "exodus:charm_of_fall_cancellation",
+    "count": 1
+  }
+}

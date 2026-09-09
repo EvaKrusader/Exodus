@@ -109,6 +109,18 @@ public class ExodusModItems {
 	public static final DeferredItem<Item> CAELITE_BLOCK_RAIN;
 	public static final DeferredItem<Item> CAELITE_BLOCK_THUNDER;
 	public static final DeferredItem<Item> RAZOR_EDGE;
+	public static final DeferredItem<Item> GRID_PORTAL;
+	public static final DeferredItem<Item> LONG_FALL_BOOTS;
+	public static final DeferredItem<Item> PHASEM_ORE;
+	public static final DeferredItem<Item> DAELITE;
+	public static final DeferredItem<Item> MONLITE;
+	public static final DeferredItem<Item> CREEPER_ZERO;
+	public static final DeferredItem<Item> BLACK_KNIFE;
+	public static final DeferredItem<Item> ESCAPE_ROPE;
+	public static final DeferredItem<Item> UPGRADED_ESCAPE_ROPE;
+	public static final DeferredItem<Item> RECORD_2000;
+	public static final DeferredItem<Item> CHARM_OF_NATURE;
+	public static final DeferredItem<Item> RECORD_GLACEIR;
 	static {
 		CREEPER_PATCHER = block(ExodusModBlocks.CREEPER_PATCHER);
 		ONYX = register("onyx", OnyxItem::new);
@@ -196,6 +208,18 @@ public class ExodusModItems {
 		CAELITE_BLOCK_RAIN = block(ExodusModBlocks.CAELITE_BLOCK_RAIN);
 		CAELITE_BLOCK_THUNDER = block(ExodusModBlocks.CAELITE_BLOCK_THUNDER);
 		RAZOR_EDGE = register("razor_edge", RazorEdgeItem::new);
+		GRID_PORTAL = block(ExodusModBlocks.GRID_PORTAL);
+		LONG_FALL_BOOTS = register("long_fall_boots", LongFallItem.Boots::new);
+		PHASEM_ORE = block(ExodusModBlocks.PHASEM_ORE);
+		DAELITE = register("daelite", DaeliteItem::new);
+		MONLITE = register("monlite", MonliteItem::new);
+		CREEPER_ZERO = register("creeper_zero", CreeperZeroItem::new);
+		BLACK_KNIFE = register("black_knife", BlackKnifeItem::new);
+		ESCAPE_ROPE = register("escape_rope", EscapeRopeItem::new);
+		UPGRADED_ESCAPE_ROPE = register("upgraded_escape_rope", UpgradedEscapeRopeItem::new);
+		RECORD_2000 = register("record_2000", Record2000Item::new);
+		CHARM_OF_NATURE = register("charm_of_nature", CharmOfNatureItem::new);
+		RECORD_GLACEIR = register("record_glaceir", RecordGLACEIRItem::new);
 	}
 
 	// Start of user code block custom items

@@ -212,6 +212,25 @@
           "y": 122,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_safe_fall_distance",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSafeFallDistance"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "CENTER_LEFT",
+          "x": 10,
+          "y": 142,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",

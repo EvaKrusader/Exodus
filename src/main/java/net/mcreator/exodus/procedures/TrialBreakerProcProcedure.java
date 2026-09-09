@@ -49,7 +49,7 @@ public class TrialBreakerProcProcedure {
 				Entity _ent = entity;
 				if (_ent.level() instanceof ServerLevel _serverLevel) {
 					_ent.hurtServer(_serverLevel, new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.parse("exodus:trial_damage"))), immediatesourceentity, sourceentity),
-							(float) (amount + ExodusModVariables.WorldVariables.get(world).EnchVal_trial_breaker_damage * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+							(float) (amount + ExodusModVariables.MapVariables.get(world).EnchVal_trial_breaker_damage * (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 									.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:trial_breaker"))))));
 				}
 			}

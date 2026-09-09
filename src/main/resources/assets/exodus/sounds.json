@@ -42,5 +42,29 @@
         "stream": false
       }
     ]
+  },
+  "escape_rope": {
+    "sounds": [
+      {
+        "name": "exodus:slide_whistle",
+        "stream": false
+      }
+    ]
+  },
+  "record_2000": {
+    "sounds": [
+      {
+        "name": "exodus:record_gavriel_2000",
+        "stream": true
+      }
+    ]
+  },
+  "record_glaceir": {
+    "sounds": [
+      {
+        "name": "exodus:record_glaceir",
+        "stream": true
+      }
+    ]
   }
 }

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
@@ -36,6 +37,15 @@ public class ExodusModTabs {
 				tabData.accept(ExodusModItems.EXPERIENCE_CRYSTAL.get());
 				tabData.accept(ExodusModItems.CRESCENT_NECKLACE.get());
 			}).withSearchBar().build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB_GRIDWORLD = REGISTRY.register("tab_gridworld",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.exodus.tab_gridworld")).icon(() -> new ItemStack(ExodusModBlocks.GRID_PORTAL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ExodusModBlocks.GRID_PORTAL.get().asItem());
+			}).withTabsBefore(BAUBLES.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MUSIC_DISCS = REGISTRY.register("music_discs",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.exodus.music_discs")).icon(() -> new ItemStack(Items.MUSIC_DISC_PIGSTEP)).displayItems((parameters, tabData) -> {
+				tabData.accept(ExodusModItems.RECORD_2000.get());
+				tabData.accept(ExodusModItems.RECORD_GLACEIR.get());
+			}).withSearchBar().withTabsBefore(TAB_GRIDWORLD.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -43,6 +53,7 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModBlocks.CREEPER_PATCHER.get().asItem());
 			tabData.accept(ExodusModBlocks.EASY_BAKE_OVEN.get().asItem());
 			tabData.accept(ExodusModBlocks.CREEPER_PATCHER_2.get().asItem());
+			tabData.accept(ExodusModItems.CREEPER_ZERO.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(ExodusModItems.ONYX.get());
 			tabData.accept(ExodusModItems.RUBY.get());
@@ -54,6 +65,8 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.CAELITE_CLEAR.get());
 			tabData.accept(ExodusModItems.CAELITE_RAIN.get());
 			tabData.accept(ExodusModItems.CAELITE_THUNDER.get());
+			tabData.accept(ExodusModItems.DAELITE.get());
+			tabData.accept(ExodusModItems.MONLITE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_ORE.get().asItem());
@@ -63,6 +76,7 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModBlocks.SQUALINE_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.STONE_ONYX_ORE.get().asItem());
 			tabData.accept(ExodusModBlocks.CAELITE_ORE.get().asItem());
+			tabData.accept(ExodusModBlocks.PHASEM_ORE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(ExodusModBlocks.ONYX_BLOCK.get().asItem());
 			tabData.accept(ExodusModBlocks.RUBY_BLOCK.get().asItem());
@@ -92,6 +106,12 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.CALIDIUM_SHOVEL.get());
 			tabData.accept(ExodusModItems.CALIDIUM_HOE.get());
 			tabData.accept(ExodusModItems.RAZOR_EDGE.get());
+			tabData.accept(ExodusModItems.CREEPER_ZERO.get());
+			tabData.accept(ExodusModItems.BLACK_KNIFE.get());
+			tabData.accept(ExodusModItems.ESCAPE_ROPE.get());
+			tabData.accept(ExodusModItems.UPGRADED_ESCAPE_ROPE.get());
+			tabData.accept(ExodusModItems.RECORD_2000.get());
+			tabData.accept(ExodusModItems.RECORD_GLACEIR.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ExodusModItems.ONYX_SWORD.get());
 			tabData.accept(ExodusModItems.ONYX_ARMOR_HELMET.get());
@@ -113,6 +133,7 @@ public class ExodusModTabs {
 			tabData.accept(ExodusModItems.SQUALINE_ARMOR_LEGGINGS.get());
 			tabData.accept(ExodusModItems.SQUALINE_ARMOR_BOOTS.get());
 			tabData.accept(ExodusModItems.NETHERITE_FULL_SET.get());
+			tabData.accept(ExodusModItems.LONG_FALL_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(ExodusModItems.EXPERIENCE_GUMMY.get());
 			tabData.accept(ExodusModItems.CHEWING_GUM.get());

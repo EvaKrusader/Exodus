@@ -96,6 +96,9 @@ public class ExodusModVariables {
 		clone.chewingGumLevel = original.chewingGumLevel;
 		clone.showDevUI = original.showDevUI;
 		clone.playerXPbeforeDeath = original.playerXPbeforeDeath;
+		clone.spawnX = original.spawnX;
+		clone.spawnY = original.spawnY;
+		clone.spawnZ = original.spawnZ;
 		if (!event.isWasDeath()) {
 			clone.phasing_overlay = original.phasing_overlay;
 			clone.isGreedy = original.isGreedy;
@@ -121,6 +124,7 @@ public class ExodusModVariables {
 			clone.playerKnowledge = original.playerKnowledge;
 			clone.crescent_chance = original.crescent_chance;
 			clone.hasNightEffect = original.hasNightEffect;
+			clone.hasNatureCharm = original.hasNatureCharm;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -169,6 +173,43 @@ public class ExodusModVariables {
 			return instance;
 		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
+		public double EnchVal_fluorite_necklace_cooldown = 0;
+		public double EnchVal_fluorite_necklace_reduction = 0;
+
+		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			EnchVal_fluorite_necklace_cooldown = nbt.getDoubleOr("EnchVal_fluorite_necklace_cooldown", 0);
+			EnchVal_fluorite_necklace_reduction = nbt.getDoubleOr("EnchVal_fluorite_necklace_reduction", 0);
+		}
+
+		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			nbt.putDouble("EnchVal_fluorite_necklace_cooldown", EnchVal_fluorite_necklace_cooldown);
+			nbt.putDouble("EnchVal_fluorite_necklace_reduction", EnchVal_fluorite_necklace_reduction);
+			return nbt;
+		}
+
+		public void markSyncDirty() {
+			this.setDirty();
+			this._syncDirty = true;
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(WorldVariables.TYPE);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final SavedDataType<MapVariables> TYPE = new SavedDataType<>(Identifier.parse("exodus:mapvars"), level -> new MapVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
+			MapVariables instance = new MapVariables();
+			instance.read(tag, level.registryAccess());
+			return instance;
+		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
+		boolean _syncDirty = false;
 		public double goldVal_gold_block = 0;
 		public double goldVal_raw_gold_block = 0;
 		public double goldVal_gold_ore = 0;
@@ -198,8 +239,6 @@ public class ExodusModVariables {
 		public double EnchVal_vampirism_percentage_3 = 0;
 		public double EnchVal_vampirism_percentage_4 = 0;
 		public double EnchVal_vampirism_percentage_5 = 0;
-		public double EnchVal_fluorite_necklace_cooldown = 0;
-		public double EnchVal_fluorite_necklace_reduction = 0;
 		public double EnchVal_poison_coating_chance_1 = 0;
 		public double EnchVal_poison_coating_chance_2 = 0;
 		public double EnchVal_poison_coating_chance_3 = 0;
@@ -241,8 +280,6 @@ public class ExodusModVariables {
 			EnchVal_vampirism_percentage_3 = nbt.getDoubleOr("EnchVal_vampirism_percentage_3", 0);
 			EnchVal_vampirism_percentage_4 = nbt.getDoubleOr("EnchVal_vampirism_percentage_4", 0);
 			EnchVal_vampirism_percentage_5 = nbt.getDoubleOr("EnchVal_vampirism_percentage_5", 0);
-			EnchVal_fluorite_necklace_cooldown = nbt.getDoubleOr("EnchVal_fluorite_necklace_cooldown", 0);
-			EnchVal_fluorite_necklace_reduction = nbt.getDoubleOr("EnchVal_fluorite_necklace_reduction", 0);
 			EnchVal_poison_coating_chance_1 = nbt.getDoubleOr("EnchVal_poison_coating_chance_1", 0);
 			EnchVal_poison_coating_chance_2 = nbt.getDoubleOr("EnchVal_poison_coating_chance_2", 0);
 			EnchVal_poison_coating_chance_3 = nbt.getDoubleOr("EnchVal_poison_coating_chance_3", 0);
@@ -285,8 +322,6 @@ public class ExodusModVariables {
 			nbt.putDouble("EnchVal_vampirism_percentage_3", EnchVal_vampirism_percentage_3);
 			nbt.putDouble("EnchVal_vampirism_percentage_4", EnchVal_vampirism_percentage_4);
 			nbt.putDouble("EnchVal_vampirism_percentage_5", EnchVal_vampirism_percentage_5);
-			nbt.putDouble("EnchVal_fluorite_necklace_cooldown", EnchVal_fluorite_necklace_cooldown);
-			nbt.putDouble("EnchVal_fluorite_necklace_reduction", EnchVal_fluorite_necklace_reduction);
 			nbt.putDouble("EnchVal_poison_coating_chance_1", EnchVal_poison_coating_chance_1);
 			nbt.putDouble("EnchVal_poison_coating_chance_2", EnchVal_poison_coating_chance_2);
 			nbt.putDouble("EnchVal_poison_coating_chance_3", EnchVal_poison_coating_chance_3);
@@ -297,37 +332,6 @@ public class ExodusModVariables {
 			nbt.putDouble("EnchVal_poison_coating_length_3", EnchVal_poison_coating_length_3);
 			nbt.putDouble("EnchVal_poison_coating_length_4", EnchVal_poison_coating_length_4);
 			nbt.putDouble("EnchVal_poison_coating_length_5", EnchVal_poison_coating_length_5);
-			return nbt;
-		}
-
-		public void markSyncDirty() {
-			this.setDirty();
-			this._syncDirty = true;
-		}
-
-		static WorldVariables clientSide = new WorldVariables();
-
-		public static WorldVariables get(LevelAccessor world) {
-			if (world instanceof ServerLevel level) {
-				return level.getDataStorage().computeIfAbsent(WorldVariables.TYPE);
-			} else {
-				return clientSide;
-			}
-		}
-	}
-
-	public static class MapVariables extends SavedData {
-		public static final SavedDataType<MapVariables> TYPE = new SavedDataType<>(Identifier.parse("exodus:mapvars"), level -> new MapVariables(), level -> CompoundTag.CODEC.xmap(tag -> {
-			MapVariables instance = new MapVariables();
-			instance.read(tag, level.registryAccess());
-			return instance;
-		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
-		boolean _syncDirty = false;
-
-		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-		}
-
-		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			return nbt;
 		}
 
@@ -419,6 +423,10 @@ public class ExodusModVariables {
 		public double playerXPbeforeDeath = 0;
 		public double crescent_chance = 0;
 		public boolean hasNightEffect = false;
+		public double spawnX = 0;
+		public double spawnY = 0;
+		public double spawnZ = 0;
+		public boolean hasNatureCharm = false;
 
 		@Override
 		public void serialize(ValueOutput output) {
@@ -450,6 +458,10 @@ public class ExodusModVariables {
 			output.putDouble("playerXPbeforeDeath", playerXPbeforeDeath);
 			output.putDouble("crescent_chance", crescent_chance);
 			output.putBoolean("hasNightEffect", hasNightEffect);
+			output.putDouble("spawnX", spawnX);
+			output.putDouble("spawnY", spawnY);
+			output.putDouble("spawnZ", spawnZ);
+			output.putBoolean("hasNatureCharm", hasNatureCharm);
 		}
 
 		@Override
@@ -482,6 +494,10 @@ public class ExodusModVariables {
 			playerXPbeforeDeath = input.getDoubleOr("playerXPbeforeDeath", 0);
 			crescent_chance = input.getDoubleOr("crescent_chance", 0);
 			hasNightEffect = input.getBooleanOr("hasNightEffect", false);
+			spawnX = input.getDoubleOr("spawnX", 0);
+			spawnY = input.getDoubleOr("spawnY", 0);
+			spawnZ = input.getDoubleOr("spawnZ", 0);
+			hasNatureCharm = input.getBooleanOr("hasNatureCharm", false);
 		}
 
 		public void markSyncDirty() {

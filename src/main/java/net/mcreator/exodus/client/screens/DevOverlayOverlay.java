@@ -63,6 +63,9 @@ public class DevOverlayOverlay {
 			event.getGuiGraphics().text(Minecraft.getInstance().font,
 
 					ReturnXPVALUEProcedure.execute(entity), 14, h / 2 + 2, -1, false);
+			event.getGuiGraphics().text(Minecraft.getInstance().font,
+
+					ReturnSafeFallDistanceProcedure.execute(entity), 10, h / 2 + 22, -1, false);
 		}
 	}
 }

@@ -45,24 +45,24 @@ public class VampirismProcProcedure {
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) != 0) == true) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 1) {
-				localVampirismChance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_1;
-				localVampirismPercentage = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_1;
+				localVampirismChance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_1;
+				localVampirismPercentage = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_1;
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 2) {
-				localVampirismChance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_2;
-				localVampirismPercentage = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_2;
+				localVampirismChance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_2;
+				localVampirismPercentage = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_2;
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 3) {
-				localVampirismChance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3;
-				localVampirismPercentage = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_3;
+				localVampirismChance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_3;
+				localVampirismPercentage = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_3;
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 4) {
-				localVampirismChance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_4;
-				localVampirismPercentage = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_4;
+				localVampirismChance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_4;
+				localVampirismPercentage = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_4;
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:vampirism")))) == 5) {
-				localVampirismChance = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_chance_5;
-				localVampirismPercentage = ExodusModVariables.WorldVariables.get(world).EnchVal_vampirism_percentage_5;
+				localVampirismChance = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_chance_5;
+				localVampirismPercentage = ExodusModVariables.MapVariables.get(world).EnchVal_vampirism_percentage_5;
 			}
 			if (Math.random() <= localVampirismChance) {
 				if (sourceentity instanceof LivingEntity _entity)

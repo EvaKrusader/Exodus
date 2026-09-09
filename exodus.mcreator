@@ -5295,9 +5295,7 @@
       "registry_name": "squaline_ore_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/exodus/worldgen/placed_feature/squaline_ore_feature.json",
-          "src/main/resources/data/exodus/worldgen/configured_feature/squaline_ore_feature.json",
-          "src/main/resources/data/exodus/neoforge/biome_modifier/squaline_ore_feature_biome_modifier.json"
+          "src/main/resources/data/exodus/worldgen/configured_feature/squaline_ore_feature.json"
         ]
       },
       "path": "~/Ores"
@@ -5784,6 +5782,621 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "WeaponTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/WeaponTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Potion Effects/Knowledge"
+    },
+    {
+      "name": "GridPortal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grid_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/blockstates/grid_portal.json",
+          "src/main/resources/assets/exodus/items/grid_portal.json",
+          "src/main/resources/assets/exodus/models/item/grid_portal.json",
+          "src/main/java/net/mcreator/exodus/block/GridPortalBlock.java",
+          "src/main/resources/assets/exodus/models/block/grid_portal.json",
+          "src/main/resources/data/exodus/loot_table/blocks/grid_portal.json"
+        ]
+      },
+      "path": "~/Dimensions/Gridworld"
+    },
+    {
+      "name": "TabGridworld",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab_gridworld",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Dimensions/Gridworld"
+    },
+    {
+      "name": "Gridworld",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gridworld",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/timeline/gridworld_effects.json",
+          "src/main/resources/data/exodus/dimension_type/gridworld.json",
+          "src/main/java/net/mcreator/exodus/world/dimension/GridworldDimension.java",
+          "src/main/resources/data/exodus/dimension/gridworld.json"
+        ]
+      },
+      "path": "~/Dimensions/Gridworld"
+    },
+    {
+      "name": "GridPortalEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grid_portal_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/GridPortalEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions/Gridworld"
+    },
+    {
+      "name": "LongFall",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_fall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/long_fall_leggings.json",
+          "src/main/resources/assets/exodus/items/long_fall_boots.json",
+          "src/main/resources/assets/exodus/models/item/long_fall_boots.json",
+          "src/main/java/net/mcreator/exodus/item/LongFallItem.java",
+          "src/main/resources/assets/exodus/items/long_fall_helmet.json",
+          "src/main/java/net/mcreator/exodus/client/renderer/item/LongFallArmor.java",
+          "src/main/resources/assets/exodus/equipment/long_fall.json",
+          "src/main/resources/assets/exodus/items/long_fall_chestplate.json"
+        ]
+      },
+      "path": "~/Special Weapons"
+    },
+    {
+      "name": "ReturnSafeFallDistance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_safe_fall_distance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/ReturnSafeFallDistanceProcedure.java"
+        ]
+      },
+      "path": "~/Dev/Overlay"
+    },
+    {
+      "name": "TempuriteOreOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tempurite_ore_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/TempuriteOreOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Phasem"
+    },
+    {
+      "name": "TempuriteOreFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tempurite_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/worldgen/configured_feature/tempurite_ore_feature.json",
+          "src/main/resources/data/exodus/neoforge/biome_modifier/tempurite_ore_feature_biome_modifier.json",
+          "src/main/resources/data/exodus/worldgen/placed_feature/tempurite_ore_feature.json"
+        ]
+      },
+      "path": "~/Ores"
+    },
+    {
+      "name": "CharmOfFallCancellationRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_fall_cancellation_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/recipe/charm_of_fall_cancellation_recipe.json",
+          "src/main/resources/data/exodus/advancement/recipes/charm_of_fall_cancellation_recipe.json"
+        ]
+      },
+      "path": "~/Curio/Charms/Fall Damage Charm"
+    },
+    {
+      "name": "PhasemOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasem_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/loot_table/blocks/phasem_ore.json",
+          "src/main/resources/assets/exodus/items/phasem_ore.json",
+          "src/main/java/net/mcreator/exodus/block/PhasemOreBlock.java",
+          "src/main/resources/assets/exodus/models/block/phasem_ore.json",
+          "src/main/resources/assets/exodus/models/item/phasem_ore.json",
+          "src/main/resources/assets/exodus/blockstates/phasem_ore.json",
+          "src/main/resources/assets/exodus/models/block/phasem_ore_1.json",
+          "src/main/resources/assets/exodus/models/block/phasem_ore_0.json"
+        ]
+      },
+      "path": "~/Ores/Phasem"
+    },
+    {
+      "name": "Daelite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daelite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/daelite.json",
+          "src/main/java/net/mcreator/exodus/item/DaeliteItem.java",
+          "src/main/resources/assets/exodus/items/daelite.json"
+        ]
+      },
+      "path": "~/Ores/Phasem"
+    },
+    {
+      "name": "Monlite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monlite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/monlite.json",
+          "src/main/java/net/mcreator/exodus/item/MonliteItem.java",
+          "src/main/resources/assets/exodus/items/monlite.json"
+        ]
+      },
+      "path": "~/Ores/Phasem"
+    },
+    {
+      "name": "PhasemOreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phasem_ore_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/PhasemOreBlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Ores/Phasem"
+    },
+    {
+      "name": "CreeperZero",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_zero",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/exodus/item/CreeperZeroItem.java",
+          "src/main/resources/assets/exodus/models/item/creeper_zero.json",
+          "src/main/resources/assets/exodus/items/creeper_zero.json"
+        ]
+      },
+      "path": "~/Items/Creeper Zero"
+    },
+    {
+      "name": "BlackKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/black_knife.json",
+          "src/main/java/net/mcreator/exodus/item/BlackKnifeItem.java",
+          "src/main/resources/assets/exodus/items/black_knife.json"
+        ]
+      },
+      "path": "~/Special Weapons"
+    },
+    {
+      "name": "EscapeRope",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "escape_rope",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/escape_rope.json",
+          "src/main/java/net/mcreator/exodus/item/EscapeRopeItem.java",
+          "src/main/resources/assets/exodus/items/escape_rope.json"
+        ]
+      },
+      "path": "~/Items/Escape Rope"
+    },
+    {
+      "name": "EscapeRopePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "escape_rope_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/EscapeRopePlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Escape Rope"
+    },
+    {
+      "name": "PlayerSetSpawnValues",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_set_spawn_values",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/PlayerSetSpawnValuesProcedure.java"
+        ]
+      },
+      "path": "~/Items/Escape Rope"
+    },
+    {
+      "name": "UpgradedEscapeRope",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgraded_escape_rope",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/upgraded_escape_rope.json",
+          "src/main/resources/assets/exodus/models/item/upgraded_escape_rope.json",
+          "src/main/java/net/mcreator/exodus/item/UpgradedEscapeRopeItem.java"
+        ]
+      },
+      "path": "~/Items/Escape Rope"
+    },
+    {
+      "name": "BetterEscapeRopePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "better_escape_rope_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/BetterEscapeRopePlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Escape Rope"
+    },
+    {
+      "name": "Record2000",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "record_2000",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/items/record_2000.json",
+          "src/main/resources/assets/exodus/models/item/record_2000.json",
+          "src/main/resources/data/exodus/jukebox_song/record_2000.json",
+          "src/main/java/net/mcreator/exodus/item/Record2000Item.java"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "MusicDiscs",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "music_discs",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "GridworldPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gridworld_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/GridworldPlayerEntersDimensionProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions/Gridworld"
+    },
+    {
+      "name": "CharmOfNature",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_nature",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/exodus/models/item/charm_of_nature.json",
+          "src/main/java/net/mcreator/exodus/item/CharmOfNatureItem.java",
+          "src/main/resources/assets/exodus/items/charm_of_nature.json"
+        ]
+      },
+      "path": "~/Curio/Charms/Nature Charm"
+    },
+    {
+      "name": "HoeEfficiencyProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoe_efficiency_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/HoeEfficiencyProcProcedure.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "RecordGLACEIR",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "record_glaceir",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/exodus/jukebox_song/record_glaceir.json",
+          "src/main/resources/assets/exodus/models/item/record_glaceir.json",
+          "src/main/resources/assets/exodus/items/record_glaceir.json",
+          "src/main/java/net/mcreator/exodus/item/RecordGLACEIRItem.java"
+        ]
+      },
+      "path": "~/Discs"
+    },
+    {
+      "name": "CharmOfNatureBauble",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_nature_bauble",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Curio/Charms/Nature Charm"
+    },
+    {
+      "name": "CharmOfNatureProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charm_of_nature_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/exodus/procedures/CharmOfNatureProcProcedure.java"
+        ]
+      },
+      "path": "~/Curio/Charms/Nature Charm"
     }
   ],
   "variable_elements": [
@@ -5934,175 +6547,175 @@
     {
       "name": "goldVal_gold_block",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_raw_gold_block",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_gold_ore",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_deepslate_gold_ore",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_nether_gold_ore",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_gilded_blackstone",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_golden_helmet",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_golden_chestplate",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_golden_leggings",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_golden_boots",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_golden_pickaxe",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_gold_rush_mult",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_gold_rush_add",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_greed_lvl_1",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_greed_lvl_2",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_greed_lvl_3",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_greed_lvl_4",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "goldVal_greed_lvl_5",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_trial_breaker_damage",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_chance_1",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_chance_2",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_chance_3",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_chance_4",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_chance_5",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_percentage_1",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0.0"
     },
     {
       "name": "EnchVal_vampirism_percentage_2",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_percentage_3",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_percentage_4",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_vampirism_percentage_5",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
@@ -6144,62 +6757,86 @@
     {
       "name": "EnchVal_poison_coating_chance_1",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_chance_2",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_chance_3",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_chance_4",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_chance_5",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_length_1",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_length_2",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_length_3",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_length_4",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
     },
     {
       "name": "EnchVal_poison_coating_length_5",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "spawnX",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "spawnY",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "spawnZ",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "hasNatureCharm",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -6236,6 +6873,30 @@
         "cough"
       ],
       "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "escape_rope",
+      "files": [
+        "slide_whistle"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "record_2000",
+      "files": [
+        "record_gavriel_2000"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "record_glaceir",
+      "files": [
+        "record_glaceir"
+      ],
+      "category": "record",
       "subtitle": ""
     }
   ],
@@ -6421,6 +7082,7 @@
       "~OnyxAxe@CUSTOM:OnyxAxe"
     ],
     "ITEMS:minecraft:swords": [
+      "~BlackKnife@CUSTOM:BlackKnife",
       "~RazorEdge@CUSTOM:RazorEdge",
       "~CalidiumSword@CUSTOM:CalidiumSword",
       "~RubySword@CUSTOM:RubySword",
@@ -6455,6 +7117,7 @@
       "~OnyxArmor@CUSTOM:OnyxArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~LongFall@CUSTOM:LongFall.boots",
       "~SqualineArmor@CUSTOM:SqualineArmor.boots",
       "~CalidiumArmor@CUSTOM:CalidiumArmor.boots",
       "~RubyArmor@CUSTOM:RubyArmor.boots",
@@ -6465,6 +7128,7 @@
       "~CalidiumOre@CUSTOM:CalidiumOre"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CreeperZero@CUSTOM:CreeperZero",
       "~CharmOfFallCancellation@CUSTOM:CharmOfFallCancellation",
       "~CharmOfFireResistance@CUSTOM:CharmOfFireResistance",
       "~OnyxNecklace@CUSTOM:OnyxNecklace",
@@ -6480,6 +7144,13 @@
       "~MoonlightSaga@CUSTOM:MoonlightSaga",
       "~HerobrineSighting@CUSTOM:HerobrineSighting",
       "~Exodus@CUSTOM:Exodus"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~RecordGLACEIR@CUSTOM:RecordGLACEIR",
+      "~Record2000@CUSTOM:Record2000"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Gridworld@Blocks.UNPOWERED_REPEATER"
     ]
   },
   "tab_element_order": {},
@@ -6698,7 +7369,26 @@
       "item.exodus.caelite_block_rain": "Clear Caelite Block",
       "item.exodus.caelite_block_thunder": "Clear Caelite Block",
       "item.exodus.razor_edge": "Razor Edge",
-      "enchantment.exodus.poison_coating": "Poison Coating"
+      "enchantment.exodus.poison_coating": "Poison Coating",
+      "item.exodus.grid_portal": "Grid Portal",
+      "item_group.exodus.tab_gridworld": "Gridworld",
+      "item.exodus.long_fall_boots": "Long Fall Boots",
+      "item.exodus.phasem_ore": "Phasem Ore",
+      "item.exodus.daelite": "Shiny Tempurite",
+      "item.exodus.monlite": "Dotted Tempurite",
+      "item.exodus.creeper_zero": "Creeper Zero",
+      "item.exodus.black_knife": "Black Knife",
+      "item.exodus.escape_rope": "Escape Rope",
+      "subtitles.escape_rope": "",
+      "item.exodus.upgraded_escape_rope": "Escape Rope",
+      "subtitles.record_2000": "",
+      "item.exodus.record_2000": "Music Disc",
+      "item.exodus.record_2000.desc": "Gavriel - 2000",
+      "item_group.exodus.music_discs": "Music Discs",
+      "item.exodus.charm_of_nature": "Charm Of Nature",
+      "item.exodus.record_glaceir": "Music Disc",
+      "item.exodus.record_glaceir.desc": "Toby Fox - GLACEIR",
+      "subtitles.record_glaceir": ""
     }
   },
   "metadata": {
@@ -6811,6 +7501,10 @@
               {
                 "name": "XP Charm",
                 "children": []
+              },
+              {
+                "name": "Nature Charm",
+                "children": []
               }
             ]
           },
@@ -6888,6 +7582,10 @@
           {
             "name": "Caelite",
             "children": []
+          },
+          {
+            "name": "Phasem",
+            "children": []
           }
         ]
       },
@@ -6926,6 +7624,14 @@
           {
             "name": "Chewing Gum",
             "children": []
+          },
+          {
+            "name": "Creeper Zero",
+            "children": []
+          },
+          {
+            "name": "Escape Rope",
+            "children": []
           }
         ]
       },
@@ -6952,6 +7658,15 @@
       {
         "name": "Special Weapons",
         "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": [
+          {
+            "name": "Gridworld",
+            "children": []
+          }
+        ]
       }
     ]
   },

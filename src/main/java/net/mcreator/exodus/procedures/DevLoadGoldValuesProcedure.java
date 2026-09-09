@@ -60,94 +60,94 @@ public class DevLoadGoldValuesProcedure {
 				}
 				bufferedReader.close();
 				jsonObject = new com.google.gson.Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_gold_block != jsonObject.get("minecraft:gold_block").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_gold_block = jsonObject.get("minecraft:gold_block").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_gold_block != jsonObject.get("minecraft:gold_block").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_gold_block = jsonObject.get("minecraft:gold_block").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_raw_gold_block != jsonObject.get("minecraft:raw_gold_block").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_raw_gold_block = jsonObject.get("minecraft:raw_gold_block").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_raw_gold_block != jsonObject.get("minecraft:raw_gold_block").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_raw_gold_block = jsonObject.get("minecraft:raw_gold_block").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_gold_ore != jsonObject.get("minecraft:gold_ore").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_gold_ore = jsonObject.get("minecraft:gold_ore").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_gold_ore != jsonObject.get("minecraft:gold_ore").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_gold_ore = jsonObject.get("minecraft:gold_ore").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_deepslate_gold_ore != jsonObject.get("minecraft:deepslate_gold_ore").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_deepslate_gold_ore = jsonObject.get("minecraft:deepslate_gold_ore").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_deepslate_gold_ore != jsonObject.get("minecraft:deepslate_gold_ore").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_deepslate_gold_ore = jsonObject.get("minecraft:deepslate_gold_ore").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_nether_gold_ore != jsonObject.get("minecraft:nether_gold_ore").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_nether_gold_ore = jsonObject.get("minecraft:nether_gold_ore").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_nether_gold_ore != jsonObject.get("minecraft:nether_gold_ore").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_nether_gold_ore = jsonObject.get("minecraft:nether_gold_ore").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_gilded_blackstone != jsonObject.get("minecraft:gilded_blackstone").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_gilded_blackstone = jsonObject.get("minecraft:gilded_blackstone").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_gilded_blackstone != jsonObject.get("minecraft:gilded_blackstone").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_gilded_blackstone = jsonObject.get("minecraft:gilded_blackstone").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					BlockValues = BlockValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_golden_helmet != jsonObject.get("helmet").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_golden_helmet = jsonObject.get("helmet").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_golden_helmet != jsonObject.get("helmet").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_golden_helmet = jsonObject.get("helmet").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					ItemValues = ItemValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_golden_chestplate != jsonObject.get("chestplate").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_golden_chestplate = jsonObject.get("chestplate").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_golden_chestplate != jsonObject.get("chestplate").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_golden_chestplate = jsonObject.get("chestplate").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					ItemValues = ItemValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_golden_leggings != jsonObject.get("leggings").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_golden_leggings = jsonObject.get("leggings").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_golden_leggings != jsonObject.get("leggings").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_golden_leggings = jsonObject.get("leggings").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					ItemValues = ItemValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_golden_boots != jsonObject.get("boots").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_golden_boots = jsonObject.get("boots").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_golden_boots != jsonObject.get("boots").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_golden_boots = jsonObject.get("boots").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					ItemValues = ItemValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_golden_pickaxe != jsonObject.get("pickaxe").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_golden_pickaxe = jsonObject.get("pickaxe").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_golden_pickaxe != jsonObject.get("pickaxe").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_golden_pickaxe = jsonObject.get("pickaxe").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					ItemValues = ItemValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_mult != jsonObject.get("gold_rush_multiplier").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_mult = jsonObject.get("gold_rush_multiplier").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_mult != jsonObject.get("gold_rush_multiplier").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_mult = jsonObject.get("gold_rush_multiplier").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_add != jsonObject.get("gold_rush_additive").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_gold_rush_add = jsonObject.get("gold_rush_additive").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_add != jsonObject.get("gold_rush_additive").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_gold_rush_add = jsonObject.get("gold_rush_additive").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_1 != jsonObject.get("greedlevel1").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_1 = jsonObject.get("greedlevel1").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_1 != jsonObject.get("greedlevel1").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_1 = jsonObject.get("greedlevel1").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_2 != jsonObject.get("greedlevel2").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_2 = jsonObject.get("greedlevel2").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_2 != jsonObject.get("greedlevel2").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_2 = jsonObject.get("greedlevel2").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_3 != jsonObject.get("greedlevel3").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_3 = jsonObject.get("greedlevel3").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_3 != jsonObject.get("greedlevel3").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_3 = jsonObject.get("greedlevel3").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_4 != jsonObject.get("greedlevel4").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_4 = jsonObject.get("greedlevel4").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_4 != jsonObject.get("greedlevel4").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_4 = jsonObject.get("greedlevel4").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
-				if (ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_5 != jsonObject.get("greedlevel5").getAsDouble()) {
-					ExodusModVariables.WorldVariables.get(world).goldVal_greed_lvl_5 = jsonObject.get("greedlevel5").getAsDouble();
-					ExodusModVariables.WorldVariables.get(world).markSyncDirty();
+				if (ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_5 != jsonObject.get("greedlevel5").getAsDouble()) {
+					ExodusModVariables.MapVariables.get(world).goldVal_greed_lvl_5 = jsonObject.get("greedlevel5").getAsDouble();
+					ExodusModVariables.MapVariables.get(world).markSyncDirty();
 					GreedValues = GreedValues + 1;
 				}
 			} catch (IOException e) {

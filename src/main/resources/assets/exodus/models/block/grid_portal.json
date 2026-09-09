@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "exodus:block/gridportal_bottom",
+    "up": "exodus:block/gridportal_top",
+    "north": "exodus:block/gridportal_side",
+    "east": "exodus:block/gridportal_side",
+    "south": "exodus:block/gridportal_side",
+    "west": "exodus:block/gridportal_side",
+    "particle": "exodus:block/gridportal_bottom"
+  }
+}

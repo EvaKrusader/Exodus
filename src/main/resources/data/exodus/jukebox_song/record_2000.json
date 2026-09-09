@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.exodus.record_2000.desc"
+  },
+  "length_in_seconds": 209,
+  "sound_event": "exodus:record_2000"
+}

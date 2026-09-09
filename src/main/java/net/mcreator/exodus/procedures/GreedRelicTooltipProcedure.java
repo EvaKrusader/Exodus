@@ -42,10 +42,12 @@ public class GreedRelicTooltipProcedure {
 				tooltip.add(1, Component.literal("\u00A76The Body"));
 			}
 			if (itemstack.getItem() == Items.GOLDEN_LEGGINGS) {
-				tooltip.add(Component.literal("\u00A76The Mind"));
+				tooltip.remove(1);
+				tooltip.add(1, Component.literal("\u00A76The Body"));
 			}
 			if (itemstack.getItem() == Items.GOLDEN_BOOTS) {
-				tooltip.add(Component.literal("\u00A76The Mind"));
+				tooltip.remove(1);
+				tooltip.add(1, Component.literal("\u00A76The Body"));
 			}
 			if (itemstack.getItem() == ExodusModItems.GREED_RELIC.get()) {
 				tooltip.add(Component.literal(("\u00A76" + new java.text.DecimalFormat("#").format(Math.floor(entity.getData(ExodusModVariables.PLAYER_VARIABLES).goldAmount)) + "/"

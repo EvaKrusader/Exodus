@@ -41,24 +41,24 @@ public class PoisonCoatingProcProcedure {
 		double local_length = 0;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:poison_coating")))) == 1) {
-			local_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_1;
-			local_length = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_1;
+			local_chance = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_chance_1;
+			local_length = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_length_1;
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:poison_coating")))) == 2) {
-			local_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_2;
-			local_length = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_2;
+			local_chance = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_chance_2;
+			local_length = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_length_2;
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:poison_coating")))) == 3) {
-			local_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_3;
-			local_length = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_3;
+			local_chance = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_chance_3;
+			local_length = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_length_3;
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:poison_coating")))) == 4) {
-			local_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_4;
-			local_length = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_4;
+			local_chance = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_chance_4;
+			local_length = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_length_4;
 		} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 				.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, Identifier.parse("exodus:poison_coating")))) == 5) {
-			local_chance = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_chance_5;
-			local_length = ExodusModVariables.WorldVariables.get(world).EnchVal_poison_coating_length_5;
+			local_chance = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_chance_5;
+			local_length = ExodusModVariables.MapVariables.get(world).EnchVal_poison_coating_length_5;
 		}
 		if (Math.random() <= local_chance) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
